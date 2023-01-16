@@ -12,3 +12,10 @@ $(OUTPUT): # TODO dependencies
 	
 install-deps:
 	pip install marko
+	
+render-articles:
+	export PYTHONPATH="${PYTHONPATH}:."; \
+	mkdir -p src/articles; \
+	for article in ./articles/*.md; do \
+		cat $$article | marko --renderer scripts.MarkoLatexRenderer > src/$${article//.md/.latex}; \
+	done
