@@ -1,1 +1,10 @@
 build/
+__pycache__
+
+_minted*/
+
+*.aux
+*.log
+*.out
+*.pdf
+!/*.pdf

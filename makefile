@@ -1,12 +1,28 @@
 export TEXINPUTS=.:latex/:
 LATEX=pdflatex
-FLAGS=-half-on-error -shell-escape
+FLAGS=-halt-on-error -shell-escape
 BUILD_FOLDER=build/
 OUTPUT=$(BUILD_FOLDER)/vnoi-magazine-2023.pdf
 
-all: $(OUTPUT)
+all: magazine
 	
-$(OUTPUT): # TODO dependencies
+clean:
+	rm -rf build/
+
+$(BUILD_FOLDER):
+	mkdir -p $(BUILD_FOLDER)
+	
+magazine: | $(BUILD_FOLDER)
 	cd src; \
-	$(LATEX) $(FLAGS) -output-directory=../$(BUILD_FOLDER) vnoi-magazine-2023.latex
+	$(LATEX) $(FLAGS) vnoi-magazine-2023.latex; \
+	cp vnoi-magazine-2023.pdf ../
 	
+install-deps:
+	pip install marko
+	
+render-articles:
+	export PYTHONPATH="${PYTHONPATH}:./scripts/"; \
+	mkdir -p src/articles; \
+	for article in ./articles/*.md; do \
+		cat $$article | marko -e marko_latex_extension > src/$${article//.md/.latex}; \
+	done
