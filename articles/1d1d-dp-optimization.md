@@ -34,16 +34,20 @@ $$h[i] = \mathop{\arg\min} \limits_{0 \le j < i} f[j] + w(j, i)$$
 
 Nói cách khác, $h[i]$ là vị trí $j$ nhỏ nhất thỏa mãn $f[j] + w(j, i)$ đạt giá trị cực tiểu.
 
-Để thuận tiện cho việc biểu diễn thuật toán, ta sẽ quy ước $f[0] = 0$, $f[1] = f[2] = \cdots = f[n] = \infty$.
+Để thuận tiện cho việc biểu diễn thuật toán, ta sẽ quy ước
+
+$f[0] = 0$, $f[1] = f[2] = \ldots = f[n] = \infty$.
 
 ### Ý tưởng "ngây thơ"
 
 Trước khi đi vào thuật toán chính, chúng ta sẽ xem xét qua thuật toán "ngây thơ" sau:
 
-- Ở thời điểm đầu tiên, $h[1] = h[2] = \cdots = h[n] = 0$.
+- Ở thời điểm đầu tiên,
+    
+  $h[1] = h[2] = \ldots = h[n] = 0$.
 - Ở thời điểm thứ $i$:
     - Vì $h[i]$ đã được cập nhật hoàn toàn, ta tính được $f[i] = f[h[i]] + w(h[i], i)$.
-    - Sau khi tính được $f[i]$, ta sẽ cập nhật lại $h[i + 1], h[i + 2], \cdots, h[n]$.
+    - Sau khi tính được $f[i]$, ta sẽ cập nhật lại $h[i + 1], h[i + 2], \ldots, h[n]$.
     
 Chúng ta có thể cài đặt thuật toán trên một cách đơn giản như sau:
 
@@ -77,23 +81,23 @@ void solve() {
 
 > *Việc mảng $h$ luôn là dãy đơn điệu tăng sẽ có ý nghĩa gì?*
 
-Khi cập nhật đến $f[i]$, nếu tồn tại một vị trí $j$ thỏa mãn $f[h[j]] + w(h[j], j) \le f[i] + w(i, j)$, điều đó đồng nghĩa với việc $h[j]$ sẽ không thay đổi. Không chỉ thế, vì $h[i + 1] \le h[i + 2] \le \cdots \le h[j - 1] \le h[j]$, nên cả đoạn $h[i + 1 \ldots j]$ cũng sẽ không thay đổi.
+Khi cập nhật đến $f[i]$, nếu tồn tại một vị trí $j$ thỏa mãn $f[h[j]] + w(h[j], j) \le f[i] + w(i, j)$, điều đó đồng nghĩa với việc $h[j]$ sẽ không thay đổi. Không chỉ thế, vì $h[i + 1] \le h[i + 2] \le \ldots \le h[j - 1] \le h[j]$, nên cả đoạn $h[i + 1 \ldots j]$ cũng sẽ không thay đổi.
 
 **Hệ quả.** *Nếu tồn tại vị trí $j$ thỏa mãn $f[h[j]] + w(h[j], j) \le f[i] + w(i, j)$, ta được $f[h[p]] + w(h[p], p) \le f[i] + w(i, p)$ với mọi $i < p \le j$.*
 
-Chính vì thế, để cập nhật mảng $h$, ta sẽ tìm vị trí $z$ nhỏ nhất thỏa mãn $f[h[z]] + w(h[z], z) > f[i] + w(i, z)$, và cập nhật $h[z] = h[z + 1] = \cdots = h[n] = i$. Từ đây, ta có ý tưởng thuật toán sau:
+Chính vì thế, để cập nhật mảng $h$, ta sẽ tìm vị trí $z$ nhỏ nhất thỏa mãn $f[h[z]] + w(h[z], z) > f[i] + w(i, z)$, và cập nhật $h[z] = h[z + 1] = \ldots = h[n] = i$. Từ đây, ta có ý tưởng thuật toán sau:
 
 **Thuật toán.**
 
 Ta sẽ biểu diễn mảng $h$ thành $m$ đoạn $(l[i], r[i], p[i])$ thỏa mãn:
 
-$$\left\{\begin{matrix}
+$$\left\{\begin{array}{l}
 l[1] = 1\\ 
 r[m] = n\\ 
-p[i] = h[l[i]] = h[l[i] + 1] = \cdots = h[r[i]]\\
-l[i + 1] = r[i] + 1\ \forall\ 1 \le i < m\\ 
-p[i] < p[i + 1]\ \forall\ 1 \le i < m
-\end{matrix}\right.$$
+p[i] = h[l[i]] = h[l[i] + 1] = \ldots = h[r[i]]\\
+l[i + 1] = r[i] + 1,\ \forall\ 1 \le i < m\\ 
+p[i] < p[i + 1],\ \forall\ 1 \le i < m
+\end{array}\right.$$
 
 - Ở thời điểm đầu tiên, mảng $h$ chỉ chứa đoạn $(1, n, 0)$.
 - Ở thời điểm thứ $i$:
@@ -183,11 +187,12 @@ Cho $n$ cây được đánh số hiệu từ $1$ tới $n$, mỗi cây có đ�
 
 Alob và Bice có một cái cưa máy, mỗi lần sử dụng cưa có thể giảm độ cao của một cây bất kì xuống $1$. Tuy nhiên, sau mỗi lần sử dụng, cưa máy cần được sạc lại. Chi phí để sạc phụ thuộc vào những cây đã được chặt hoàn toàn (những cây đã được giảm độ cao về $0$): trong những cây đã được chặt hoàn toàn, giả sử cây có số hiệu lớn nhất là $i$, chi phí để sạc cưa máy là $b_i$. Nếu không có cây nào đã được chặt hoàn toàn, ta không thể sạc lại cưa máy.
 
-Điều kiện bài toán: $\left\{\begin{matrix}
+Điều kiện bài toán:
+$$\left\{\begin{matrix}
 1 \le n \le 10^5\\ 
 1 = a_1 < a_2 < \ldots < a_n \le 10^9\\ 
 10^9 \ge b_1 > b_2 > \ldots > b_n = 0
-\end{matrix}\right.$
+\end{matrix}\right.$$
 
 ### Ý tưởng
 
@@ -203,11 +208,11 @@ Nếu đặt $w(j, i) = b_j \cdot a_i$, hàm $w$ là một hàm thỏa mãn bấ
 
 Xét $4$ điểm $x < y \le z < t$, ta có:
 
-$$w(x, z) + w(y, t) - w(x, t) - w(y, z)$$
-
-$$= b_x \cdot a_z + b_y \cdot a_t - b_x \cdot a_t - b_y \cdot a_z$$
-
-$$= (b_x - b_y)(a_z - a_t) \le 0$$
+$$\begin{array}{cl}
+  & w(x, z) + w(y, t) - w(x, t) - w(y, z) \\
+= & b_x \cdot a_z + b_y \cdot a_t - b_x \cdot a_t - b_y \cdot a_z \\
+= & (b_x - b_y)(a_z - a_t) \le 0
+\end{array}$$
 
 Vì vậy, 
 
@@ -290,8 +295,6 @@ int main() {
 
 ## Bài toán 2
 
-(link)
-
 ### Tóm tắt
 
 Ở ngôi làng nọ, có $n$ ngôi nhà nằm trên một đường thẳng. Biết trưởng làng sống ở nhà thứ $1$, nhà thứ $i$ nằm cách nhà trưởng làng đúng $a_i$ km về phía đông. Trưởng làng muốn chọn ra một số địa điểm trên đường thẳng để chuẩn bị tổ chức lễ hội, biết chi phí tổ chức lễ hội cho một địa điểm là $k$.
@@ -302,10 +305,12 @@ Hãy tìm cách chọn một số địa điểm sao cho tổng chi phí tổ ch
 
 Nói cách khác, nếu như ta chọn $m$ địa điểm, địa điểm thứ $i$ nằm cách nhà trưởng làng đúng $s_i$ km về phía đông, tổng chi phí tổ chức lễ hội và di chuyển sẽ là $k \cdot m + \sum \limits_{i = 1}^{n} \min \limits_{j = 1}^{m} |a_i - s_j|$.
 
-Điều kiện bài toán: $\left\{\begin{matrix}
+Điều kiện bài toán: 
+
+$$\left\{\begin{array}{l}
 1 \le n \le 2 \cdot 10^5, 1 \le k \le 10^9\\ 
 0 = a_1 < a_2 < \ldots < a_n \le 10^9
-\end{matrix}\right.$
+\end{array}\right.$$
 
 ### Ý tưởng
 
@@ -337,15 +342,16 @@ Với $r - l$ chẵn: $w(l, r) = (p[r] - p[r - \frac{k}{2}]) - (p[l + \frac{k}{2
 
 Đặt $b = \frac{x + z}{2}$, $c = \frac{y + t}{2}$, $d = \frac{x + t}{2}$, $e = \frac{y + z}{2}$. Ta có:
 
-$$w(x, z) + w(y, t) - w(x, t) - w(y, z)$$
-
-$$= 2 \cdot (-p[\frac{x + z}{2}] - p[\frac{y + t}{2}] + p[\frac{x + t}{2}] + p[\frac{y + z}{2}]) = 2 \cdot (-p[b] - p[c] + p[d] + p[e])$$
-
-$$= 2 \cdot (p[d] - p[b]) - 2 \cdot (p[c] - p[e])$$
-
-$$= 2 \cdot (a_{b + 1} + a_{b + 2} + \ldots + a_d) - 2 \cdot (a_{e + 1} + a_{e + 2} + \ldots + a_c)$$
-
-$$= 2 \cdot(a_{b + 1} - a_{e + 1}) + 2 \cdot (a_{b + 2} - a_{e + 2}) + \ldots + 2 \cdot (a_d - a_c) \le 0$$
+$$\begin{array}{cl}
+  & w(x, z) + w(y, t) - w(x, t) - w(y, z) \\
+= & 2 \cdot (-p[\frac{x + z}{2}] - p[\frac{y + t}{2}] + p[\frac{x + t}{2}] + p[\frac{y + z}{2}])  \\
+= & 2 \cdot (-p[b] - p[c] + p[d] + p[e]) \\
+= & 2 \cdot (p[d] - p[b]) - 2 \cdot (p[c] - p[e]) \\
+= & 2 \cdot (a_{b + 1} + a_{b + 2} + \ldots + a_d) \\
+  & - 2 \cdot (a_{e + 1} + a_{e + 2} + \ldots + a_c) \\
+= & 2 \cdot(a_{b + 1} - a_{e + 1}) + 2 \cdot (a_{b + 2} - a_{e + 2}) + \ldots \\
+  & + 2 \cdot (a_d - a_c) \le 0
+\end{array}$$
 
 Vì vậy, 
 
