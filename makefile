@@ -24,5 +24,5 @@ render-articles:
 	export PYTHONPATH="${PYTHONPATH}:./scripts/"; \
 	mkdir -p src/articles; \
 	for article in ./articles/*.md; do \
-		cat $$article | marko -e marko_latex_extension > src/$${article//.md/.latex}; \
+		cat $$article | marko -e marko_latex_extension -o src/$${article//.md/.latex}; \
 	done

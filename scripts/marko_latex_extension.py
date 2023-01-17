@@ -3,10 +3,10 @@ from marko import (inline, block)
 import re
 
 class BlockMath(block.BlockElement):
-    priority=3
+    priority=100
     pattern=re.compile(r'\$\$([\s\S]*?)\$\$', flags=re.M)
     include_children=False
-    
+   
     def __init__(self, match):
         self.content = match.group(1)
 
@@ -19,11 +19,19 @@ class BlockMath(block.BlockElement):
         m = source.match
         source.consume()
         return m
+
+class BlockMathInParagraph(inline.InlineElement):
+    priority=101
+    pattern = r'\$\$([\s\S]*?)\$\$'
+    parse_children = False
+   
+    def __init__(self, match):
+        self.content = match.group(1)
     
 class InlineMath(inline.InlineElement):
-    priority=3
+    priority=100
     pattern = r'\$([\s\S]*?)\$'
-    parse_children = True
+    parse_children = False
     
     def __init__(self, match):
         self.content = match.group(1)
@@ -36,7 +44,7 @@ class MarkoLatexRenderer(LatexRenderer):
         # create document parts
         # items = ["\\documentclass{article}"]
         # add used packages
-        # items.extend(f"\\usepackage{{{p}}}" for p in self._packages)
+        # items.extend(f"\\usepackagep" for p in self._packages)
         # add inner content
         # items.append(self._environment("document", children))
         return children
@@ -50,13 +58,38 @@ class MarkoLatexRenderer(LatexRenderer):
         return self._environment(f"{language}code", element.children[0].children)
     
     def render_block_math(self, element):
+        print('block math', element.content)
+        return f"$${element.content}$$"
+    
+    def render_block_math_in_paragraph(self, element):
+        print('block math in paragraph', element.content)
         return f"$${element.content}$$"
     
     def render_inline_math(self, element):
+        print('inline math', element.content)
         return f"${element.content}$"
     
+    @staticmethod
+    def _escape_latex(text: str) -> str:
+        print('escaping', text)
+        # Special LaTeX Character:  # $ % ^ & _ { } ~ \
+        specials = {
+            "#": "\\#",
+            "$": "\\$",
+            "%": "\\%",
+            "&": "\\&",
+            "_": "\\_",
+            "{": "\\{",
+            "}": "\\}",
+            "^": "\\^{}",
+            "~": "\\~{}",
+            "\\": "\\textbackslash{}",
+        }
+
+        return "".join(specials.get(s, s) for s in text)
+    
 class MarkoLatexExtension:
-    elements=[BlockMath, InlineMath]
+    elements=[BlockMath, BlockMathInParagraph, InlineMath]
     renderer_mixins = [MarkoLatexRenderer]
 
 def make_extension(*args):
