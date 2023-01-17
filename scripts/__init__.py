@@ -1,1 +1,1 @@
-from .marko_latex_renderer import MarkoLatexRenderer
+from .marko_latex_extension import MarkoLatexExtension
