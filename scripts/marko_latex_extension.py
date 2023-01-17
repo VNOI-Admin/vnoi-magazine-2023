@@ -2,9 +2,9 @@ from marko.ext.latex_renderer import LatexRenderer
 from marko import (inline, block)
 import re
 
-class BlockMath(block.BlockElement):
+class BlockElementWithPattern(block.BlockElement):
     priority=100
-    pattern=re.compile(r'\$\$([\s\S]*?)\$\$', flags=re.M)
+    pattern=None
     include_children=False
    
     def __init__(self, match):
@@ -36,28 +36,19 @@ class InlineMath(inline.InlineElement):
     def __init__(self, match):
         self.content = match.group(1)
         
-class Author(block.BlockElement):
-    priority=100
+class BlockMath(BlockElementWithPattern):
+    pattern=re.compile(r'\$\$([\s\S]*?)\$\$', flags=re.M)
+        
+class Author(BlockElementWithPattern):
     pattern = re.compile(r'Author: (.*)')
     
-    include_children=False
-   
-    def __init__(self, match):
-        self.content = match.group(1)
-
-    @classmethod
-    def match(cls, source):
-        return source.expect_re(cls.pattern)
-
-    @classmethod
-    def parse(cls, source):
-        m = source.match
-        source.consume()
-        return m
-    
+class Preface(BlockElementWithPattern):
+    pattern = re.compile(r'Preface:\s(.*)')
+    parse_children = True
 
 class MarkoLatexRenderer(LatexRenderer):
     author = ''
+    preface = ''
     def render_document(self, element):
         # should come first to collect needed packages
         children = self.render_children(element)
@@ -73,6 +64,11 @@ class MarkoLatexRenderer(LatexRenderer):
         self.author = element.content
         return ''
     
+    def render_preface(self, element):
+        self.preface = element.content
+        print('got preface', self.preface)
+        return ''
+    
     def render_heading(self, element):
         children = self.render_children(element)
         if element.level == 1:
@@ -82,7 +78,7 @@ class MarkoLatexRenderer(LatexRenderer):
     
     def render_fenced_code(self, element):
         language = self._escape_latex(element.lang).strip().lower()
-        if language == 'c++':
+        if 'c++' in language or 'cpp' in language:
             language = 'cpp'
         if language not in ['c', 'cpp', 'python', 'text']:
             language = 'text'
@@ -113,6 +109,15 @@ class MarkoLatexRenderer(LatexRenderer):
         if element.start and element.start != 1:
             _logger.warning("Setting the starting number of the list is not supported!")
         return self._environment(env, children, ['leftmargin=0.5cm'])
+            
+    def render_image(self, element):
+        return f"""
+            % \\end{{multicols}}
+            \\begin{{center}}
+                \\includegraphics[width=\\linewidth]{{{element.dest}}}
+            \\end{{center}}
+            % \\begin{{multicols}}{{2}}
+        """
     
     @staticmethod
     def _escape_latex(text: str) -> str:

@@ -8,18 +8,27 @@
 \RequirePackage{amsmath}
 \RequirePackage{multicol}
 \RequirePackage{enumitem}
+\RequirePackage{graphicx}
 
 \newcommand{\setCoverImage}[1]{\includepdf{#1}}
 
 \setlength{\columnsep}{0.8cm}
 \newenvironment{article}[2]{
+    \ifodd\value{page}\null\newpage\fi%
+    
+    ~\thispagestyle{empty}
+    \vfill
     \part*{#1}
     \begin{flushright}
         \textit{Author: #2}
     \end{flushright}
+    \vfill
+    
+    \pagebreak
     \begin{multicols}{2}
 }{
     \end{multicols}
+    \pagebreak
 }
 
 % Minted syntax highlight

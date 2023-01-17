@@ -1,9 +1,11 @@
 \documentclass[12pt]{article}
 \usepackage[utf8]{vietnam} 
 \usepackage{vnoiMagazine2023}
-\usepackage[a4paper, margin=1in]{geometry}
+\usepackage[a4paper, margin=1.5cm, twoside]{geometry}
+\usepackage[bottom]{footmisc}
 
 \begin{document}
     \setCoverImage{./assets/cover.png}
     \input{./articles/1d1d-dp-optimization.latex}
+    \input{./articles/derivative-application.latex}
 \end{document}
