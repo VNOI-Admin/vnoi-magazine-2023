@@ -6,8 +6,16 @@
 \RequirePackage{csquotes}
 \RequirePackage{hyperref}
 \RequirePackage{amsmath}
+\RequirePackage{multicol}
 
 \newcommand{\setCoverImage}[1]{\includepdf{#1}}
+
+\setlength{\columnsep}{1cm}
+\newenvironment{article}[1][]{
+    \begin{multicols}{2}
+}{
+    \end{multicols}
+}
 
 % Minted syntax highlight
 \usemintedstyle{vs}
@@ -25,5 +33,6 @@
     \newminted{text}{#1}
 }
 \expandafter\setmintedconfig\expandafter{\mintedArgs}
+
 
 

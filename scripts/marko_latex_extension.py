@@ -47,7 +47,7 @@ class MarkoLatexRenderer(LatexRenderer):
         # items.extend(f"\\usepackagep" for p in self._packages)
         # add inner content
         # items.append(self._environment("document", children))
-        return children
+        return self._environment("article", children)
     
     def render_fenced_code(self, element):
         language = self._escape_latex(element.lang).strip().lower()
