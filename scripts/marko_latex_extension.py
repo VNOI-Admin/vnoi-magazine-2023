@@ -75,6 +75,14 @@ class MarkoLatexRenderer(LatexRenderer):
         body = self.render_children(element)
         return f"\\href{{{element.dest}}}{{{body}}} \\footnote{{{self._escape_latex(element.dest)}}}"
     
+    def render_list(self, element):
+        children = self.render_children(element)
+        env = "enumerate" if element.ordered else "itemize"
+        # TODO: check how to handle element.start with ordered list
+        if element.start and element.start != 1:
+            _logger.warning("Setting the starting number of the list is not supported!")
+        return self._environment(env, children, ['leftmargin=0.5cm'])
+    
     @staticmethod
     def _escape_latex(text: str) -> str:
         # print('escaping', text)

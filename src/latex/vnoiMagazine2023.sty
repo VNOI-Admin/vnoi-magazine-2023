@@ -7,6 +7,7 @@
 \RequirePackage{hyperref}
 \RequirePackage{amsmath}
 \RequirePackage{multicol}
+\RequirePackage{enumitem}
 
 \newcommand{\setCoverImage}[1]{\includepdf{#1}}
 
@@ -20,7 +21,7 @@
 % Minted syntax highlight
 \usemintedstyle{vs}
 % \definecolor{bg}{HTML}{555555}
-\def\mintedArgs{fontsize=\footnotesize,breaklines,linenos,xleftmargin=1cm,frame=leftline}
+\def\mintedArgs{fontsize=\footnotesize,breaklines,frame=leftline}
 \newcommand{\setmintedconfig}[1]{
     \newmintedfile[inputc]{c}{#1}
     \newmintedfile[inputcpp]{cpp}{#1}
