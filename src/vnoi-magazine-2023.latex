@@ -1,6 +1,9 @@
 \documentclass[12pt]{article}
+\usepackage[utf8]{vietnam} 
 \usepackage{vnoiMagazine2023}
+\usepackage[a4paper, margin=1in]{geometry}
 
 \begin{document}
     \setCoverImage{./assets/cover.png}
+    \input{./articles/1d1d-dp-optimization.latex}
 \end{document}
