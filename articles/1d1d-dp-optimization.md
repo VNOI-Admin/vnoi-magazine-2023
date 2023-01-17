@@ -57,15 +57,20 @@ int n, h[N];
 long long f[N];
 
 long long w(int j, int i) {
-  // một hàm cost bất kì thỏa mãn bất đẳng thức tứ giác
+  // một hàm cost bất kì thỏa mãn
+  // bất đẳng thức tứ giác
 }
 
 void solve() {
   for (int i = 1; i <= n; ++i) {
-    f[i] = f[h[i]] + w(h[i], i); // cập nhật f[i]
+    // cập nhật f[i]
+    f[i] = f[h[i]] + w(h[i], i); 
+    
     for (int j = i + 1; j <= n; ++j) {
       // cập nhật lại h[i + 1..n]
-      if (f[i] + w(i, j) < f[h[j]] + w(h[j], j)) {
+      if (
+        f[i] + w(i, j) < f[h[j]] + w(h[j], j)
+      ) {
         h[j] = i;
       }
     }
@@ -123,38 +128,45 @@ int n;
 long long f[N];
 
 long long w(int j, int i) {
-  // một hàm cost bất kì thỏa mãn bất đẳng thức tứ giác
+  // một hàm cost bất kì thỏa mãn
+  // bất đẳng thức tứ giác
 }
 
 void solve() {
   deque<item> dq;
   dq.push_back({1, n, 0});
   for (int i = 1; i <= n; ++i) {
-    f[i] = f[dq.front().p] + w(dq.front().p, i);
-    ++dq.front().l; // deque chỉ lưu giá trị từ h[i + 1] tới h[n]
+    f[i]=f[dq.front().p]+w(dq.front().p,i);
+    // deque chỉ lưu giá trị từ h[i + 1]
+    // tới h[n]
+    ++dq.front().l;
+    
+    // nếu l > r, ta loại đoạn này khỏi deque
     if (dq.front().l > dq.front().r) {
       dq.pop_front();
-      // nếu l > r, ta loại đoạn này khỏi deque
     }
 
     while (!dq.empty()) {
       auto [l, r, p] = dq.back();
       if (f[i] + w(i, l) < f[p] + w(p, l)) {
         dq.pop_back();
-        // p không còn là giá trị của h[l], h[l + 1], ..., h[r]
-        // lúc này, h[l] = h[l + 1] = ... = h[r] = i.
+        // p không còn là giá trị của
+        // h[l], h[l + 1], ..., h[r]
+        // lúc này, h[l]=h[l+1]=...=h[r]=i.
       }
       else break;
     }
 
     if (dq.empty()) {
       dq.push_back({i + 1, n, i});
-      // h[i + 1] = h[i + 2] = ... = h[n] = i
+      // h[i+1]=h[i+2]=...=h[n]=i
     }
     else {
-      // tìm nhị phân vị trí pos nhỏ nhất thỏa h[pos] = i
+      // tìm nhị phân vị trí pos nhỏ nhất
+      // thỏa mãn h[pos] = i
       auto& [l, r, p] = dq.back();
-      int low = l, high = r, pos = r + 1, mid;
+      int low = l, high = r;
+      int pos = r + 1, mid;
       while (low <= high) {
         mid = (low + high) / 2;
         if (f[i] + w(i, mid) < f[p] + w(p, mid)) {
@@ -165,10 +177,11 @@ void solve() {
         }
       }
 
-      r = pos - 1; // cập nhật đoạn (l, r, p) thành (l, pos - 1, p)
+      // cập nhật đoạn (l,r,p) thành (l,pos-1,p)
+      r = pos - 1;
       if (pos <= n) {
         dq.push_back({pos, n, i});
-        // h[pos] = h[pos + 1] = ... = h[n] = i
+        // h[pos]=h[pos+1]=...=h[n]=i
       }
     }
   }
