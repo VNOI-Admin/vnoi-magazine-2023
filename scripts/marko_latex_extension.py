@@ -58,20 +58,26 @@ class MarkoLatexRenderer(LatexRenderer):
         return self._environment(f"{language}code", element.children[0].children)
     
     def render_block_math(self, element):
-        print('block math', element.content)
+        # print('block math', element.content)
         return f"$${element.content}$$"
     
     def render_block_math_in_paragraph(self, element):
-        print('block math in paragraph', element.content)
+        # print('block math in paragraph', element.content)
         return f"$${element.content}$$"
     
     def render_inline_math(self, element):
-        print('inline math', element.content)
+        # print('inline math', element.content)
         return f"${element.content}$"
+    
+    def render_link(self, element):
+        if element.title:
+            _logger.warning("Setting a title for links is not supported!")
+        body = self.render_children(element)
+        return f"\\href{{{element.dest}}}{{{body}}} \\footnote{{{self._escape_latex(element.dest)}}}"
     
     @staticmethod
     def _escape_latex(text: str) -> str:
-        print('escaping', text)
+        # print('escaping', text)
         # Special LaTeX Character:  # $ % ^ & _ { } ~ \
         specials = {
             "#": "\\#",
