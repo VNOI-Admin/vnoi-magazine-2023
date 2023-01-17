@@ -35,9 +35,29 @@ class InlineMath(inline.InlineElement):
     
     def __init__(self, match):
         self.content = match.group(1)
+        
+class Author(block.BlockElement):
+    priority=100
+    pattern = re.compile(r'Author: (.*)')
+    
+    include_children=False
+   
+    def __init__(self, match):
+        self.content = match.group(1)
+
+    @classmethod
+    def match(cls, source):
+        return source.expect_re(cls.pattern)
+
+    @classmethod
+    def parse(cls, source):
+        m = source.match
+        source.consume()
+        return m
     
 
 class MarkoLatexRenderer(LatexRenderer):
+    author = ''
     def render_document(self, element):
         # should come first to collect needed packages
         children = self.render_children(element)
@@ -47,7 +67,18 @@ class MarkoLatexRenderer(LatexRenderer):
         # items.extend(f"\\usepackagep" for p in self._packages)
         # add inner content
         # items.append(self._environment("document", children))
-        return self._environment("article", children)
+        return self._environment2("article", children, [self.article_name, self.author])
+    
+    def render_author(self, element):
+        self.author = element.content
+        return ''
+    
+    def render_heading(self, element):
+        children = self.render_children(element)
+        if element.level == 1:
+            self.article_name = children
+            return ""
+        return super().render_heading(element)
     
     def render_fenced_code(self, element):
         language = self._escape_latex(element.lang).strip().lower()
@@ -102,8 +133,13 @@ class MarkoLatexRenderer(LatexRenderer):
 
         return "".join(specials.get(s, s) for s in text)
     
+    @staticmethod
+    def _environment2(env_name: str, content: str, options = ()):
+        options_str = f"{''.join(map(lambda s: '{' + s + '}', options))}" if options else ""
+        return f"\\begin{{{env_name}}}{options_str}\n{content}\\end{{{env_name}}}\n"
+    
 class MarkoLatexExtension:
-    elements=[BlockMath, BlockMathInParagraph, InlineMath]
+    elements=[BlockMath, BlockMathInParagraph, InlineMath, Author]
     renderer_mixins = [MarkoLatexRenderer]
 
 def make_extension(*args):

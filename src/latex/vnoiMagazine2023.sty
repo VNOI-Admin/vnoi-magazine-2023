@@ -12,7 +12,11 @@
 \newcommand{\setCoverImage}[1]{\includepdf{#1}}
 
 \setlength{\columnsep}{0.8cm}
-\newenvironment{article}[1][]{
+\newenvironment{article}[2]{
+    \part*{#1}
+    \begin{flushright}
+        \textit{Author: #2}
+    \end{flushright}
     \begin{multicols}{2}
 }{
     \end{multicols}

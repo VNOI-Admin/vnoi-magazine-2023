@@ -1,5 +1,7 @@
 # Tối ưu quy hoạch động 1 chiều (Knuth's 1D1D Optimization)
 
+Author: Nguyễn Tuấn Tài
+
 > *Giới thiệu: đây là kiến thức xuất hiện trong đề thi TST 2022, và đã lấy đi rất nhiều nước mắt của thí sinh. Nếu bạn muốn thử học một thuật toán mới lạ mà nhiều người chưa biết (ngay cả Trần Xuân Bách!), thì đây chính là bài viết dành cho bạn!*
 
 Khi làm những bài toán quy hoạch động, đôi khi ta sẽ nghĩ ra những thuật toán có độ phức tạp rất lớn, ví dụ:
