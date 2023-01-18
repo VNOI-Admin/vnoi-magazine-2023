@@ -527,14 +527,8 @@ int32_t main() {
 
 ## Luyện tập
 
- - Codeforces 449B - Jzzhu and Cities:
- 
-   https://codeforces.com/problemset/problem/449/B
-   
- - COCI 2008 - Najkraci (aka [PVHOI 2020 - CAULUONG](https://1drv.ms/b/s!Asql3vhziCu10CZ5FDu69rbPIDyM?e=6yie4Z))
- 
-   https://dmoj.ca/problem/coci08c3p6 
- - Gym - Đường ai nấy đi:
- 
-   https://vjudge.net/problem/Gym-406204K
+ - [Codeforces 449B - Jzzhu and Cities](https://codeforces.com/problemset/problem/449/B)
+ - [COCI 2008 - Najkraci](https://dmoj.ca/problem/coci08c3p6)
+ (aka [PVHOI 2020 - CAULUONG](https://1drv.ms/b/s!Asql3vhziCu10CZ5FDu69rbPIDyM?e=6yie4Z))
+ - [Gym - Đường ai nấy đi](https://vjudge.net/problem/Gym-406204K)
  
