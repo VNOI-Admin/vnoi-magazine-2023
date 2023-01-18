@@ -12,7 +12,7 @@ clean:
 $(BUILD_FOLDER):
 	mkdir -p $(BUILD_FOLDER)
 	
-magazine: render-articles | $(BUILD_FOLDER)
+magazine: render-articles preprocess-interviews | $(BUILD_FOLDER)
 	cd src; \
 	$(LATEX) $(FLAGS) vnoi-magazine-2023.latex; \
 	cp vnoi-magazine-2023.pdf ../
@@ -26,4 +26,11 @@ render-articles:
 	for article in ./articles/*.md; do \
 		echo Processing $$article; \
 		cat $$article | marko -e marko_latex_extension -o src/$${article//.md/.latex}; \
+	done
+	
+preprocess-interviews:
+	mkdir -p src/interviews; \
+	for interview in ./interviews/*.txt; do \
+		echo Processing $$interview; \
+		cat $$interview | python ./scripts/preprocess-interview.py > src/$${interview//.txt/.latex}; \
 	done
