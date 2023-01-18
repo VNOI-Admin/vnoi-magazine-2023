@@ -76,6 +76,13 @@ class Strikethrough(inline.InlineElement):
     
     def __init__(self, match):
         self.content = match.group(1)
+        
+class Emoji(inline.InlineElement):
+    pattern=r'\:(.*)\:'
+    parse_children = False
+    
+    def __init__(self, match):
+        self.emoji_name = match.group(1)
 
 class MarkoLatexRenderer(LatexRenderer):
     author = ''
@@ -178,6 +185,9 @@ class MarkoLatexRenderer(LatexRenderer):
     def render_latex_minipage(self, element):
         return r'\begin{center}' + element.content + r'\end{center}'
     
+    def render_emoji(self, element):
+        return f'\\{element.emoji_name}'
+    
     def render_line_break(self, element):
         # always soft
         return '\n'
@@ -207,7 +217,20 @@ class MarkoLatexRenderer(LatexRenderer):
         return f"\\begin{{{env_name}}}{options_str}\n{content}\\end{{{env_name}}}\n"
     
 class MarkoLatexExtension:
-    elements=[BlockMath, BlockMathInParagraph, InlineMath, Author, CustomFootnote, Strikethrough, LatexTabular, Subtitle, LatexLongTable, LatexMinipage, LatexTabularx]
+    elements=[
+            BlockMath,
+            BlockMathInParagraph,
+            InlineMath,
+            Author,
+            CustomFootnote,
+            Strikethrough,
+            LatexTabular,
+            Subtitle,
+            LatexLongTable,
+            LatexMinipage,
+            LatexTabularx,
+            Emoji
+        ]
     renderer_mixins = [MarkoLatexRenderer]
 
 def make_extension(*args):

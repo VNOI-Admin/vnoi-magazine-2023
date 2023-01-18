@@ -1,4 +1,4 @@
-# :peanuts: rang
+# :peanut: rang
 
 Author: Trần Xuân Bách
 
