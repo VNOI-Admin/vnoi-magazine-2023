@@ -45,6 +45,20 @@ class Author(BlockElementWithPattern):
 class Preface(BlockElementWithPattern):
     pattern = re.compile(r'Preface:\s(.*)')
     parse_children = True
+    
+class CustomFootnote(inline.InlineElement):
+    pattern=r'\[\{(.*)\}\]'
+    parse_children = False
+    
+    def __init__(self, match):
+        self.content = match.group(1)
+        
+class Strikethrough(inline.InlineElement):
+    pattern=r'\~\~(.*)\~\~'
+    parse_children = False
+    
+    def __init__(self, match):
+        self.content = match.group(1)
 
 class MarkoLatexRenderer(LatexRenderer):
     author = ''
@@ -80,6 +94,8 @@ class MarkoLatexRenderer(LatexRenderer):
         language = self._escape_latex(element.lang).strip().lower()
         if 'c++' in language or 'cpp' in language:
             language = 'cpp'
+        if 'py' in language or 'python' in language:
+            language = 'python'
         if language not in ['c', 'cpp', 'python', 'text']:
             language = 'text'
         return self._environment(f"{language}code", element.children[0].children)
@@ -98,7 +114,7 @@ class MarkoLatexRenderer(LatexRenderer):
     
     def render_link(self, element):
         if element.title:
-            _logger.warning("Setting a title for links is not supported!")
+            print("Setting a title for links is not supported!")
         body = self.render_children(element)
         return f"\\href{{{element.dest}}}{{{body}}} \\footnote{{{self._escape_latex(element.dest)}}}"
     
@@ -107,17 +123,19 @@ class MarkoLatexRenderer(LatexRenderer):
         env = "enumerate" if element.ordered else "itemize"
         # TODO: check how to handle element.start with ordered list
         if element.start and element.start != 1:
-            _logger.warning("Setting the starting number of the list is not supported!")
+            print("Setting the starting number of the list is not supported!")
         return self._environment(env, children, ['leftmargin=0.5cm'])
             
     def render_image(self, element):
-        return f"""
-            % \\end{{multicols}}
-            \\begin{{center}}
-                \\includegraphics[width=\\linewidth]{{{element.dest}}}
-            \\end{{center}}
-            % \\begin{{multicols}}{{2}}
-        """
+        children = self.render_children(element)
+        
+        return f"\\includeImage{{ {element.dest} }}{{ {children} }}"
+        
+    def render_custom_footnote(self, element):
+        return f"\\footnote{{ {element.content} }}"
+    
+    def render_strikethrough(self, element):
+        return f"\\sout{{ {element.content} }}"
     
     @staticmethod
     def _escape_latex(text: str) -> str:
@@ -144,7 +162,7 @@ class MarkoLatexRenderer(LatexRenderer):
         return f"\\begin{{{env_name}}}{options_str}\n{content}\\end{{{env_name}}}\n"
     
 class MarkoLatexExtension:
-    elements=[BlockMath, BlockMathInParagraph, InlineMath, Author]
+    elements=[BlockMath, BlockMathInParagraph, InlineMath, Author, CustomFootnote, Strikethrough]
     renderer_mixins = [MarkoLatexRenderer]
 
 def make_extension(*args):

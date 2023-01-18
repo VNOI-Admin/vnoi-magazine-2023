@@ -9,8 +9,15 @@
 \RequirePackage{multicol}
 \RequirePackage{enumitem}
 \RequirePackage{graphicx}
+\RequirePackage{ulem}
 
 \newcommand{\setCoverImage}[1]{\includepdf{#1}}
+\newcommand{\includeImage}[2]{%
+    \begin{center}
+        \includegraphics[width=\linewidth]{#1}
+        \textit{#2}
+    \end{center}
+}
 
 \setlength{\columnsep}{0.8cm}
 \newenvironment{article}[2]{
@@ -20,7 +27,7 @@
     \vfill
     \part*{#1}
     \begin{flushright}
-        \textit{Author: #2}
+        \textit{~-- #2}
     \end{flushright}
     \vfill
     
