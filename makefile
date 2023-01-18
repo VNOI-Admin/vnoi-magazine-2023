@@ -12,7 +12,7 @@ clean:
 $(BUILD_FOLDER):
 	mkdir -p $(BUILD_FOLDER)
 	
-magazine: | $(BUILD_FOLDER)
+magazine: render-articles | $(BUILD_FOLDER)
 	cd src; \
 	$(LATEX) $(FLAGS) vnoi-magazine-2023.latex; \
 	cp vnoi-magazine-2023.pdf ../
