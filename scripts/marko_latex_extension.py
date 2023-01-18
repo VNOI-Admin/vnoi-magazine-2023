@@ -41,6 +41,9 @@ class BlockMath(BlockElementWithPattern):
         
 class Author(BlockElementWithPattern):
     pattern = re.compile(r'Author: (.*)')
+
+class LatexTabular(BlockElementWithPattern):
+    pattern = re.compile(r'(\\begin\{tabular\}[\s\S]*\\end\{tabular\})', re.M)
     
 class Preface(BlockElementWithPattern):
     pattern = re.compile(r'Preface:\s(.*)')
@@ -137,6 +140,18 @@ class MarkoLatexRenderer(LatexRenderer):
     def render_strikethrough(self, element):
         return f"\\sout{{ {element.content} }}"
     
+    def render_html_block(self, element):
+        print("Rendering HTML is not supported!")
+        print(element.children)
+        return ""
+    
+    def render_latex_tabular(self, element):
+        return r'\begin{center}' + element.content + r'\end{center}'
+    
+    def render_line_break(self, element):
+        # always soft
+        return '\n'
+    
     @staticmethod
     def _escape_latex(text: str) -> str:
         # print('escaping', text)
@@ -162,7 +177,7 @@ class MarkoLatexRenderer(LatexRenderer):
         return f"\\begin{{{env_name}}}{options_str}\n{content}\\end{{{env_name}}}\n"
     
 class MarkoLatexExtension:
-    elements=[BlockMath, BlockMathInParagraph, InlineMath, Author, CustomFootnote, Strikethrough]
+    elements=[BlockMath, BlockMathInParagraph, InlineMath, Author, CustomFootnote, Strikethrough, LatexTabular]
     renderer_mixins = [MarkoLatexRenderer]
 
 def make_extension(*args):
