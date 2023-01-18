@@ -10,6 +10,7 @@
 \RequirePackage{enumitem}
 \RequirePackage{graphicx}
 \RequirePackage{ulem}
+\RequirePackage{fancyhdr}
 
 \newcommand{\setCoverImage}[1]{\includepdf{#1}}
 \newcommand{\includeImage}[2]{%
@@ -21,7 +22,11 @@
 
 \setlength{\columnsep}{0.8cm}
 \newenvironment{article}[2]{
+    \pagestyle{fancy}
     \ifodd\value{page}\null\newpage\fi%
+    \fancyhead{}
+    \lhead{#1}
+    \rhead{\textit{#2}}
     
     ~\thispagestyle{empty}
     \vfill
