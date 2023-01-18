@@ -15,4 +15,5 @@
     \input{./articles/gauss-elimination.latex}
     \input{./articles/burnside-lemma.latex}
     \input{./articles/dsu-tree.latex}
+    \input{./articles/gaming.latex}
 \end{document}
