@@ -6,6 +6,14 @@
 
 \begin{document}
     \setCoverImage{./assets/cover.png}
+    
+    \interview{Phỏng vấn Trần Xuân Bách}{Nguyễn Trung Quân}{./interviews/tran-xuan-bach.latex}
+    \interview{Phỏng vấn Bùi Việt Dũng}{Vương Hoàng Long}{./interviews/bui-viet-dung.latex}
+    \interview{Phỏng vấn Nguyễn Xuân Tùng}{Vương Hoàng Long}{./interviews/nguyen-xuan-tung.latex}
+    \interview{Phỏng vấn Trần Quang Lộc}{Hoàng Xuân Nhật}{./interviews/tran-quang-loc.latex}
+    \interview{Phỏng vấn Vũ Hoàng Kiên}{Nguyễn Tuấn Nghĩa}{./interviews/vu-hoang-kien.latex}
+    \interview{Phỏng vấn Lê Bảo Hiệp}{Mai Vinh Hiển}{./interviews/le-bao-hiep.latex}
+    
     \input{./articles/1d1d-dp-optimization.latex}
     \input{./articles/derivative-application.latex}
     \input{./articles/peanut.latex}
@@ -17,4 +25,5 @@
     \input{./articles/dsu-tree.latex}
     \input{./articles/gaming.latex}
     \input{./articles/binary-lifting.latex}
+    
 \end{document}

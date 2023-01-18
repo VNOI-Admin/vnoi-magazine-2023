@@ -74,6 +74,12 @@
     \pagebreak
 }
 
+\newcommand{\interview}[3]{
+    \begin{article}{#1}{Interviewer: #2}{}
+        \input{#3}
+    \end{article}
+}
+
 % Minted syntax highlight
 \usemintedstyle{vs}
 % \definecolor{bg}{HTML}{555555}
@@ -90,6 +96,3 @@
     \newminted{text}{#1}
 }
 \expandafter\setmintedconfig\expandafter{\mintedArgs}
-
-
-
