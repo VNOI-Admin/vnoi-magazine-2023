@@ -7,6 +7,11 @@
 \begin{document}
     \setCoverImage{./assets/cover.png}
     
+    \tableofcontents
+    \pagebreak
+    
+    Lời nói đầu :thinkingcat:
+    
     \interview{Phỏng vấn Trần Xuân Bách}{Nguyễn Trung Quân}{./interviews/tran-xuan-bach.latex}
     \interview{Phỏng vấn Bùi Việt Dũng}{Vương Hoàng Long}{./interviews/bui-viet-dung.latex}
     \interview{Phỏng vấn Nguyễn Xuân Tùng}{Vương Hoàng Long}{./interviews/nguyen-xuan-tung.latex}

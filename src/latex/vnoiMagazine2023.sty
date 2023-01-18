@@ -21,6 +21,7 @@
 \RequirePackage{amssymb}
 \RequirePackage{tablefootnote}
 \RequirePackage{tabularx}
+\RequirePackage{tocloft}
 
 \newcolumntype{S}{>{\hsize=.5\hsize}X}
 
@@ -40,8 +41,12 @@
     \href{#1}{#2}\footnote{#1}
 }
 
+\renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}}
+\renewcommand\cftpartafterpnum{\vskip-20pt}
+
 \setlength{\columnsep}{0.8cm}
 \newenvironment{article}[3]{
+    
     \pagestyle{fancy}
     \ifodd\value{page}\null\newpage\fi%
     \fancyhead{}
@@ -53,6 +58,7 @@
     \pagecolor[rgb]{0,0,0}
     \color[rgb]{1,1,1}
     
+    \addcontentsline{toc}{section}{\protect\numberline{}#1}
     \vfill
     \part*{#1}
     #2
@@ -60,6 +66,8 @@
         \textit{~-- #3}
     \end{flushright}
     \vfill
+    
+    % \addtocontents{toc}{#1}
     
     \pagebreak
     
