@@ -149,8 +149,6 @@ Trên thực tế, các giá trị $S, S_i, p_i, x_i, y_i$ thường được t�
 
 [Capture the flag (CTF)](https://en.wikipedia.org/wiki/Capture_the_flag_(cybersecurity)) là một dạng kì thi khá giống với lập trình thi đấu, với mục đích là thử thách các kĩ năng nhận diện và xử lí lỗ hổng bảo mật của thí sinh. Để giải được bài, thí sinh cần phải tìm được một "lá cờ" (flag) được giấu trong một trang web hoặc phần mềm, bằng cách lợi dụng các lỗ hổng bảo mật được cố tình đưa vào từ ban ra đề.
 
-<!-- Những bài CTF đơn giản nhất chỉ cần một vài nút bấm: tìm flag được ẩn giấu ở phần mô tả của fanpage, inspect element một trang web, hay scan mã QR trong một bức ảnh. Các bài khó hơn thì sẽ phải cần kĩ năng google nhiều hơn, vì trên mạng đã có rất nhiều tool có sẵn rồi. Thí sinh sẽ cần phải "dựng lại" code c++ từ file exe đã được compile (reverse engineering), tìm cách làm tràn mảng hay tràn số một đoạn code cho trước (binary exploitation - pwn), và lục lọi flag ẩn trong một bức ảnh hay một file âm thanh (forensics). Các bạn học lập trình thi đấu thì chắc sẽ quen nhất ở phần cryptography - mật mã học. Tìm cách để phá từ những mã hóa đơn giản như Caesar đến những mật mã nâng cao như RSA và AES hẳn sẽ là một trải nghiệm khá thú vị với các bạn. -->
-
 CTF không chỉ đơn giản và thân thiện hơn với thí sinh mới so với lập trình thi đấu, mà còn phổ cập cho thí sinh các kiến thức cơ bản về bảo mật thông tin nói riêng và máy tính nói chung. 
 
 Mình và một vài người bạn có tham gia một kì thi vào ngày 25-27/11, mang tên [HITCON CTF](https://ctf2022.hitcon.org/). Bài thi dễ nhất của phần mật mã mang tên BabySSS, và như bạn đọc có thể đoán, ta phải tìm ra một lỗ hổng nào đó trong phần mềm cài đặt thuật toán SSS của ban tổ chức để từ đó lấy được flag.
@@ -221,10 +219,7 @@ print(cipher.nonce)
   Đây là những thư viện mà `chall.py` sẽ sử dụng - có thể thấy ta import AES và sha256 là cách mã hóa và hash phổ biến. Ta cũng thấy có một biến `flag` được import từ module `secret`, ta đoán rằng đây chính là flag mà mình cần tìm.
   
   Bình thường CTF cũng có vài bài lợi dụng việc tìm seed được dùng cho random để mô phỏng lại việc mã hóa `flag`, tuy nhiên khi mình tra tài liệu thì nó bảo là `SystemRandom` không mô phỏng lại được luôn.
-  <figure>
-    <p style="text-align:center;"><img src="https://i.imgur.com/0E4DlxF.png" title="chaotic evil random"></p>
-    <figcaption style="text-align: center">Tài liệu chính thức của Python về <code>SystemRandom</code></figcaption>
-  </figure>
+![Tài liệu chính thức của Python về `SystemRandom`](./assets/peanut/img3)
 
 - Dòng 9-22
 
@@ -309,12 +304,9 @@ print("shares_x =", shares_x)
 print("lcm =", math.lcm(*shares_x))
 print("2^64 =", 2 ** 64)
 ```
-    
-<figure>
-    <p style="text-align:center;"><img src="https://i.imgur.com/3iJJehj.png" title="chac chan minh khong dung WolframAlpha"></p>
-    <figcaption style="text-align: center">Kết quả của đoạn code trên</figcaption>
-</figure>
 
+![Kết quả của đoạn code trên](./assets/peanut/img4.png)
+    
 Vậy ta đã tìm được giá trị của $\text{poly}[0]$, làm thế nào để tìm nốt các hệ số còn lại của đa thức? Ta sẽ dùng một mẹo như sau:
 
 $$

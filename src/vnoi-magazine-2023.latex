@@ -8,4 +8,6 @@
     \setCoverImage{./assets/cover.png}
     \input{./articles/1d1d-dp-optimization.latex}
     \input{./articles/derivative-application.latex}
+    \input{./articles/peanut.latex}
+    % \input{./articles/shortest-path-dag.latex}
 \end{document}
