@@ -50,6 +50,15 @@ class Subtitle(BlockElementWithPattern):
 class LatexTabular(BlockElementWithPattern):
     pattern = re.compile(r'(\\begin\{tabular\}[\s\S]*\\end\{tabular\})', re.M)
     
+class LatexTabularx(BlockElementWithPattern):
+    pattern = re.compile(r'(\\begin\{tabularx\}[\s\S]*\\end\{tabularx\})', re.M)
+    
+class LatexLongTable(BlockElementWithPattern):
+    pattern = re.compile(r'(\\begin\{longtable\}[\s\S]*\\end\{longtable\})', re.M)
+    
+class LatexMinipage(BlockElementWithPattern):
+    pattern = re.compile(r'(\\begin\{minipage\}[\s\S]*\\end\{minipage\})', re.M)
+    
 class Preface(BlockElementWithPattern):
     pattern = re.compile(r'Preface:\s(.*)')
     parse_children = True
@@ -130,7 +139,8 @@ class MarkoLatexRenderer(LatexRenderer):
         if element.title:
             print("Setting a title for links is not supported!")
         body = self.render_children(element)
-        return f"\\href{{{element.dest}}}{{{body}}} \\footnote{{{self._escape_latex(element.dest)}}}"
+        # return f"\\href{{{element.dest}}}{{{body}}} \\footnote{{{self._escape_latex(element.dest)}}}"
+        return f"\\insertLink{{ {self._escape_latex(element.dest)} }}{{ {body} }}"
     
     def render_list(self, element):
         children = self.render_children(element)
@@ -157,6 +167,15 @@ class MarkoLatexRenderer(LatexRenderer):
         return ""
     
     def render_latex_tabular(self, element):
+        return r'\begin{center}' + element.content + r'\end{center}'
+    
+    def render_latex_tabularx(self, element):
+        return r'\begin{center}' + element.content + r'\end{center}'
+    
+    def render_latex_long_table(self, element):
+        return r'\begin{center}' + element.content + r'\end{center}'
+    
+    def render_latex_minipage(self, element):
         return r'\begin{center}' + element.content + r'\end{center}'
     
     def render_line_break(self, element):
@@ -188,7 +207,7 @@ class MarkoLatexRenderer(LatexRenderer):
         return f"\\begin{{{env_name}}}{options_str}\n{content}\\end{{{env_name}}}\n"
     
 class MarkoLatexExtension:
-    elements=[BlockMath, BlockMathInParagraph, InlineMath, Author, CustomFootnote, Strikethrough, LatexTabular, Subtitle]
+    elements=[BlockMath, BlockMathInParagraph, InlineMath, Author, CustomFootnote, Strikethrough, LatexTabular, Subtitle, LatexLongTable, LatexMinipage, LatexTabularx]
     renderer_mixins = [MarkoLatexRenderer]
 
 def make_extension(*args):

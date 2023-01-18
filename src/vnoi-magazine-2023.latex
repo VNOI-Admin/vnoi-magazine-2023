@@ -16,4 +16,5 @@
     \input{./articles/burnside-lemma.latex}
     \input{./articles/dsu-tree.latex}
     \input{./articles/gaming.latex}
+    \input{./articles/binary-lifting.latex}
 \end{document}
