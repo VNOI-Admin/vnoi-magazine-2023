@@ -1,5 +1,5 @@
 # Bổ đề cháy cạnh
-(Bổ đề Burnside & Định lý liệt kê Pólya)
+Subtitle: (Bổ đề Burnside & Định lý liệt kê Pólya)
 
 Author: Nguyễn Hoàng Dũng
 

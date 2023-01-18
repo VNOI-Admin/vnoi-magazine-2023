@@ -40,7 +40,12 @@ class BlockMath(BlockElementWithPattern):
     pattern=re.compile(r'\$\$([\s\S]*?)\$\$', flags=re.M)
         
 class Author(BlockElementWithPattern):
+    include_children=True
     pattern = re.compile(r'Author: (.*)')
+    
+class Subtitle(BlockElementWithPattern):
+    include_children=True
+    pattern = re.compile(r'Subtitle: (.*)');
 
 class LatexTabular(BlockElementWithPattern):
     pattern = re.compile(r'(\\begin\{tabular\}[\s\S]*\\end\{tabular\})', re.M)
@@ -66,6 +71,8 @@ class Strikethrough(inline.InlineElement):
 class MarkoLatexRenderer(LatexRenderer):
     author = ''
     preface = ''
+    subtitle = ''
+    
     def render_document(self, element):
         # should come first to collect needed packages
         children = self.render_children(element)
@@ -75,10 +82,14 @@ class MarkoLatexRenderer(LatexRenderer):
         # items.extend(f"\\usepackagep" for p in self._packages)
         # add inner content
         # items.append(self._environment("document", children))
-        return self._environment2("article", children, [self.article_name, self.author])
+        return self._environment2("article", children, [self.article_name, self.subtitle, self.author])
     
     def render_author(self, element):
         self.author = element.content
+        return ''
+    
+    def render_subtitle(self, element):
+        self.subtitle = self._escape_latex(element.content)
         return ''
     
     def render_preface(self, element):
@@ -177,7 +188,7 @@ class MarkoLatexRenderer(LatexRenderer):
         return f"\\begin{{{env_name}}}{options_str}\n{content}\\end{{{env_name}}}\n"
     
 class MarkoLatexExtension:
-    elements=[BlockMath, BlockMathInParagraph, InlineMath, Author, CustomFootnote, Strikethrough, LatexTabular]
+    elements=[BlockMath, BlockMathInParagraph, InlineMath, Author, CustomFootnote, Strikethrough, LatexTabular, Subtitle]
     renderer_mixins = [MarkoLatexRenderer]
 
 def make_extension(*args):

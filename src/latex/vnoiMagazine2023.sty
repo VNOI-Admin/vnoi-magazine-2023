@@ -29,18 +29,19 @@
 }
 
 \setlength{\columnsep}{0.8cm}
-\newenvironment{article}[2]{
+\newenvironment{article}[3]{
     \pagestyle{fancy}
     \ifodd\value{page}\null\newpage\fi%
     \fancyhead{}
     \lhead{#1}
-    \rhead{\textit{#2}}
+    \rhead{\textit{#3}}
     
     ~\thispagestyle{empty}
     \vfill
     \part*{#1}
+    #2
     \begin{flushright}
-        \textit{~-- #2}
+        \textit{~-- #3}
     \end{flushright}
     \vfill
     
