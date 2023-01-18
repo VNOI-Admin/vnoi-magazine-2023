@@ -7,4 +7,3 @@ _minted*/
 *.log
 *.out
 *.pdf
-!/*.pdf
