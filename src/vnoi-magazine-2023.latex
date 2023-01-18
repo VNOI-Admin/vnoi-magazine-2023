@@ -13,4 +13,5 @@
     \input{./articles/xor-basis.latex}
     \input{./articles/hash.latex}
     \input{./articles/gauss-elimination.latex}
+    \input{./articles/burnside-lemma.latex}
 \end{document}
