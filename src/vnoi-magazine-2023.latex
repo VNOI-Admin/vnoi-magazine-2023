@@ -12,4 +12,5 @@
     \input{./articles/shortest-path-dag.latex}
     \input{./articles/xor-basis.latex}
     \input{./articles/hash.latex}
+    \input{./articles/gauss-elimination.latex}
 \end{document}
