@@ -37,10 +37,8 @@ Vậy tồn tại tối đa một đa thức $P$ thỏa mãn điều kiện củ
 
 #### Chứng minh sự tồn tại
 Ta sẽ chỉ ra một cách để xây dựng đa thức $P$ thỏa mãn. Ý tưởng ở đây là ta sẽ tách $P$ thành $n$ đa thức con:
-
 $$
-P = P_1 + P_2 + ... + P_{n+1}
-$$
+P = P_1 + P_2 + ... + P_{n+1}$$
 
 Trong đó, mỗi đa thức con $P_i$ sẽ thỏa mãn:
 
@@ -50,26 +48,22 @@ Trong đó, mỗi đa thức con $P_i$ sẽ thỏa mãn:
 Ta sẽ thêm các thừa số $(x - x_j)$ vào $P_i$ để khiến $P_i(x_j) = 0$, rồi sau đó nhân nó với một giá trị thích hợp để $P_i(x_i) = y_i$.
 
 Cuối cùng công thức tổng quát cho $P_i$ và $P$ là:
-
 $$
 \begin{array}{rl}
 P_i(x) = & y_i \times
 \frac{x - x_1}{x_i - x_1} \times
 \dots \times
 \frac{x - x_{i - 1}}{x_i - x_{i - 1}} \times \\
-        
 & 
 \qquad \times \frac{x - x_{i + 1}}{x_i - x_{i + 1}} \times
 \dots \times
 \frac{x - x_{n+1}}{x_i - x_{n+1}} \\
-        
 = & y_i \prod_{j \ne i} \frac{x - x_j}{x_i - x_j} \\
 \Rightarrow
 P(x) =& y_1 \prod_{j \ne 1} \frac{x - x_j}{x_1 - x_j} + \dots + \\
       & \qquad + y_{n+1} \prod_{j \ne {n+1}} \frac{x - x_j}{x_{n+1} - x_j} \\
 = & \sum_{i=1}^{n+1} y_i \prod_{j \ne i} \frac{x - x_j}{x_i - x_j}
-\end{array}
-$$
+\end{array}$$
 
 Bạn đọc có thể tự kiểm chứng rằng đa thức $P$ thỏa mãn điều kiện của định lí trên. Cách xây dựng $P(x)$ trên được gọi là nội suy Lagrange.
 
@@ -269,26 +263,22 @@ Khi mình đọc trang Wikipedia của thuật toán SSS đã được link tron
 Sau đó, có một ví dụ nói về việc khi chỉ có được $2$ điểm trong khi $k = 3$, ta đã có thể rút gọn số giá trị có thể của $S$ về $150$ số bằng phương pháp đồng dư. Đoạn code trên cũng tính toán bằng số nguyên, vậy ta có thể làm tương tự được không?
 
 Hãy quay lại các cặp giá trị $(x_1, y_1), \dots, (x_8, y_8)$, ta có:
-
 $$
 \begin{array}{rl}
 y_i =& \text{poly}(x_i) \\
 =& \text{poly}[0] + \text{poly}[1] \times x_i + \dots + \\
     & \qquad + \text{poly}[128] \times x_i^{128} \\
 \Rightarrow y_i \equiv & \text{poly}[0] \pmod {x_i}
-\end{array}
-$$
+\end{array}$$
 
 Vậy ta có $8$ biểu thức đồng dư như sau:
-
 $$
 \begin{array}{rl}
 \text{poly}[0] &\equiv y_1 \pmod {x_1} \\
 \text{poly}[0] &\equiv y_2 \pmod {x_2} \\
 \dots \\
 \text{poly}[0] &\equiv y_8 \pmod {x_8} \\
-\end{array}
-$$
+\end{array}$$
 
 Chắc hẳn nhiều bạn sẽ nhận ra đây chính là [định lí thặng dư Trung Hoa](https://en.wikipedia.org/wiki/Chinese_remainder_theorem). Sử dụng định lí này, ta sẽ tìm được giá trị của $\text{poly}[0] \bmod \text{lcm}(x_1, x_2, \dots, x_8)$. Do $\text{poly}[0]$ là một số ngẫu nhiên có $64$ bit, nên nếu giá trị của hàm $\text{lcm}$ trên không nhỏ hơn $2^{64}$ thì ta đã tìm được giá trị thỏa mãn duy nhất của $\text{poly}[0]$.
 
@@ -308,7 +298,6 @@ print("2^64 =", 2 ** 64)
 ![Kết quả của đoạn code trên](./assets/peanut/img4.png)
     
 Vậy ta đã tìm được giá trị của $\text{poly}[0]$, làm thế nào để tìm nốt các hệ số còn lại của đa thức? Ta sẽ dùng một mẹo như sau:
-
 $$
 \begin{array}{clcl}
 & y_i &=&  \text{poly}[0] + \text{poly}[1] \times x_i + \\
@@ -317,8 +306,7 @@ $$
  & & & + \dots + \text{poly}[128] \times x_i^{128} \\
 \iff & \frac{y_i - \text{poly}[0]}{x_i} & =& \text{poly}[1] + \text{poly}[2] \times x_i + \\ 
  & & & + \dots + \text{poly}[128] \times x_i^{127} \\
-\end{array}
-$$
+\end{array}$$
 
 Ta có thể thấy vế phải biến thành một đa thức có bậc là $127$ với các hệ số lần lượt là $\text{poly}[1], \dots, \text{poly}[128]$. Làm tương tự như $\text{poly}[0]$, ta sẽ lần lượt tìm được các giá trị $\text{poly}[1], \dots, \text{poly}[128]$.
 

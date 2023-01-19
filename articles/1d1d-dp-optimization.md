@@ -16,9 +16,7 @@ Công thức trên có độ phức tạp $O(n^2)$, có thể cải tiến xuố
 ## Giới thiệu bài toán
 
 Gọi $w(j, i)$ là một hàm tính cost thỏa mãn bất đẳng thức tứ giác (quadrangle inequality):
-
-$$w(a, c) + w(b, d) \le w(a, d) + w(b, c)$$ với mọi $a < b \le c < d$. Ta sẽ tính toán công thức quy hoạch động sau với độ phức tạp nhanh hơn $O(n^2)$:
-$$f[i] = \min \limits_{0 \le j < i} f[j] + w(j, i)$$
+$$w(a, c) + w(b, d) \le w(a, d) + w(b, c)$$ với mọi $a < b \le c < d$. Ta sẽ tính toán công thức quy hoạch động sau với độ phức tạp nhanh hơn $O(n^2)$:$$f[i] = \min \limits_{0 \le j < i} f[j] + w(j, i)$$
 
 Một số ví dụ về hàm $w$ thỏa mãn bất đẳng thức tứ giác (bạn đọc có thể tự chứng minh):
 
@@ -31,7 +29,6 @@ Một số ví dụ về hàm $w$ thỏa mãn bất đẳng thức tứ giác (b
 > *Nhưng... làm sao để tối ưu công thức quy hoạch động trên? Có cách nào để nhanh chóng tìm được vị trí mà $f[j] + w(j, i)$ đạt giá trị nhỏ nhất không?*
 
 Ta định nghĩa mảng $h$ như sau
-
 $$h[i] = \mathop{\arg\min} \limits_{0 \le j < i} f[j] + w(j, i)$$
 
 Nói cách khác, $h[i]$ là vị trí $j$ nhỏ nhất thỏa mãn $f[j] + w(j, i)$ đạt giá trị cực tiểu.
@@ -97,7 +94,6 @@ Chính vì thế, để cập nhật mảng $h$, ta sẽ tìm vị trí $z$ nh�
 **Thuật toán.**
 
 Ta sẽ biểu diễn mảng $h$ thành $m$ đoạn $(l[i], r[i], p[i])$ thỏa mãn:
-
 $$\left\{\begin{array}{l}
 l[1] = 1\\ 
 r[m] = n\\ 
@@ -202,8 +198,7 @@ Cho $n$ cây được đánh số hiệu từ $1$ tới $n$, mỗi cây có đ�
 
 Alob và Bice có một cái cưa máy, mỗi lần sử dụng cưa có thể giảm độ cao của một cây bất kì xuống $1$. Tuy nhiên, sau mỗi lần sử dụng, cưa máy cần được sạc lại. Chi phí để sạc phụ thuộc vào những cây đã được chặt hoàn toàn (những cây đã được giảm độ cao về $0$): trong những cây đã được chặt hoàn toàn, giả sử cây có số hiệu lớn nhất là $i$, chi phí để sạc cưa máy là $b_i$. Nếu không có cây nào đã được chặt hoàn toàn, ta không thể sạc lại cưa máy.
 
-Điều kiện bài toán:
-$$\left\{\begin{matrix}
+Điều kiện bài toán:$$\left\{\begin{matrix}
 1 \le n \le 10^5\\ 
 1 = a_1 < a_2 < \ldots < a_n \le 10^9\\ 
 10^9 \ge b_1 > b_2 > \ldots > b_n = 0
@@ -214,7 +209,6 @@ $$\left\{\begin{matrix}
 Vì $b_n = 0$, ta sẽ tìm chi phí nhỏ nhất để chặt hoàn toàn cây $n$ (sau đó, ta có thể chặt bất kì cây nào mà không tốn chi phí).
 
 Gọi $f[i]$ là chi phí nhỏ nhất để chặt hoàn toàn cây thứ $i$. Nếu cây gần nhất được chặt hoàn toàn trước đó là $j$, chi phí nhỏ nhất để chặt hoàn toàn cây thứ $i$ sẽ là $f[j] + b_j \cdot a_i$. Vì vậy, ta có được công thức quy hoạch động sau:
-
 $$f[i] = \min \limits_{1 \le j < i} f[j] + b_j \cdot a_i$$
 
 Nếu đặt $w(j, i) = b_j \cdot a_i$, hàm $w$ là một hàm thỏa mãn bất đẳng thức tứ giác.
@@ -222,7 +216,6 @@ Nếu đặt $w(j, i) = b_j \cdot a_i$, hàm $w$ là một hàm thỏa mãn bấ
 **Chứng minh.**
 
 Xét $4$ điểm $x < y \le z < t$, ta có:
-
 $$\begin{array}{cl}
   & w(x, z) + w(y, t) - w(x, t) - w(y, z) \\
 = & b_x \cdot a_z + b_y \cdot a_t - b_x \cdot a_t - b_y \cdot a_z \\
@@ -230,7 +223,6 @@ $$\begin{array}{cl}
 \end{array}$$
 
 Vì vậy, 
-
 $$w(x, z) + w(y, t) \le w(x, t) + w(y, z)$$
 
 Từ đây, ta có thể áp dụng thuật toán đã nêu trong bài.
@@ -321,7 +313,6 @@ Hãy tìm cách chọn một số địa điểm sao cho tổng chi phí tổ ch
 Nói cách khác, nếu như ta chọn $m$ địa điểm, địa điểm thứ $i$ nằm cách nhà trưởng làng đúng $s_i$ km về phía đông, tổng chi phí tổ chức lễ hội và di chuyển sẽ là $k \cdot m + \sum \limits_{i = 1}^{n} \min \limits_{j = 1}^{m} |a_i - s_j|$.
 
 Điều kiện bài toán: 
-
 $$\left\{\begin{array}{l}
 1 \le n \le 2 \cdot 10^5, 1 \le k \le 10^9\\ 
 0 = a_1 < a_2 < \ldots < a_n \le 10^9
@@ -332,7 +323,6 @@ $$\left\{\begin{array}{l}
 Ta có nhận xét sau: tất cả người dân nằm trên một đoạn liên tiếp sẽ đến cùng một địa điểm, vì thế bài toán có thể viết lại thành: chia $n$ người dân thành các đoạn liên tiếp sao cho tổng chi phí là nhỏ nhất, biết chi phí mỗi đoạn gồm chi phí tổ chức $k$ và chi phí di chuyển của người dân trong đoạn.
 
 Gọi $f[i]$ là chi phí nhỏ nhất để chia $i$ người dân thành các đoạn sao cho tổng chi phí là nhỏ nhất. Ta có công thức quy hoạch động sau:
-
 $$f[i] = k + \min \limits_{0 \le j < i} f[j] + w(j, i)$$
 
 với $w(j, i)$ là chi phí di chuyển của người dân nằm trong đoạn $j + 1$ tới $i$.
@@ -356,7 +346,6 @@ Xét $4$ điểm $x < y \le z < t$. Để thuận tiện cho việc chứng minh
 Với $r - l$ chẵn: $w(l, r) = (p[r] - p[r - \frac{k}{2}]) - (p[l + \frac{k}{2}] - p[l]) = p[l] + p[r] - 2 \cdot p[\frac{l + r}{2}]$.
 
 Đặt $b = \frac{x + z}{2}$, $c = \frac{y + t}{2}$, $d = \frac{x + t}{2}$, $e = \frac{y + z}{2}$. Ta có:
-
 $$\begin{array}{cl}
   & w(x, z) + w(y, t) - w(x, t) - w(y, z) \\
 = & 2 \cdot (-p[\frac{x + z}{2}] - p[\frac{y + t}{2}] + p[\frac{x + t}{2}] + p[\frac{y + z}{2}])  \\
@@ -369,7 +358,6 @@ $$\begin{array}{cl}
 \end{array}$$
 
 Vì vậy, 
-
 $$w(x, z) + w(y, t) \le w(x, t) + w(y, z)$$
 
 ### Cài đặt mẫu
@@ -449,20 +437,16 @@ int main() {
 ### Chứng minh nhận xét $\dagger$.
 
 Ta sẽ chứng minh bằng cách phản chứng: giả sử tồn tại vị trí $i$ thỏa mãn $h[i] > h[i + 1]$. Để thuận tiện cho việc chứng minh, ta sẽ đặt $a = h[i],\ b = h[i + 1]$ ($a > b$). Điều này tương đương với:
-
 $$\left\{\begin{matrix}
 f[a] + w(a, i) < f[b] + w(b, i)\\ 
 f[a] + w(a, i + 1) > f[b] + w(b, i + 1)
 \end{matrix}\right.$$
 
 Trừ hai bất đẳng thức theo vế, ta được:
-
 $$w(a, i) - w(a, i + 1) < w(b, i) - w(b, i + 1)$$
-
 $$\Leftrightarrow w(a, i) + w(b, i + 1) < w(a, i + 1) + w(b, i)$$
 
 Tuy nhiên, theo tính chất của hàm $w$, xét bộ số $b < a < i < i + 1$, ta có:
-
 $$w(b, i) + w(a, i + 1) \le w(b, i + 1) + w(a, i)$$
 
 Điều này là vô lý. Vì vậy, ta có điều phải chứng minh.

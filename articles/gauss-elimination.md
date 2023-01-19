@@ -4,31 +4,26 @@ Author: Nguyễn Đức Anh
 ## Giới thiệu
 Cho một hệ $n$ phương trình đại số tuyến tính (system of linear algebraic equations - SLAE) với$m$ ẩn. Ta được yêu cầu giải hệ phương trình đó (tức là xác định xem nó có vô nghiệm, chính xác một nghiệm hay vô số nghiệm) và trong trường hợp hệ có ít nhất một nghiệm, hãy đưa ra một nghiệm bất kì của hệ đó. 
 
-Nói tóm lại, ta được yêu cầu giải hệ phường trình sau:
-$$
+Nói tóm lại, ta được yêu cầu giải hệ phường trình sau:$$
 \begin{array}{lcll}
 a_{11} x_1 + a_{12} x_2 + & \dots & + a_{1m} x_m &= b_1 \\
 a_{21} x_1 + a_{22} x_2 + & \dots & + a_{2m} x_m &= b_2 \\
 &\vdots & &  \\
 a_{n1} x_1 + a_{n2} x_2 + & \dots & + a_{nm} x_m &= b_n
-\end{array}
-$$
+\end{array}$$
 
 trong đó $a_{ij}$ $(1 \leqslant i \leqslant n$ và $1 \leqslant j \leqslant m)$ và $b_i$ ( $1 \leqslant i \leqslant n)$ là các hệ số đã biết còn $x_i$ $(1 \leqslant i \leqslant m)$ là các ẩn.
 
-Ngoài ra còn có cách biểu diễn hệ bằng ma trận như sau:
-$$Ax = b$$
+Ngoài ra còn có cách biểu diễn hệ bằng ma trận như sau:$$Ax = b$$
 trong đó $A$ là ma trận kích thước $n \times m$ chứa các hệ số $a_{ij}$ và $b$ là vector độ dài $n$ chứa các hệ số $b_i$.
 
-Đặc biệt, phương pháp này còn có thể áp dụng trong trường hợp các phương trình có kết quả lấy dư cho số nguyên dương $p$ bất kì:
-$$
+Đặc biệt, phương pháp này còn có thể áp dụng trong trường hợp các phương trình có kết quả lấy dư cho số nguyên dương $p$ bất kì:$$
 \left\lbrace\begin{array}{lcl}
 a_{11} x_1 + a_{12} x_2 + & \dots & + a_{1m} x_m \equiv b_1 \pmod p \\
 a_{21} x_1 + a_{22} x_2 + & \dots & + a_{2m} x_m \equiv b_2 \pmod p \\
 &\vdots&   \\
 a_{n1} x_1 + a_{n2} x_2 + & \dots & + a_{nm} x_m \equiv b_n \pmod p
-\end{array}\right.
-$$
+\end{array}\right.$$
 
 ## Thuật toán
 Phương pháp khử Gauss-Jordan dùng cách lần lượt khử các ẩn để đưa hệ phương trình đã cho về một dạng ma trận rồi giải hệ phương trình. Cụ thể hơn, ta sẽ dùng phương trình thứ nhất để khử ẩn $x_1$ trong $n - 1$ phương trình còn lại, tức là biến tất cả các hệ số $a_{i1}$ $(2 \leqslant i \leqslant n)$ thành 0 mà hệ phương trình mới vẫn tương đương với hệ cũ. Tương tự, ta tiếp tục dùng phương trình thứ hai để khử ẩn $x_2$ trong $n - 1$ phương trình còn lại, $\dots$ . 
@@ -85,26 +80,22 @@ $\Longrightarrow$ Hệ số của ẩn $z$ ở phương trình $(1)$ và $(3)$ s
 ![](./assets/gauss-elimination/4-example-4.png)
 
 * Cuối cùng, vì $t$ là ẩn tự do nên ta sẽ đặt $t = 0$.
-$\Longrightarrow$ Ta có một nghiệm sau:
-$$
+$\Longrightarrow$ Ta có một nghiệm sau:$$
 \begin{cases}
     x = 3 \\
     y = -1 \\
     z = 7 \\
     t = 0 \\
-\end{cases}
-$$
+\end{cases}$$
 
 *  Ngoài ra, vì có $1$ ẩn tự do là $t$ nên hệ có vô số nghiệm. 
-    Một nghiệm khác thỏa mãn là:
-$$
+    Một nghiệm khác thỏa mãn là:$$
 \begin{cases}
     x = -121 \\
     y = 18 \\
     z = 18 \\
     t = 1 \\
-\end{cases}
-$$
+\end{cases}$$
 
 ### Lưu ý
 *  Khi chọn phương trình $e$ có $a_{ei} \ne 0$, ta nên chọn $e$ có $|a_{ei}|$ lớn nhất để các hệ số của phương trình $e$ trở nên nhỏ hơn và tránh tràn số.
@@ -299,15 +290,13 @@ Cho đồ thị vô hướng và số nguyên tố $p$, mỗi đỉnh có trọn
 
 
 ### Phân tích
-* Ta có thể đưa bài toán trở thành đếm số nghiệm của hệ phương trình sau:
-$$
+* Ta có thể đưa bài toán trở thành đếm số nghiệm của hệ phương trình sau:$$
 \begin{array}{lcl}
 a_{11} x_1 + a_{12} x_2 + &\dots& + a_{1m} x_m \equiv b_1 \pmod p \\
 a_{21} x_1 + a_{22} x_2 + &\dots& + a_{2m} x_m \equiv b_2 \pmod p \\
 &\vdots& \\
 a_{n1} x_1 + a_{n2} x_2 + &\dots& + a_{nm} x_m \equiv b_n \pmod p
-\end{array}
-$$
+\end{array}$$
 với $a_{uv} = 1$ khi và chỉ khi giữa $u$ và $v$ có cạnh nối trực tiếp, ngược lại thì $a_{uv} = 0$.
 
 * Giả sử hệ phương trình trên có $k$ ẩn $x$ là ẩn tự do, khi ta cố định cả $k$ ẩn đó thì tất cả các ẩn khác cũng sẽ được cố định.
@@ -327,7 +316,6 @@ $\Longrightarrow$ Nếu ta tìm được $k$ ẩn tự do thì đáp án sẽ l�
 ## Ví dụ $2$ -- [Codeforces - 1155E](https://codeforces.com/contest/1155/problem/E)
 ### Đề bài 
 Có một đa thức bậc $k$ $(k \leqslant 10)$ có hệ số nguyên: 
-
 $$\begin{array}{rl}
 f(x) = & a_0 + a_1 \times x + a_2 \times x^2 + \\
        & \qquad + \dots + a_k \times x^k \quad(0 \leqslant a_i < 10^6 + 3)
@@ -338,15 +326,13 @@ Hãy tìm giá trị $x_0$ sao cho $f(x_0) \equiv 0 \pmod {10^6+3}$. Nếu tìm 
 
 ### Phân tích
 * Nếu ta hỏi "? $0$" thì ta sẽ được giá trị của $a_0$.
-* Nếu ta hỏi $k$ câu hỏi thì ta sẽ được hệ phương trình như sau (theo modulo $10^6 + 3$):
-$$
+* Nếu ta hỏi $k$ câu hỏi thì ta sẽ được hệ phương trình như sau (theo modulo $10^6 + 3$):$$
 \begin{array}{lcl}
 a_{0} + a_{1} x_1 + a_{2} x_1^2 + &\dots& + a_{k}x_1^k \equiv b_1  \\
 a_{0} + a_{1} x_2 + a_{2} x_2^2 + &\dots& + a_{k}x_2^k \equiv b_2  \\
 &\vdots& \\
 a_{0} + a_{1} x_k + a_{2} x_k^2 + &\dots& + a_{k}x_k^k \equiv b_k 
-\end{array}
-$$
+\end{array}$$
 Mà tất cả các ẩn $x_1, x_2, \dots, x_k$ ta đã biết nên bài toán trở thành giải hệ phương trình để tìm các hệ số $a_i$.
 
 $\Longrightarrow$ Ta sẽ thử tìm đa thức $f(x)$ rồi thử với tất cả các giá trị $x$ từ $0$ đến $10^6+2$.

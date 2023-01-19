@@ -65,8 +65,7 @@ Ta cần so sánh $a_l, a_{l + 1},...,a_{r}$ và $1, 2,...,r - l + 1$, tính th�
 #### Giải pháp
 Ta sẽ gán một số nguyên khác không ngẫu nhiên $h(i)$ cho mỗi giá trị $i$ từ $1$ đến $n$.
 
-Phép XOR có tính chất giao hoán, dễ thấy dãy con $a_l, a_{l + 1},...,a_r$ hoàn hảo thì biểu thức sau phải thỏa mãn, tuy nhiên phải lưu ý rằng chiều ngược lại có thể không đúng: 
-$$\begin{array}{l}
+Phép XOR có tính chất giao hoán, dễ thấy dãy con $a_l, a_{l + 1},...,a_r$ hoàn hảo thì biểu thức sau phải thỏa mãn, tuy nhiên phải lưu ý rằng chiều ngược lại có thể không đúng: $$\begin{array}{l}
 h(1) \oplus h(2) \, \oplus \, ... \, \oplus \, h(r - l + 1) \\
 \qquad = h(a_l) \oplus h(a_{l + 1}) \, \oplus \, ... \, \oplus \, h(a_r)
 \end{array}$$
@@ -83,8 +82,7 @@ Có thể dễ dàng sinh các số ngẫu nhiên 64-bit, khả năng xung độ
 ### Hash với phép cộng
 
 #### Bài toán
-Cho hai dãy số nguyên $a$ độ dài $n$ và $b$ độ dài $m$ ($n, m \le 10^5$) với $1\le a_i \le n$ và $q \le 10^5$ truy vấn có dạng:
-$$
+Cho hai dãy số nguyên $a$ độ dài $n$ và $b$ độ dài $m$ ($n, m \le 10^5$) với $1\le a_i \le n$ và $q \le 10^5$ truy vấn có dạng:$$
 l \; r \; k
 \\
 u_1 \; v_1
@@ -93,8 +91,7 @@ u_2 \; v_2
 \\
 ...
 \\
-u_k \; v_k
-$$
+u_k \; v_k$$
 
 tổng $k$ trong tất cả các truy vấn không quá $10^5$.
 
@@ -106,8 +103,7 @@ Giống với bài toán ở phần trước, ta cũng cần kiểm tra tính b�
 #### Giải pháp
 Ta sẽ gán một số nguyên khác không ngẫu nhiên $h(i)$ cho mỗi giá trị $i$ từ $1$ đến $n$.
 
-Thay vì dùng phép XOR, ta dùng phép cộng, dãy con $a_l, a_{l + 1},...,a_r$ hoàn hảo khi, cũng giống phương pháp XOR, chiều ngược lại cũng có thể không đúng:
-$$\begin{array}{l}
+Thay vì dùng phép XOR, ta dùng phép cộng, dãy con $a_l, a_{l + 1},...,a_r$ hoàn hảo khi, cũng giống phương pháp XOR, chiều ngược lại cũng có thể không đúng:$$\begin{array}{l}
 h(a_l) + h(a_{l + 1}) +...+ h(a_r) \\
 \qquad = h(u_1) \times v_1 + h(u_2) \times v_2 + ... + h(u_k) \times v_k
 \end{array}$$

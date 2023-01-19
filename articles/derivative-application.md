@@ -5,7 +5,6 @@ Author: Nguyễn Thành Trung (RR)
 Lúc học môn Toán có lẽ chúng ta thường hay tự hỏi: Học đạo hàm, tích phân.. để làm gì? Hôm nay chúng ta sẽ cùng nghiên cứu một áp dụng vô cùng bất ngờ và ảo ma của đạo hàm trong 1 bài toán.
 
 Bài toán như sau:
-
 - Cho $N$ ngôi nhà trên 1 đường thẳng. Ngôi nhà thứ $i$ có $H_i$ tầng.
 - Để khu phố nhìn đẹp hơn, người ta muốn sửa lại các ngôi nhà sao cho độ cao của tất cả các ngôi nhà đều bằng nhau, bằng cách xây thêm hoặc đập đi một số tầng của một số ngôi nhà.
 - Với ngôi nhà thứ $i$, chi phí để xây thêm 1 tầng hoặc đập đi 1 tầng là $C_i$.
@@ -13,11 +12,8 @@ Bài toán như sau:
 - Giới hạn: $N \leq 10^7$, $0 \leq H(i) \leq 10^7$, $0 \leq C_i \leq 10^{11}$.
 
 Ví dụ: với $N = 3$, $H = [10, 20, 15]$, $C = [1000, 1, 2]$. Cách tối ưu là đưa cả 3 nhà về độ cao $10$, với chi phí:
-
 $$
-|10 - 10| * 1000 + |20 - 10| * 1 + |15 - 10| * 2 = 20
-$$
-
+|10 - 10| * 1000 + |20 - 10| * 1 + |15 - 10| * 2 = 20$$
 
 Các bạn có thể đọc đề và nộp thử tại [SPOJ](https://www.spoj.com/problems/KOPC12A/) (tuy nhiên giới hạn trong bài SPOJ này khá nhỏ).
 
@@ -26,20 +22,15 @@ Các bạn có thể đọc đề và nộp thử tại [SPOJ](https://www.spoj.
 Đầu tiên chúng ta hãy nghiên cứu 1 số lời giải "thông thường" cho bài toán này.
 
 Đặt $f_i(x)$ là chi phí để sửa ngôi nhà thứ $i$ về độ cao $x$. Ta có công thức:
-
 $$
-f_i(x) = |x - H_i| * C_i
-$$
+f_i(x) = |x - H_i| * C_i$$
 
 Đặt $F(x) = \sum_{i=1..n}{f_i(x)}$, nói cách khác $F(x)$ là chi phí để đưa tất cả các ngôi nhà về độ cao $x$. Đề bài yêu cầu ta tìm $min(F(x))$.
 
 ### Nhận xét 1:
 
 Đặt $x_0$ là giá trị của $x$ để hàm $F(x)$ đạt giá trị nhỏ nhất, khi đó:
-
-$$
-min(H_i) \leq x_0 \leq max(H_i)
-$$
+$$min(H_i) \leq x_0 \leq max(H_i)$$
 
 Khá hiển nhiên, giả sử $x_0 < min(H_i)$, điều này chỉ xảy ra khi ta phải giảm độ cao của tất cả các ngôi nhà đi ít nhất 1 tầng. Với mỗi ngôi nhà ta giảm nó ít đi 1 tầng thì sẽ được chi phí nhỏ hơn. Do đó $x_0 \geq min(H_i)$.
 
@@ -64,13 +55,10 @@ $\Rightarrow$ đến đây ta đã có thuật toán với độ phức tạp $O
 Rất bất ngờ, bài này còn có thể giải được với độ phức tạp $O(N + max_H)$ sử dụng đạo hàm!
 
 Ở bài viết này chúng ta ứng dụng đạo hàm của hàm trên số nguyên ($f(x)$ với $x$ chỉ nhận giá trị nguyên) - [discrete derivative](https://calculus.subwiki.org/wiki/Discrete_derivative). Định nghĩa:
-
 $$
-f'(x) = f(x) - f(x-1)
-$$
+f'(x) = f(x) - f(x-1)$$
 
 Áp dụng công thức trên vào bài toán ban đầu: ta tính đạo hàm của hàm chi phí:
-
 $$
 f'_i(x) = \left\lbrace \begin{array}{rl}
 -C(i) & \text{nếu }x \leq H(i) \\

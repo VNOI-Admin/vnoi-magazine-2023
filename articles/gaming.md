@@ -1,4 +1,4 @@
-# "Gaming"
+# Gaming
 
 Author: Trần Xuân Bách
 
@@ -144,14 +144,11 @@ Nhận thấy ở tình huống trên, $a$, $b$, $c$ tạo thành một *cấp s
 
 Vậy ở lượt trước đó, A sẽ đi như thế nào để "dồn" B vào trường hợp trên?
 
-Giả sử ở lượt này Việt thêm vào chồng $a$ một lượng là $x$, vậy số đá mới sẽ là $b < c < a + x$. Lưu ý rằng ta phải chọn $x$ đủ lớn để thỏa mãn điều kiện $3$. Để thỏa mãn điều kiện $(1)$ và $(2)$, ta có:
-
-$$
+Giả sử ở lượt này Việt thêm vào chồng $a$ một lượng là $x$, vậy số đá mới sẽ là $b < c < a + x$. Lưu ý rằng ta phải chọn $x$ đủ lớn để thỏa mãn điều kiện $3$. Để thỏa mãn điều kiện $(1)$ và $(2)$, ta có:$$
 \begin{array}{rccl}
      & a+x-\,&c&=c-b \\
 \iff &       &x&=2c-a-b
-\end{array}
-$$
+\end{array}$$
 
 ![](./assets/gaming/9-1375F-2.png)
 

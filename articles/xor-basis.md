@@ -55,15 +55,13 @@ $\mathbb{Z}_2^d$: là một không gian vector $d$ chiều bao gồm tất cả 
 
 ### Bao tuyến tính (Linear span, gọi tắt là span)
 
-Một không gian vector $V$ được span bởi một tập các vector $S = \{v_1, v_2, \ldots, v_n\}$ chứa tất cả các vector $x$ được biểu diễn thông qua một tổ hợp tuyến tính của các vector trong $S$.
-$$\text{span}(S) = \left\{\sum_{i = 1}^n c_i v _i \, \middle| \, v_i \in S, c_i \in \{0, 1\} \right\}$$
+Một không gian vector $V$ được span bởi một tập các vector $S = \{v_1, v_2, \ldots, v_n\}$ chứa tất cả các vector $x$ được biểu diễn thông qua một tổ hợp tuyến tính của các vector trong $S$.$$\text{span}(S) = \left\{\sum_{i = 1}^n c_i v _i \, \middle| \, v_i \in S, c_i \in \{0, 1\} \right\}$$
 lúc này ta nói $V$ được span bởi $S$, $V$ được sinh bởi $S$ hay $S$ sinh ra $V$.
 
 _Chú ý:_ do chỉ xét trên $\mathbb{Z}_2^d$ nên $c_i$ cũng phải thuộc $\mathbb{Z}_2^d$. Do đó trong tổ hợp trên mỗi $v_i$ chỉ có hai trạng thái là __xuất hiện__ hoặc __không xuất hiện__.
 
 __Ví dụ:__ tìm span$(\{2, 5\})$, span$(\{2, 5, 7\})$ và span$(\{\})$?
-- Ta có $2 \oplus 5 = 7$, suy ra:
-$$\begin{array}{l}
+- Ta có $2 \oplus 5 = 7$, suy ra:$$\begin{array}{l}
 	\text{span}(\{2, 5\}) =\text{span}(\{2, 5, 7\}) = \{0, 2, 5, 7\} \\
 	\text{span}(\{\})= \{0\}
 \end{array}$$
@@ -93,16 +91,14 @@ _Chú ý:_ số phần tử phân biệt trong không gian vector $V$ được s
 
 #### Không gian hàng và không gian cột
 
-Xét một ma trận $M$ kích cỡ $n \times m$ ($n$ hàng và $m$ cột):
-$$
+Xét một ma trận $M$ kích cỡ $n \times m$ ($n$ hàng và $m$ cột):$$
 M = 
 \begin{bmatrix}
 	v_{1,1} & v_{1,2} & \cdots & v_{1,m} \\
 	v_{2,1} & v_{2,2} & \cdots & v_{2,m} \\
 	\vdots & \vdots & \ddots & \vdots \\
 	v_{n,1} & v_{n,2} & \cdots & v_{n,m} 
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 - Chia ma trận $M$ thành các vector hàng, ta được:
   $$row_i = [v_{i, 1}, v_{i, 2}, \ldots, v_{i, m}]$$
 - Chia ma trận $M$ thành các vector cột, ta được:
@@ -123,8 +119,7 @@ Người ta chứng minh được rằng dim$(RS(M))$ $=$ dim$(CS(M))$ và đư�
 
 Không gian hạch của một ma trận $M$, kí hiệu là null$(M)$ là tập các vector $x \in \mathbb{R}^m$ (được viết ở dạng cột) sao cho: $$M \cdot x = O$$
 
-Giả sử:
-$$M = 
+Giả sử:$$M = 
 \begin{bmatrix}
 	v_{1,1} & v_{1,2} & \cdots & v_{1,m} \\
 	v_{2,1} & v_{2,2} & \cdots & v_{2,m} \\
@@ -139,16 +134,14 @@ x =
 	\ldots \\
 	x_m 
 \end{bmatrix}$$
-Khi đó $(x_1, x_2, \ldots, x_m)$ là nghiệm của hệ phương trình:
-$$\begin{cases}
+Khi đó $(x_1, x_2, \ldots, x_m)$ là nghiệm của hệ phương trình:$$\begin{cases}
 	v_{1, 1}x_1 + v_{1, 2}x_2 + \ldots + v_{1, m}x_m = 0 \\
 	v_{2, 1}x_1 + v_{2, 2}x_2 + \ldots + v_{2, m}x_m = 0 \\
 	\ldots \\
 	v_{n, 1}x_1 + v_{n, 2}x_2 + \ldots + v_{n, m}x_m = 0
 \end{cases}$$
 
-__Đặc biệt:__ nếu ma trận $M$ kích cỡ $n \times m$ gồm $m$ vector $v \in \mathbb{Z}_2^n$ và vector $x \in \mathbb{Z}_2^m$ (các vector $v$ và $x$ được viết ở dạng cột):
-$$
+__Đặc biệt:__ nếu ma trận $M$ kích cỡ $n \times m$ gồm $m$ vector $v \in \mathbb{Z}_2^n$ và vector $x \in \mathbb{Z}_2^m$ (các vector $v$ và $x$ được viết ở dạng cột):$$
 \begin{array}{rl}
 M &= 
 \begin{bmatrix}
@@ -173,8 +166,7 @@ x &=
 \end{bmatrix}
 \end{array}$$
 
-Khi đó:
-$$ \begin{array}{l}
+Khi đó:$$ \begin{array}{l}
 M \cdot x = O \\
 \Longleftrightarrow 
 \begin{cases}
@@ -183,13 +175,11 @@ M \cdot x = O \\
 	\ldots \\
 	v_{1, n}x_1 + v_{2, n}x_2 + \ldots + v_{m, n}x_m \equiv 0 
 \end{cases}
-\end{array}
-$$
+\end{array}$$
 
 _Lưu ý các phương trình trong hệ phương trình trên là đồng dư theo **modulo $2$**_.
 
-Để ý rằng không gian hạch cũng là một không gian vector, vì:
-$$\begin{array}{rl}
+Để ý rằng không gian hạch cũng là một không gian vector, vì:$$\begin{array}{rl}
 \left\lbrace\begin{array}{rl}
 M\cdot a &= O \\
 M \cdot b & = O
@@ -475,8 +465,7 @@ Bài này có thể giải bằng quy hoạch động bitmask. Nhưng mình sẽ
 	$$
 - Chúng ta cần tìm tất cả các vector $x = [x_1, x_2, \ldots, x_n]$ ($x \in \mathbb{Z}_2^n$), trong đó $x_i = 0$ tương ứng với $a_i$ không được chọn và $x_i = 1$ tương ứng với $a_i$ được chọn, sao cho: $$M \cdot x = O$$
 - Số vector $x$ thõa mãn chính bằng số vector trong không gian hạch của $M$ và bằng $2^{\text{nullity}(M)}$ (bao gồm cả cách chọn tập rỗng từ $a$). Khi đó đáp án chính là $2^{\text{nullity}(M)} - 1$. 
-- Theo định lí về hạng và số vô hiệu: $$\text{rank}(M) + \text{nullity}(M) = \text{số cột} = n$$ Dễ dàng suy ra:
-$$\begin{array}{rl}
+- Theo định lí về hạng và số vô hiệu: $$\text{rank}(M) + \text{nullity}(M) = \text{số cột} = n$$ Dễ dàng suy ra:$$\begin{array}{rl}
 \text{nullity}(M)
 & = n - \text{rank}(M) \\
 & = n - \text{dim}(\text{CS}(M)) \\

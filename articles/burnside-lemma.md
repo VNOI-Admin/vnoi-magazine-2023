@@ -142,7 +142,6 @@ Cuối cùng, xét tới phép xoay. Đầu tiên là xoay 72 độ theo chiều
 Với ba cách xoay còn lại chúng ta có thể lập luận tương tự, vậy tổng lại phép quay có $4k$ cách tô.
 
 Theo bổ đề Burnside, số lượng quỹ đạo, cũng là số lượng chuỗi hạt, là:
-
 $$ \frac{k^5+5k^3+4k}{10} $$
 
 ## Định lý liệt kê Pólya
@@ -182,7 +181,6 @@ Sau đó, ta có thể phát biểu định lý như sau:
 (Đây là phiên bản dễ hơn của bài toán ở trên mà không có phép lật.)
 
 Trong bài toán này ta có thể tìm ngay được nhóm các hoán vị bất biến:
-
 $$\begin{array}{rl}
 \pi_0 &= 1 2 3 \dots n\\
 \pi_1 &= 2 3 \dots n 1\\
@@ -193,15 +191,12 @@ $$\begin{array}{rl}
 Ta hãy tìm một công thức rõ ràng để tính toán $C(\pi_i)$. Trước tiên, chúng tôi lưu ý rằng hoán vị $\pi_i$ có ở vị trí $j$-th giá trị $i + j$ (tính theo mô-đun $n$). Nếu ta xét cấu trúc chu trình cho $\pi_i$, ta thấy rằng $1$ chuyển thành $1 + i$, $1 + i$ chuyển thành $1 + 2i$, chuyển thành $1 + 3i$, v.v., cho đến một số có dạng $1 + k n$. Lập luận tương tự cho các phần tử còn lại. Do đó, chúng ta thấy rằng tất cả các chu trình đều có cùng độ dài, cụ thể là $\frac{\text{lcm}(i, n)}{i} = \frac{n}{\gcd(i, n)}$. Vì vậy, số chu kỳ trong $\pi_i$ sẽ bằng $\gcd(i, n)$.
 
 Thay các giá trị này vào định lý liệt kê Pólya, ta thu được công thức:
-
 $$\frac{1}{n} \sum_{i=1}^n k^{\gcd(i, n)}$$
 
 Bạn có thể để công thức này ở dạng này hoặc bạn có thể đơn giản hóa nó hơn nữa. Hãy thay đổi thứ tự tính tổng để nó lặp trên tất cả các ước của $n$. Trong công thức ban đầu sẽ có nhiều số hạng tương đương: nếu $i$ không phải là ước của $n$, thì có thể tìm được ước sau khi tính $\gcd(i, n)$. Do đó, đối với mỗi ước số $d ~|~ n$ số hạng của nó $k^{\gcd(d, n)} = k^d$ sẽ xuất hiện trong tổng nhiều lần, tức là câu trả lời cho bài toán có thể được viết lại thành
-
 $$\frac{1}{n} \sum_{d ~|~ n} C_d k^d,$$
 
 trong đó $C_d$ là số các số $i$ với $\gcd(i, n) = d$. Chúng ta có thể tìm được một biểu thức rõ ràng cho giá trị này. Bất kỳ số $i$ nào như vậy đều có dạng $i = d j$ với $\gcd(j, n / d) = 1$ (nếu không thì $\gcd(i, n) > d$). Vì vậy, chúng tôi có thể đếm số $j$ với tính chất này. Phi hàm Euler cho ta $C_d = \phi(n / d)$, và do đó ta có đáp án:
-
 $$\frac{1}{n} \sum_{d ~|~ n} \phi\left(\frac{n}{d}\right) k^d$$
 
 Cài đặt mẫu:
