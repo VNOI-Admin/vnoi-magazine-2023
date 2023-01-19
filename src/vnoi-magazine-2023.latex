@@ -1,9 +1,14 @@
 \documentclass[12pt]{article}
-\usepackage[utf8]{vietnam} 
+% \usepackage[utf8]{vietnam} 
+\usepackage[utf8]{inputenc}
+% \usepackage[sfdefault]{noto}
+\usepackage[T1,T5]{fontenc}
+\usepackage[main=vietnamese]{babel}
 \usepackage{vnoiMagazine2023}
 \usepackage[a4paper, margin=1.5cm, twoside]{geometry}
 \usepackage[bottom]{footmisc}
 
+\renewcommand{\familydefault}{\sfdefault}
 \begin{document}
     \setCoverImage{./assets/cover.png}
     
