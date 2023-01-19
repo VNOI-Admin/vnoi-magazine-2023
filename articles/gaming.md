@@ -1,4 +1,4 @@
-# Gaming
+# Làm thế nào để chơi game?
 
 Author: Trần Xuân Bách
 

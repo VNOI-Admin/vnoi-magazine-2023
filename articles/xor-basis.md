@@ -1,4 +1,4 @@
-# XOR BASIS
+# Kỹ thuật tinh tế về phép Xor
 
 Author: Nguyễn Minh Thiện
 

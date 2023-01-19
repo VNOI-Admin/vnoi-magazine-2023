@@ -1,4 +1,4 @@
-# Hash
+# Tất tần tật về Hash
 
 Author: Lê Tuấn Hoàng
 
