@@ -1,6 +1,6 @@
 ---
 title: Phỏng vấn Vũ Hoàng Kiên
-subtitle: "Interviewer: Phạm Tuần Nghĩa ~-- ICPC World Finalist 2020 \\& 2022"
+subtitle: "Interviewer: Phạm Tuấn Nghĩa ~-- ICPC World Finalist 2020 \\& 2022"
 is_interview: true
 Q: Nghĩa
 A: Kiên
