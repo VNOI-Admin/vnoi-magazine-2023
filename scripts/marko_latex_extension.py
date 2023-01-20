@@ -2,6 +2,9 @@ from marko.ext.latex_renderer import LatexRenderer
 from marko import (inline, block)
 import re
 import yaml
+import sys
+
+sys.stdin.reconfigure(encoding="utf-8-sig")
 
 class BlockElementWithPattern(block.BlockElement):
     priority=100
@@ -41,11 +44,13 @@ class BlockMath(BlockElementWithPattern):
     pattern=re.compile(r'\$\$([\s\S]*?)\$\$', flags=re.M)
     
 class FrontMatter(BlockElementWithPattern):
-    pattern = re.compile(r'---\n(.*?)\n---', re.M | re.DOTALL)
+    priority=100
+    pattern = re.compile(r'---\n(.*?)\n---\n', re.M | re.DOTALL)
+    parse_children = False
     def __init__(self, match):
         super().__init__(match)
         self.data = yaml.safe_load(self.content)
-
+        
 class LatexTabular(BlockElementWithPattern):
     pattern = re.compile(r'(\\begin\{tabular\}[\s\S]*\\end\{tabular\})', re.M)
     
@@ -57,10 +62,6 @@ class LatexLongTable(BlockElementWithPattern):
     
 class LatexMinipage(BlockElementWithPattern):
     pattern = re.compile(r'(\\begin\{minipage\}[\s\S]*\\end\{minipage\})', re.M)
-    
-class Preface(BlockElementWithPattern):
-    pattern = re.compile(r'Preface:\s(.*)')
-    parse_children = True
     
 class CustomFootnote(inline.InlineElement):
     pattern=r'\[\{(.*)\}\]'
@@ -82,19 +83,36 @@ class Emoji(inline.InlineElement):
     
     def __init__(self, match):
         self.emoji_name = match.group(1)
+        
+class InterviewQA(inline.InlineElement):
+    pattern=r'([QA])\: '
+    parse_children = False
+    def __init__(self, match):
+        self.type = match.group(1)
 
 class MarkoLatexRenderer(LatexRenderer):
     front_matter = {}
     
     def render_document(self, element):
         children = self.render_children(element)
-        def get(field):
-            return self.front_matter.get(field, '')
-        return self._environment2("article", children, [
+        def get(field, default=''):
+            return self.front_matter.get(field, default)
+        
+        items = []
+        
+        if get('is_interview', False):
+            Q = get('Q', 'Q')
+            A = get('A', 'A')
+
+            items.append(f'\\def\\Qtext{{{Q}}}')
+            items.append(f'\\def\\Atext{{{A}}}')
+            
+        items.append(self._environment2("article", children, [
             get('title'),
             get('subtitle'),
             get('author')
-        ])
+        ]))
+        return '\n'.join(items)
     
     def render_heading(self, element):
         children = self.render_children(element)
@@ -179,6 +197,11 @@ class MarkoLatexRenderer(LatexRenderer):
         self.front_matter = element.data
         return ''
     
+    def render_interview_qa(self, element):
+        if self.front_matter.get('is_interview', False):
+            return r'\interview' + element.type + ' '
+        return element.type + ': '
+    
     @staticmethod
     def _escape_latex(text: str) -> str:
         # print('escaping', text)
@@ -215,7 +238,8 @@ class MarkoLatexExtension:
             LatexMinipage,
             LatexTabularx,
             Emoji,
-            FrontMatter
+            FrontMatter,
+            InterviewQA,
         ]
     renderer_mixins = [MarkoLatexRenderer]
 

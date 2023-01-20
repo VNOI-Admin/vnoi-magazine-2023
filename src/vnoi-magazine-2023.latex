@@ -26,17 +26,17 @@
     \input{./articles/gaming.latex}
     \input{./articles/hash.latex}
     \input{./articles/1d1d-dp-optimization.latex}
-    \interview{Phỏng vấn Bùi Việt Dũng}{Vương Hoàng Long}{./interviews/bui-viet-dung.latex}
-    \interview{Phỏng vấn Trần Quang Lộc}{Hoàng Xuân Nhật}{./interviews/tran-quang-loc.latex}
+    \input{./interviews/bui-viet-dung.latex}
+    \input{./interviews/tran-quang-loc.latex}
     \input{./articles/gauss-elimination.latex}
     \input{./articles/xor-basis.latex}
-    \interview{Phỏng vấn Vũ Hoàng Kiên}{Phạm Tuấn Nghĩa}{./interviews/vu-hoang-kien.latex}
-    \interview{Phỏng vấn Trần Xuân Bách}{Nguyễn Trung Quân}{./interviews/tran-xuan-bach.latex}
+    \input{./interviews/vu-hoang-kien.latex}
+    \input{./interviews/tran-xuan-bach.latex}
     \input{./articles/derivative-application.latex}
     \input{./articles/peanut.latex}
     \input{./articles/burnside-lemma.latex}
-    \interview{Phỏng vấn Nguyễn Xuân Tùng}{Vương Hoàng Long}{./interviews/nguyen-xuan-tung.latex}
-    \interview{Phỏng vấn Lê Bảo Hiệp}{Mai Vinh Hiển}{./interviews/le-bao-hiep.latex}
+    \input{./interviews/nguyen-xuan-tung.latex}
+    \input{./interviews/le-bao-hiep.latex}
     \input{./articles/shortest-path-dag.latex}
     \input{./articles/dsu-tree.latex}
     \input{./articles/binary-lifting.latex}
