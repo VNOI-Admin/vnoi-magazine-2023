@@ -1,6 +1,6 @@
 ---
 title: Phỏng vấn Trần Xuân Bách
-subtitle: "Interviewer: Nguyễn Trung Quân"
+subtitle: "Interviewer: Nguyễn Trung Quân ~-- Tình nguyện viên VNOI Gen 2"
 is_interview: true
 Q: Quân
 A: Bách

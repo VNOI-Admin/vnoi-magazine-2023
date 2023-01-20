@@ -1,6 +1,6 @@
 ---
 title: Phỏng vấn Lê Bảo Hiệp
-subtitle: "Interviewer: Mai Vinh Hiển"
+subtitle: "Interviewer: Mai Vinh Hiển ~-- Tình nguyện viên VNOI Gen 2"
 is_interview: true
 Q: Hiển
 A: Hiệp
