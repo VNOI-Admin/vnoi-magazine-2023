@@ -14,13 +14,13 @@
         \setCoverImage{./assets/cover.png}
     \end{titlepage}
     
+    \input{./introduction.latex}
+    \newpage
+    
     \null
     \vfill
     \tableofcontents
     \vfill
-    \newpage
-    
-    \input{./introduction.latex}
     \newpage
     
     \input{./articles/gaming.latex}
