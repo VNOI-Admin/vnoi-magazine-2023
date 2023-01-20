@@ -11,7 +11,7 @@
 \renewcommand{\familydefault}{\sfdefault}
 \begin{document}
     \begin{titlepage}
-        \setCoverImage{./assets/cover.png}
+        \setCoverImage{./assets/cover_x2.png}
     \end{titlepage}
     
     \input{./introduction.latex}
