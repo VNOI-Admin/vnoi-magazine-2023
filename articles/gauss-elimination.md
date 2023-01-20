@@ -1,6 +1,6 @@
 ---
 title: Khử Gauss-Jordan
-author: Nguyễn Đức Anh
+author: Nguyễn Đức Anh \\ 11 Tin, Trường THPT Chuyên Hà Nội - Amsterdam
 ---
 
 ## Giới thiệu

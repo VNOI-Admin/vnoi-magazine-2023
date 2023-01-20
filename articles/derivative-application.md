@@ -1,6 +1,6 @@
 ---
 title: Áp dụng bất ngờ của đạo hàm
-author: Nguyễn Thành Trung (RR)
+author: Nguyễn Thành Trung \\ Nguyễn Thành Trung, Singapore
 ---
 
 Lúc học môn Toán có lẽ chúng ta thường hay tự hỏi: Học đạo hàm, tích phân.. để làm gì? Hôm nay chúng ta sẽ cùng nghiên cứu một áp dụng vô cùng bất ngờ và ảo ma của đạo hàm trong 1 bài toán.

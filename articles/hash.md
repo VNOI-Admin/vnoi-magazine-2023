@@ -1,6 +1,6 @@
 ---
 title: Tất tần tật về Hash
-author: Lê Tuấn Hoàng
+author: Lê Tuấn Hoàng \\ 12 Tin, Trường THPT Chuyên Hà Nội - Amsterdam
 ---
 
 ## Giới thiệu

@@ -30,7 +30,7 @@
 \newcommand{\includeImage}[2]{%
     \begin{center}
         \includegraphics[width=0.9\linewidth]{#1} \\
-        \textit{#2}
+        \textit{\small #2}
     \end{center}
 }
 
@@ -57,15 +57,15 @@
     
     ~\thispagestyle{empty}
     
-    \pagecolor[rgb]{0,0,0}
-    \color[rgb]{1,1,1}
+    % \pagecolor[rgb]{0,0,0}
+    % \color[rgb]{1,1,1}
     
     \addcontentsline{toc}{section}{\protect\numberline{}#1}
     \vfill
     \part*{#1}
     #2
     \begin{flushright}
-        \textrm{\textit{~-- #3}}
+        \textrm{\textit{#3}}
     \end{flushright}
     \vfill
     
@@ -73,8 +73,8 @@
     
     \pagebreak
     
-    \pagecolor[rgb]{1,1,1}
-    \color[rgb]{0,0,0}
+    % \pagecolor[rgb]{1,1,1}
+    % \color[rgb]{0,0,0}
     
     \everymath={\displaystyle}
     \begin{multicols*}{2}

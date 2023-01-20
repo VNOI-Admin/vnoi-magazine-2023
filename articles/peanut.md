@@ -1,6 +1,6 @@
 ---
-title: \peanut rang
-author: Trần Xuân Bách
+title: "Cách làm ``lạc rang''"
+author: Trần Xuân Bách \\ 12A1 Tin, Trường THPT Chuyên Khoa học Tự nhiên
 ---
 
 ## Giới thiệu

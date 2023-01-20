@@ -1,6 +1,6 @@
 ---
 title: Shortest Path DAG và ứng dụng
-author: Nguyễn Đăng Quân
+author: Nguyễn Đăng Quân \\ sinh viên năm 1, Trường Đại học Công nghệ, Đại học Quốc gia Hà Nội
 ---
 
 Trong một số bài toán liên quan đến đường đi ngắn nhất, tính chất của đồ thị khá khó nhận ra và cũng không dễ dàng để áp dụng. Hôm nay mình xin chia sẻ các bạn một kĩ thuật sử dụng phương pháp tính toán trên DAG (Directed Acyclic Graph) để giải một số bài toán về đường đi ngắn nhất.

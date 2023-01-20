@@ -1,6 +1,6 @@
 ---
 title: Kỹ thuật tinh tế về phép Xor
-author: Nguyễn Minh Thiện
+author: Nguyễn Minh Thiện \\ sinh viên năm 2, Trường Công Nghệ Thông Tin và Truyền Thông, Đại học Cần Thơ
 ---
 
 ## Giới thiệu
