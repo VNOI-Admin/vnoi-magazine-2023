@@ -19,7 +19,9 @@
     
     \null
     \autoSetBackground
-    \vfill
+    \vspace{3cm}
+    \renewcommand{\contentsname}{\hfill\bfseries\Large Mục lục\hfill}   
+    \renewcommand{\cftaftertoctitle}{\hfill}
     \tableofcontents
     \vfill
     \newpage
