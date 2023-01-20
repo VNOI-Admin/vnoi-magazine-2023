@@ -47,6 +47,7 @@
 \renewcommand\cftpartafterpnum{\vskip-20pt}
 
 \setlength{\columnsep}{0.8cm}
+\newcommand\authorInfo{}
 \newenvironment{article}[3]{
     
     \pagestyle{fancy}
@@ -65,7 +66,9 @@
     \part*{#1}
     #2
     \begin{flushright}
-        \textrm{\textit{#3}}
+        \textrm{
+            \textit{#3 \\ \authorInfo}
+        }
     \end{flushright}
     \vfill
     

@@ -1,6 +1,7 @@
 ---
 title: Làm sao để "chơi game"?
-author: Trần Xuân Bách \\ 12A1 Tin, Trường THPT Chuyên Khoa học Tự nhiên, Đại học Quốc gia Hà Nội
+author: Trần Xuân Bách
+author_info: 12A1 Tin, Trường THPT Chuyên Khoa học Tự nhiên, Đại học Quốc gia Hà Nội
 ---
 
 ## Giới thiệu

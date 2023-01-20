@@ -100,6 +100,8 @@ class MarkoLatexRenderer(LatexRenderer):
         
         items = []
         
+        items.append(f'\\renewcommand\\authorInfo{{ {get("author_info")} }}')
+        
         if get('is_interview', False):
             Q = get('Q', 'Q')
             A = get('A', 'A')

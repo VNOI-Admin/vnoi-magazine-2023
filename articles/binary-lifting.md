@@ -1,6 +1,7 @@
 ---
 title: Binary Lifting với bộ nhớ $O(n)$
 author: Ngô Nhật Quang
+author_info: 12A1 Tin, Trường THPT Chuyên Khoa học Tự nhiên, Đại học Quốc gia Hà Nội
 ---
 
 ## Giới thiệu
