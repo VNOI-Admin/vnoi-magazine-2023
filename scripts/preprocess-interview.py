@@ -22,7 +22,7 @@ def escape_latex(text: str) -> str:
 
 lines = list(s.strip() for s in stdin)
 content = '\n'.join(lines)
-match = re.match(r'---\n([\s\S]*?)\n---\n([\s\S]*)', content, re.M)
+match = re.match(r'---\n(.*?)\n---\n(.*)', content, re.M | re.DOTALL)
 
 if match is None:
     front_matter = '{}'
@@ -45,5 +45,6 @@ for line in interview_content.split('\n'):
     line = escape_latex(line)
     line = re.sub('^Q:', r'\\interviewQ', line)
     line = re.sub('^A:', r'\\interviewA', line)
+    line = re.sub(r'\*(.*?)\*', r'\\textit{*\1*}', line, flags=re.DOTALL)
     print(line)
     print()
