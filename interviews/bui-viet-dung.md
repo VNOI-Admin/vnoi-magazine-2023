@@ -1,6 +1,6 @@
 ---
 title: Phỏng vấn Bùi Việt Dũng
-subtitle: "Interviewer: Hoàng Long Vương ~-- ICPC World Finalist 2021"
+subtitle: "Interviewer: Vương Hoàng Long ~-- ICPC World Finalist 2021"
 is_interview: true
 Q: Long
 A: Dũng
