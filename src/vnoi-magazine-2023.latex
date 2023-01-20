@@ -18,6 +18,7 @@
     \newpage
     
     \null
+    \autoSetBackground
     \vfill
     \tableofcontents
     \vfill

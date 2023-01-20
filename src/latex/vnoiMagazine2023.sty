@@ -23,6 +23,8 @@
 \RequirePackage{tablefootnote}
 \RequirePackage{tabularx}
 \RequirePackage{tocloft}
+\RequirePackage{eso-pic}
+\RequirePackage{intcalc}
 
 \newcolumntype{S}{>{\hsize=.5\hsize}X}
 
@@ -46,6 +48,16 @@
 \renewcommand{\cftpartleader}{\cftdotfill{\cftdotsep}}
 \renewcommand\cftpartafterpnum{\vskip-20pt}
 
+\newcommand\setbackground[1]{
+    \AddToShipoutPictureBG*{\includegraphics[width=\paperwidth,height=\paperheight]{#1}}
+}
+
+\newcounter{backgroundCounter}
+\setcounter{backgroundCounter}{0}
+\newcommand\autoSetBackground[0]{
+    \setbackground{./assets/background/\intcalcMod{\value{backgroundCounter}}{5}.png}  \stepcounter{backgroundCounter}
+}
+
 \setlength{\columnsep}{0.8cm}
 \newcommand\authorInfo{}
 \newenvironment{article}[3]{
@@ -57,6 +69,7 @@
     \rhead{\textrm{\textit{#3}}}
     
     ~\thispagestyle{empty}
+    \autoSetBackground
     
     % \pagecolor[rgb]{0,0,0}
     % \color[rgb]{1,1,1}
