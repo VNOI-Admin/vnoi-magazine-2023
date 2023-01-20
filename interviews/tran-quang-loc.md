@@ -39,7 +39,9 @@ A: tourist hiện tại theo mình biết là tiếp tục làm nghiên cứu si
 
 Q: Vậy sau khi sang Nga, anh thấy mình đã đạt được mục tiêu anh muốn trong CP chưa?
 
-A: Tất nhiên mục tiêu cao nhất của mình là vào được WF, và mình đã không làm được. Nhưng mình cũng được thi Regional, và cái Regional của mình (NEERC) cũng được đánh giá là khó. Thêm một điều nữa là mình được gặp tourist này! Mình cũng thấy đó là điều tuyệt vời mà không phải ai cũng được. *\*cười\**
+A: Tất nhiên mục tiêu cao nhất của mình là vào được WF, và mình đã không làm được. Nhưng mình cũng được thi Regional, và cái Regional của mình (NERC) cũng được đánh giá là khó. Thêm một điều nữa là mình được gặp tourist này! Mình cũng thấy đó là điều tuyệt vời mà không phải ai cũng được. *\*cười\**
+
+![Trần Quang Lộc với đội Unexpected Value trong kì thi ICPC NERC 2021](./assets/interviews/tran-quang-loc-nerc-2021-1.jpg)
 
 Q: Không chỉ tourist mà anh còn được gặp founder Codeforces Mike Mirzayanov đúng không?
 
