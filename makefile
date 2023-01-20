@@ -5,6 +5,9 @@ BUILD_FOLDER=build/
 OUTPUT=$(BUILD_FOLDER)/vnoi-magazine-2023.pdf
 
 all: magazine
+
+install-dependencies:
+	pip install marko pyyaml
 	
 clean:
 	rm -rf build/
