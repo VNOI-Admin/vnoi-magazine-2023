@@ -14,10 +14,14 @@
         \setCoverImage{./assets/cover.png}
     \end{titlepage}
     
+    \null
+    \vfill
     \tableofcontents
-    \pagebreak
+    \vfill
+    \newpage
     
-    Lời nói đầu :thinkingcat:
+    \input{./introduction.latex}
+    \newpage
     
     \input{./articles/gaming.latex}
     \input{./articles/hash.latex}

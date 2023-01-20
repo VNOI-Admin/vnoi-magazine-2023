@@ -85,6 +85,7 @@ class Emoji(inline.InlineElement):
         self.emoji_name = match.group(1)
 
 class MarkoLatexRenderer(LatexRenderer):
+    article_name = ''
     author = ''
     preface = ''
     subtitle = ''

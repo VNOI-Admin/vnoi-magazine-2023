@@ -1,0 +1,35 @@
+\newgeometry{left=3.5cm,right=3.5cm,bottom=1.5cm}
+\null
+\vfill
+\textit{Quý độc giả thân mến,}
+
+Tạp chí VNOI - Xuân Quý Mão là một ấn phẩm đặc biệt của Câu lạc bộ Olympic Tin
+học Việt Nam, như một món quà đầu xuân mà VNOI muốn dành tặng cho cộng đồng
+nhân dịp Tết Quý Mão 2023. 
+
+Với mục đích truyền tải kiến thức, kinh nghiệm qua nhiều chủ đề, số tạp chí đặc
+biệt kì này sẽ mang đến cho các bạn những bài viết thú vị với nội dung đa dạng,
+thân thiện và phù hợp với nhiều đối tượng độc giả. Tạp chí bao gồm 11 bài
+viết học thuật xoay quanh các chủ đề trong Tin học và Lập trình thi đấu đến
+từ 10 tác giả, được chúng mình tuyển chọn qua rất nhiều bài viết được gửi
+về từ khắp mọi miền tổ quốc. Bên cạnh những nội dung mang tính học thuật,
+tạp chí kì này còn có sự xuất hiện của 6 vị khách mời đặc biệt qua 6 bài
+phỏng vấn, hứa hẹn mang tới cho các bạn độc giả những câu chuyện ý nghĩa về
+hành trình học Tin của các nhân vật có tầm ảnh hưởng lớn trong cộng đồng
+Tin học Việt Nam.
+
+Trong niềm vui hân hoan, nao nức của xuân mới, ban biên tập nói riêng và tập
+thể VNOI nói chung xin chân thành gửi lời tri ân đến các khách mời, các tác
+giả, quý độc giả đã luôn dành quan tâm, theo dõi và ủng hộ trong suốt thời gian
+qua.
+
+Nhân dịp xuân Quý Mão 2023, tập thể VNOI thân chúc bạn đọc một năm mới sức
+khỏe, hạnh phúc và nhiều thành công! 
+
+
+\begin{flushright}
+    \textbf{BAN BIÊN TẬP}
+\end{flushright}
+
+\vfill
+\restoregeometry
