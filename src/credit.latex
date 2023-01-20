@@ -1,0 +1,35 @@
+\null
+\vfill
+\section*{Ban biên tập}
+\begin{itemize}
+    \item[] Nguyễn Trung Quân (tổng biên tập)
+    \item[] Võ Nguyễn Phương Quỳnh
+    \item[] Phạm Thị Diễm Quỳnh
+    \item[] Mai Vinh Hiển
+\end{itemize}
+
+\section*{Thiết kế}
+\begin{itemize}
+    \item[] Nguyễn Trúc Như Bình
+    \item[] Trần Quang Lộc
+\end{itemize}
+
+\vspace{1in}
+
+\section*{Hình ảnh sử dụng}
+Các hình ảnh được sử dụng để thiết kế nền các trang được lấy từ trang web \href{https://www.flaticon.com/}{Flaticon}
+\begin{itemize}
+    \item \href{https://www.flaticon.com/free-icons/children-toys}{Children toys icons created by Freepik}
+        
+    \item \href{https://www.flaticon.com/free-icons/origami}{Origami icons created by photo3idea\_studio}
+    
+    \item \href{https://www.flaticon.com/free-icons/cactus}{Cactus icons created by smalllikeart}
+        
+    \item \href{https://www.flaticon.com/free-icon/book\_1245121}{Book icons created by itim2101}
+        
+    \item \href{https://www.flaticon.com/free-icons/cd}{Cd icons created by geotatah}
+\end{itemize}
+\vfill
+
+\newpage
+\setCoverImage{./assets/credit.png}

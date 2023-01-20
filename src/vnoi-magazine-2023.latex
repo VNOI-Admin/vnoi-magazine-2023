@@ -43,4 +43,7 @@
     \input{./articles/dsu-tree.latex}
     \input{./articles/binary-lifting.latex}
     
+    \newpage
+    \input{./credit.latex}
+    
 \end{document}

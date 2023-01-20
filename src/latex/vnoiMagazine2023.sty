@@ -58,6 +58,11 @@
     \setbackground{./assets/background/\intcalcMod{\value{backgroundCounter}}{5}.png}  \stepcounter{backgroundCounter}
 }
 
+\newcommand\customPart[1]{
+    \part*{#1}
+    \addcontentsline{toc}{part}{\protect\numberline{}#1}
+}
+
 \setlength{\columnsep}{0.8cm}
 \newcommand\authorInfo{}
 \newenvironment{article}[3]{
@@ -75,14 +80,13 @@
     % \color[rgb]{1,1,1}
     
     \vfill
-    \part*{#1}
+    \customPart{#1}
     #2
     \begin{flushright}
         \textrm{
             \textit{#3 \\ \authorInfo}
         }
     \end{flushright}
-    \addcontentsline{toc}{part}{\protect\numberline{}#1}
     \vfill
     
     % \addtocontents{toc}{#1}
