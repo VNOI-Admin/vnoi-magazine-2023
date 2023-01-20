@@ -46,4 +46,7 @@
     \newpage
     \input{./credit.latex}
     
+    \newpage
+    \setCoverImage{./assets/backcover.png}
+    
 \end{document}
