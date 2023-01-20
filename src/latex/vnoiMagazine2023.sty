@@ -74,7 +74,6 @@
     % \pagecolor[rgb]{0,0,0}
     % \color[rgb]{1,1,1}
     
-    \addcontentsline{toc}{section}{\protect\numberline{}#1}
     \vfill
     \part*{#1}
     #2
@@ -83,6 +82,7 @@
             \textit{#3 \\ \authorInfo}
         }
     \end{flushright}
+    \addcontentsline{toc}{part}{\protect\numberline{}#1}
     \vfill
     
     % \addtocontents{toc}{#1}
