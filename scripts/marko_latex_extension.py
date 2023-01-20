@@ -219,6 +219,7 @@ class MarkoLatexRenderer(LatexRenderer):
             "^": "\\^{}",
             "~": "\\~{}",
             "\\": "\\textbackslash{}",
+            "\"": "''"
         }
 
         return "".join(specials.get(s, s) for s in text)
