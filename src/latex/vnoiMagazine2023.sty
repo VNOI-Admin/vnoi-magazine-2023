@@ -13,6 +13,7 @@
 ]{hyperref}
 \RequirePackage{amsmath}
 \RequirePackage{multicol}
+\RequirePackage{flushend}
 \RequirePackage{enumitem}
 \RequirePackage{graphicx}
 \RequirePackage{ulem}
@@ -76,10 +77,9 @@
     \color[rgb]{0,0,0}
     
     \everymath={\displaystyle}
-    \begin{multicols}{2}
+    \begin{multicols*}{2}
 }{
-    \vfill
-    \end{multicols}
+    \end{multicols*}
     \pagebreak
 }
 
