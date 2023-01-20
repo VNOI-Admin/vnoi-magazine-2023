@@ -1,4 +1,8 @@
-﻿A: Xin chào tất cả mọi người, mình là Kiên. Hiện tại mình đang học năm 2 của trường Đại học Quốc gia Singapore. Rất vui được gặp các bạn :)
+﻿---
+Q: Nghĩa
+A: Kiên
+---
+A: Xin chào tất cả mọi người, mình là Kiên. Hiện tại mình đang học năm 2 của trường Đại học Quốc gia Singapore. Rất vui được gặp các bạn :)
 
 
 Q: Kiên là người mới học CP năm cấp 3 nhưng khi lên 11 đã đạt được HCB IOI. Vậy Kiên đã làm gì để thăng tiến nhanh như vậy? Thói quen train CP của bạn có gì đặc biệt không?

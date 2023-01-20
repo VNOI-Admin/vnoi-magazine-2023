@@ -1,4 +1,8 @@
-﻿Q: Chào Dũng, rất cảm ơn bạn đã nhận lời phỏng vấn cho tạp chí VNOI năm đầu tiên này. Bạn cũng là người đầu tiên bọn mình phỏng vấn. *cười*
+﻿---
+Q: Long
+A: Dũng
+---
+Q: Chào Dũng, rất cảm ơn bạn đã nhận lời phỏng vấn cho tạp chí VNOI năm đầu tiên này. Bạn cũng là người đầu tiên bọn mình phỏng vấn. *cười*
 Q: Chúng ta có thể bắt đầu nhé, bạn có thể giới thiệu qua một số thông tin cá nhân được không?
 A: Mình tên là Bùi Việt Dũng, năm nay đang 22 tuổi, là cựu học sinh trường THPT Kim Liên, Hà Nội. Mình tham gia ICPC 4 năm với tư cách là sinh viên của trường Đại học Wisconsin-Madison… tạm thời là thế nhé! *cười*
 Q: Sở thích của bạn là gì nhỉ? Bạn thường làm gì lúc rảnh?

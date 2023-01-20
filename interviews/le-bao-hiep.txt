@@ -1,3 +1,7 @@
+---
+Q: Hiển
+A: Hiệp
+---
 Q: Xin chào Hiệp, bạn có thể giới thiệu đôi chút về bản thân, công việc hiện tại cũng như thành tích nổi bật của bạn được không?
 A: Mình là Lê Bảo Hiệp, sinh viên năm 3 của Chương trình Tiên Tiến ngành Khoa học máy tính, trường Đại học Khoa học Tự nhiên, hiện tại mình cũng đang thất nghiệp *cười*. Ở cấp 3 mình có Giải nhì Học sinh giỏi Quốc gia môn Tin học và vào vòng 2, cơ mà không được dự thi tiếp vòng Châu Á hay Quốc tế nào cả *cười*. Sau đó lên Đại học thì mình được 2 lần vô địch ICPC Regional và cũng có cho mình Cúp Đồng khối Siêu cúp Olympic Sinh Viên.
 

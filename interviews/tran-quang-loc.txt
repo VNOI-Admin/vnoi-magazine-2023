@@ -1,4 +1,8 @@
-﻿Q: Xin chào anh Lộc, mời anh giới thiệu bản thân
+﻿---
+Q: Nhật
+A: Lộc
+---
+Q: Xin chào anh Lộc, mời anh giới thiệu bản thân
 A: Xin chào các bạn, mình tên là Trần Quang Lộc, sinh năm 1999, nhà ở tỉnh Hòa Bình, mình là du học sinh Nga, học tại trường ITMO.
 
 

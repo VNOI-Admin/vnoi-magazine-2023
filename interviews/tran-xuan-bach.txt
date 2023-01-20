@@ -1,4 +1,8 @@
-﻿Q: Chào Bách, bạn có thể giới thiệu đôi chút về bản thân cũng như thành tích nổi bật của bạn được không? 
+﻿---
+Q: Quân
+A: Bách
+---
+Q: Chào Bách, bạn có thể giới thiệu đôi chút về bản thân cũng như thành tích nổi bật của bạn được không? 
 A: Em tên là Trần Xuân Bách, học lớp 12 trường THPT Chuyên Khoa học Tự nhiên, Hà Nội. Năm lớp 10, em đạt giải Nhì VOI 2020, huy chương đồng APIO. Sang năm lớp 11, em may mắn có cho mình huy chương vàng APIO và huy chương vàng IOI *cười*
 
 

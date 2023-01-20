@@ -10,7 +10,9 @@
 
 \renewcommand{\familydefault}{\sfdefault}
 \begin{document}
-    \setCoverImage{./assets/cover.png}
+    \begin{titlepage}
+        \setCoverImage{./assets/cover.png}
+    \end{titlepage}
     
     \tableofcontents
     \pagebreak
@@ -20,7 +22,7 @@
     \input{./articles/gaming.latex}
     \input{./articles/hash.latex}
     \input{./articles/1d1d-dp-optimization.latex}
-    \interview{Phỏng vấn Bùi Việt Dũng}{Vương Hoàng Long}{./interviews/le-bao-hiep.latex}
+    \interview{Phỏng vấn Bùi Việt Dũng}{Vương Hoàng Long}{./interviews/bui-viet-dung.latex}
     \interview{Phỏng vấn Trần Quang Lộc}{Hoàng Xuân Nhật}{./interviews/tran-quang-loc.latex}
     \input{./articles/gauss-elimination.latex}
     \input{./articles/xor-basis.latex}
