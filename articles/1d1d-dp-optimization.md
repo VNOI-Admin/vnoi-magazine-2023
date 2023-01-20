@@ -303,6 +303,8 @@ int main() {
 
 ## Bài toán 2
 
+[VNOJ - Lễ hội](https://oj.vnoi.info/problem/lehoi)
+
 ### Tóm tắt
 
 Ở ngôi làng nọ, có $n$ ngôi nhà nằm trên một đường thẳng. Biết trưởng làng sống ở nhà thứ $1$, nhà thứ $i$ nằm cách nhà trưởng làng đúng $a_i$ km về phía đông. Trưởng làng muốn chọn ra một số địa điểm trên đường thẳng để chuẩn bị tổ chức lễ hội, biết chi phí tổ chức lễ hội cho một địa điểm là $k$.
