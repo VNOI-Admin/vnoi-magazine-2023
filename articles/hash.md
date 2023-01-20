@@ -1,6 +1,7 @@
-# Tất tần tật về Hash
-
-Author: Lê Tuấn Hoàng
+---
+title: Tất tần tật về Hash
+author: Lê Tuấn Hoàng
+---
 
 ## Giới thiệu
 

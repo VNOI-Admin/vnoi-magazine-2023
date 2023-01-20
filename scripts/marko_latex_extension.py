@@ -1,6 +1,7 @@
 from marko.ext.latex_renderer import LatexRenderer
 from marko import (inline, block)
 import re
+import yaml
 
 class BlockElementWithPattern(block.BlockElement):
     priority=100
@@ -38,14 +39,12 @@ class InlineMath(inline.InlineElement):
         
 class BlockMath(BlockElementWithPattern):
     pattern=re.compile(r'\$\$([\s\S]*?)\$\$', flags=re.M)
-        
-class Author(BlockElementWithPattern):
-    include_children=True
-    pattern = re.compile(r'Author: (.*)')
     
-class Subtitle(BlockElementWithPattern):
-    include_children=True
-    pattern = re.compile(r'Subtitle: (.*)');
+class FrontMatter(BlockElementWithPattern):
+    pattern = re.compile(r'---\n(.*?)\n---', re.M | re.DOTALL)
+    def __init__(self, match):
+        super().__init__(match)
+        self.data = yaml.safe_load(self.content)
 
 class LatexTabular(BlockElementWithPattern):
     pattern = re.compile(r'(\\begin\{tabular\}[\s\S]*\\end\{tabular\})', re.M)
@@ -85,34 +84,17 @@ class Emoji(inline.InlineElement):
         self.emoji_name = match.group(1)
 
 class MarkoLatexRenderer(LatexRenderer):
-    article_name = ''
-    author = ''
-    preface = ''
-    subtitle = ''
+    front_matter = {}
     
     def render_document(self, element):
-        # should come first to collect needed packages
         children = self.render_children(element)
-        # create document parts
-        # items = ["\\documentclass{article}"]
-        # add used packages
-        # items.extend(f"\\usepackagep" for p in self._packages)
-        # add inner content
-        # items.append(self._environment("document", children))
-        return self._environment2("article", children, [self.article_name, self.subtitle, self.author])
-    
-    def render_author(self, element):
-        self.author = element.content
-        return ''
-    
-    def render_subtitle(self, element):
-        self.subtitle = self._escape_latex(element.content)
-        return ''
-    
-    def render_preface(self, element):
-        self.preface = element.content
-        print('got preface', self.preface)
-        return ''
+        def get(field):
+            return self.front_matter.get(field, '')
+        return self._environment2("article", children, [
+            get('title'),
+            get('subtitle'),
+            get('author')
+        ])
     
     def render_heading(self, element):
         children = self.render_children(element)
@@ -193,6 +175,10 @@ class MarkoLatexRenderer(LatexRenderer):
         # always soft
         return '\n'
     
+    def render_front_matter(self, element):
+        self.front_matter = element.data
+        return ''
+    
     @staticmethod
     def _escape_latex(text: str) -> str:
         # print('escaping', text)
@@ -222,15 +208,14 @@ class MarkoLatexExtension:
             BlockMath,
             BlockMathInParagraph,
             InlineMath,
-            Author,
             CustomFootnote,
             Strikethrough,
             LatexTabular,
-            Subtitle,
             LatexLongTable,
             LatexMinipage,
             LatexTabularx,
-            Emoji
+            Emoji,
+            FrontMatter
         ]
     renderer_mixins = [MarkoLatexRenderer]
 

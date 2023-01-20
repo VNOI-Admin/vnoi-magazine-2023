@@ -1,6 +1,7 @@
-# Binary Lifting với bộ nhớ $O(n)$
-
-Author: Ngô Nhật Quang
+---
+title: Binary Lifting với bộ nhớ $O(n)$
+author: Ngô Nhật Quang
+---
 
 ## Giới thiệu
 

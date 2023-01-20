@@ -1,6 +1,7 @@
-# Làm thế nào để chơi game?
-
-Author: Trần Xuân Bách
+---
+title: Làm thế nào để chơi game?
+author: Trần Xuân Bách
+---
 
 ## Giới thiệu
 

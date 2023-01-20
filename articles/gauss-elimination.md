@@ -1,5 +1,7 @@
-# Khử Gauss-Jordan
-Author: Nguyễn Đức Anh
+---
+title: Khử Gauss-Jordan
+author: Nguyễn Đức Anh
+---
 
 ## Giới thiệu
 Cho một hệ $n$ phương trình đại số tuyến tính (system of linear algebraic equations - SLAE) với$m$ ẩn. Ta được yêu cầu giải hệ phương trình đó (tức là xác định xem nó có vô nghiệm, chính xác một nghiệm hay vô số nghiệm) và trong trường hợp hệ có ít nhất một nghiệm, hãy đưa ra một nghiệm bất kì của hệ đó. 

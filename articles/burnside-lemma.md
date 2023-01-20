@@ -1,7 +1,8 @@
-# Bổ đề cháy cạnh
-Subtitle: (Bổ đề Burnside & Định lý liệt kê Pólya)
-
-Author: Nguyễn Hoàng Dũng
+---
+title: Bổ đề cháy cạnh
+subtitle: (Bổ đề Burnside \& Định lý liệt kê Pólya)
+author: Nguyễn Hoàng Dũng
+---
 
 ## Giới thiệu
 

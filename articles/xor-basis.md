@@ -1,6 +1,7 @@
-# Kỹ thuật tinh tế về phép Xor
-
-Author: Nguyễn Minh Thiện
+---
+title: Kỹ thuật tinh tế về phép Xor
+author: Nguyễn Minh Thiện
+---
 
 ## Giới thiệu
 

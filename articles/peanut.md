@@ -1,6 +1,7 @@
-# :peanut: rang
-
-Author: Trần Xuân Bách
+---
+title: \peanut rang
+author: Trần Xuân Bách
+---
 
 ## Giới thiệu
 

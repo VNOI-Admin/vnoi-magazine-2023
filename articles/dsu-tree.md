@@ -1,8 +1,8 @@
-# Cây DSU
-
-Subtitle: (DSU Tree)
-
-Author: Lê Minh Khánh
+---
+title: Cây DSU
+subtitle: (DSU Tree)
+author: Lê Minh Khánh
+---
 
 ## Lời nói đầu
 
