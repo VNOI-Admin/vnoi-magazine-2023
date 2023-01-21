@@ -19,9 +19,9 @@ Q: Okay tóm lại là bạn có thói quen train theo cảm hứng và train v�
 
 A: Đúng rồi, hầu hết là như vậy ạ *\*cười\**
 
-Q: Ờm thì có vẻ cái quá trình học CP của bạn nó khá giống cái đồ thị hình sin. Khi nào bạn khủng thì bạn thọt dần rồi bạn lại bắt đầu khủng *\*cười\**. Thế thì, giữa các cái lúc phong độ của bạn đi xuống ấy, lúc đấy bạn có chơi game, lướt Internet đọc reddit hay bạn đã làm gì ngu xuẩn để làm cái phong độ của bạn đi xuống nhiều như vậy?
+Q: Ờm thì có vẻ cái quá trình học CP của bạn nó khá giống cái đồ thị hình sin. Khi nào bạn khủng thì bạn thọt dần rồi bạn lại bắt đầu khủng *\*cười\**. Thế thì, giữa các cái lúc phong độ của bạn đi xuống ấy, lúc đấy bạn có chơi game, lướt Internet đọc reddit hay bạn đã làm gì khác mà phong độ của bạn đi xuống nhiều như vậy?
 
-A: Không biết lúc đấy có mấy cái Reels như giờ không, kiểu mình hay xem mấy cái giống vậy, mấy clip ngu ngu trên youtube các thứ. Thực ra mình nghĩ Tin học là một môn cần practice liên tục ấy, chỉ cần mình không làm gì thì cảm giác nó tự đi xuống thôi. Có thể tư duy nó vẫn thế nhưng cái implementation cũng đi xuống, đại loại vậy.
+A: Không biết lúc đấy có mấy cái Reels như giờ không, kiểu mình hay xem mấy cái giống vậy, mấy clip trên Youtube các thứ. Thực ra mình nghĩ Tin học là một môn cần practice liên tục ấy, chỉ cần mình không làm gì thì cảm giác nó tự đi xuống thôi. Có thể tư duy nó vẫn thế nhưng cái implementation cũng đi xuống, đại loại vậy.
 
 Q: Okay, rất là hợp lý. Nhưng mà, thường khi người ta không làm gì thì nó vẫn phải đi kèm với một cái hoạt động cụ thể nào đấy. Những lúc bạn không train hoặc train ít ấy, bạn có sở thích nào đấy ngoài CP không? Vì thực ra mình nghĩ có một cái gì đấy ngoài CP cũng rất là tốt. Nó cũng train cho mình cách nhìn các thứ theo nhiều góc khác nhau. 
 
