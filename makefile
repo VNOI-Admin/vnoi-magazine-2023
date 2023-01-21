@@ -10,7 +10,10 @@ install-dependencies:
 	pip install marko pyyaml
 	
 clean:
-	rm -rf build/
+	rm src/*.log
+	rm src/*.out
+	rm src/*.toc
+	rm src/*.aux
 
 $(BUILD_FOLDER):
 	mkdir -p $(BUILD_FOLDER)
