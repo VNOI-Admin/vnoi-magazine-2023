@@ -56,8 +56,6 @@ Node find(Node u, int d) {
 
 Đoạn code khá đơn giản vì ta cũng khó làm được gì nhiều với hai con trỏ lên trên. Ta sẽ đi lên trên bằng cách "nhảy" liên tục lên đỉnh `jump` mà kiểm tra rằng ta không nhảy quá đỉnh mà ta đang cần tìm.
 
-[pic]
-
 ## Định nghĩa con trỏ `jump`
 
 Rõ ràng, với đoạn code như trên, ta đến được đỉnh cần tìm hoàn toàn phụ thuộc vào việc các biến `jump` đưa ta đến đỉnh cần tìm nhanh như nào. Hàm thêm một lá vào cây trông như sau:
