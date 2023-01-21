@@ -33,7 +33,7 @@ Xét đa thức $R = P - Q$, ta có:
 
 Theo [Định lí cơ bản của đại số](https://vi.wikipedia.org/wiki/Định_lý_cơ_bản_của_đại_số), $R$ phải là đa thức không, vậy $P = Q$ (vô lí với giả sử phản chứng).
 
-![Trích SGK toán lớp 7 tập 2](./assets/peanut/img1.png)
+![Trích SGK toán lớp 7 tập 2](../assets/peanut/img1.png)
 
 Vậy tồn tại tối đa một đa thức $P$ thỏa mãn điều kiện của đề bài.
 
@@ -135,7 +135,7 @@ Nhận thấy $P(0)$ cũng bằng $p_0 + p_1 \times 0^1 + \dots + p_{k-1} \times
 
 Nếu ta chỉ sở hữu $k-1$ phần bí mật, với mỗi giá trị $y_k$ bất kì, ta có thể sinh ra được một đa thức $P$ thoả mãn. Do vậy, có vô vàn đa thức $P$ thoả mãn, với vô vàn các giá trị khác nhau cho $P(0)$. Điều này đồng nghĩa với việc nắm giữ $\le k-1$ phần không đưa ra bất kì thông tin gì về bí mật.
 
-![Có vô số đa thức bậc hai đi qua hai điểm cho trước như trên](./assets/peanut/img2.png)
+![Có vô số đa thức bậc hai đi qua hai điểm cho trước như trên](../assets/peanut/img2.png)
 
 Trên thực tế, các giá trị $S, S_i, p_i, x_i, y_i$ thường được tính theo modulo của một số nguyên tố đủ lớn $p$, với lí do sẽ được đề cập sau.
 
@@ -215,7 +215,7 @@ print(cipher.nonce)
   Đây là những thư viện mà `chall.py` sẽ sử dụng - có thể thấy ta import AES và sha256 là cách mã hóa và hash phổ biến. Ta cũng thấy có một biến `flag` được import từ module `secret`, ta đoán rằng đây chính là flag mà mình cần tìm.
   
   Bình thường CTF cũng có vài bài lợi dụng việc tìm seed được dùng cho random để mô phỏng lại việc mã hóa `flag`, tuy nhiên khi mình tra tài liệu thì nó bảo là `SystemRandom` không mô phỏng lại được luôn.
-![Tài liệu chính thức của Python về `SystemRandom`](./assets/peanut/img3)
+![Tài liệu chính thức của Python về `SystemRandom`](../assets/peanut/img3)
 
 - Dòng 9-22
 
@@ -297,7 +297,7 @@ print("lcm =", math.lcm(*shares_x))
 print("2^64 =", 2 ** 64)
 ```
 
-![Kết quả của đoạn code trên](./assets/peanut/img4.png)
+![Kết quả của đoạn code trên](../assets/peanut/img4.png)
     
 Vậy ta đã tìm được giá trị của $\text{poly}[0]$, làm thế nào để tìm nốt các hệ số còn lại của đa thức? Ta sẽ dùng một mẹo như sau:
 $$

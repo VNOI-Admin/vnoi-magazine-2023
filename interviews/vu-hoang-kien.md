@@ -61,7 +61,7 @@ Q: Okay thế lời khuyên cho các bạn là hãy học thật nhiều và h�
 
 A: Thực ra mình thi ICPC từ cấp 3 nhưng năm nào cũng bị hành nên là chưa bao giờ có giải ICPC khối THPT. Nên mình cũng chưa nghĩ đến.
 
-![Vũ Hoàng Kiên tại kỳ thi ICPC World Finals 2021, Dhaka (Bùi Hồng Đức, Vũ Hoàng Kiên, thầy Hồ Đắc Phương, Nguyễn Hải Bình)](./assets/interviews/vu-hoang-kien.jpg)
+![Vũ Hoàng Kiên tại kỳ thi ICPC World Finals 2021, Dhaka (Bùi Hồng Đức, Vũ Hoàng Kiên, thầy Hồ Đắc Phương, Nguyễn Hải Bình)](../assets/interviews/vu-hoang-kien.jpg)
 
 Q: Okay, sau khi nghe câu chuyện của bạn trong quá trình train ở cấp 3, mình thấy nó luôn luôn có một cái đích ở trước mắt nhưng mà luôn là đến giữa đường rồi bạn mới nhận ra mình thọt quá và bạn mới leo lên chứ cũng chưa bao giờ thấy bạn nhìn đến một cái goal xa hơn. Thực ra như thế thì nó chỉ phù hợp với một số bạn chứ không áp dụng được với nhiều người. Nước đến chân mới nhảy thì không phải ai cũng nhảy cao được như Kiên *\*cười\**. Các bạn có thể thấy là trong một khoảng thời gian rất là ngắn, chỉ cần cảm thấy cần học thì Kiên sẽ vô địch, chấm hết!
 

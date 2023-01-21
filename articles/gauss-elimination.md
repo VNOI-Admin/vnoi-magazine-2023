@@ -57,14 +57,14 @@ Sau khi khử xong ta sẽ bắt đầu tìm nghiệm:
     
 * Cho hệ phương trình sau:
 
-![](./assets/gauss-elimination/1-example-1.png)
+![](../assets/gauss-elimination/1-example-1.png)
 
 * Dùng phương trình $(1)$ để khử ẩn $x$:
     * Trừ phương trình $(2)$ đi $3$ lần phương trình $(1)$.
     * Cộng phương trình $(2)$ với $2$ lần phương trình $(1)$.
 $\Longrightarrow$ Hệ số của ẩn $x$ ở phương trình $(2)$ và $(3)$ sẽ trở thành $0$.
 
-![](./assets/gauss-elimination/2-example-2.png)
+![](../assets/gauss-elimination/2-example-2.png)
 
 * Dùng phương trình $(2)$ để khử ẩn $y$:
     * Trừ phương trình $(1)$ đi $5$ lần phương trình $(2)$.
@@ -72,7 +72,7 @@ $\Longrightarrow$ Hệ số của ẩn $x$ ở phương trình $(2)$ và $(3)$ s
 $\Longrightarrow$ Hệ số của ẩn $y$ ở phương trình $(1)$ và $(3)$ sẽ trở thành $0$.
 
 
-![](./assets/gauss-elimination/3-example-3.png)
+![](../assets/gauss-elimination/3-example-3.png)
 
 * Dùng phương trình $(3)$ để khử ẩn $z$:
     * Trừ phương trình $(1)$ đi $13$ lần phương trình $(3)$.
@@ -80,7 +80,7 @@ $\Longrightarrow$ Hệ số của ẩn $y$ ở phương trình $(1)$ và $(3)$ s
 $\Longrightarrow$ Hệ số của ẩn $z$ ở phương trình $(1)$ và $(3)$ sẽ trở thành $0$.
 
 
-![](./assets/gauss-elimination/4-example-4.png)
+![](../assets/gauss-elimination/4-example-4.png)
 
 * Cuối cùng, vì $t$ là ẩn tự do nên ta sẽ đặt $t = 0$.
 $\Longrightarrow$ Ta có một nghiệm sau:$$
@@ -210,7 +210,7 @@ Nếu ta bỏ qua các phương trình đã sử dụng thì một phương trì
 Vì thế, việc tìm nghiệm chỉ tốn $\mathcal{O}(nm)$ còn việc khử ẩn thì đã giảm được một nửa số lần phải cộng 2 phương trình.
 $\Longrightarrow$ Tốc độ chạy gần như nhanh gấp đôi.
 
-![](./assets/gauss-elimination/5-benchmark.png)
+![](../assets/gauss-elimination/5-benchmark.png)
 
 ## Giải các hệ có modulo
 Việc giải các hệ phương trình có modulo sẽ hơi khác ở phần khử ẩn vì các hệ số đều là số nguyên. Ta sẽ không chia để cho hệ số $a_{ei}$ về $1$ nữa mà nhân phương trình $r$ với $a_{ei}$ rồi trừ đi phương trình $e$ nhân $a_{ri}$. Từ đó hệ số $a_{ri}$ sẽ vẫn về $0$.

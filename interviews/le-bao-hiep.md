@@ -9,7 +9,7 @@ Q: Xin chào Hiệp, bạn có thể giới thiệu đôi chút về bản thân
 
 A: Mình là Lê Bảo Hiệp, sinh viên năm 3 của Chương trình Tiên Tiến ngành Khoa học máy tính, trường Đại học Khoa học Tự nhiên. Hiện tại mình cũng đang thất nghiệp *\*cười\**. Ở cấp 3 mình có Giải nhì Học sinh giỏi Quốc gia môn Tin học và vào vòng 2, cơ mà không được dự thi tiếp vòng Châu Á hay Quốc tế nào cả *\*cười\**. Sau đó lên Đại học thì mình được 2 lần vô địch ICPC Regional và cũng có cho mình Cúp Đồng khối Siêu cúp Olympic Sinh Viên.
 
-![Lê Bảo Hiệp và team Burned Tomatoes](./assets/interviews/le-bao-hiep-burned-tomato.jpg)
+![Lê Bảo Hiệp và team Burned Tomatoes](../assets/interviews/le-bao-hiep-burned-tomato.jpg)
 
 Q: Wow, các thành tích đều khá là khủng. Theo mình biết thì tới lớp 12 Hiệp mới bắt đầu tham gia đội tuyển và sau kỳ thi Học sinh giỏi Quốc gia, Hiệp cũng là người có thành tích cao nhất đội tuyển. Vậy Hiệp có thể chia sẻ cho các bạn kinh nghiệm học CP của mình và bí quyết để đạt những thành tích khủng như thế khi mới bắt đầu vào đội tuyển ở năm lớp 12?
 
@@ -107,7 +107,7 @@ Q: Hiệp xuất thân là học sinh chuyên Toán, vậy Hiệp cảm thấy l
 
 A: Cái đấy mình không nói được vì mình cũng không biết tư duy của các bạn không học chuyên Toán nó như nào *\*cười\**. Thật ra mình thấy chắc cũng có giúp ích đấy tại do lúc đấy mình không học về Tin từ trước mà lại lên trình và đạt giải Nhì Quốc gia nhanh như vậy.
 
-![Lê Bảo HIệp tại Văn Miếu - Quốc Tử Giám](./assets/interviews/le-bao-hiep-temple-of-literature.jpg)
+![Lê Bảo HIệp tại Văn Miếu - Quốc Tử Giám](../assets/interviews/le-bao-hiep-temple-of-literature.jpg)
 
 Q: Bản thân Hiệp là sinh viên năm 3 cũng sắp tốt nghiệp, vậy Hiệp có dự định học Cao học hay đi làm tại các công ty công nghệ không hay sẽ khởi nghiệp?
 

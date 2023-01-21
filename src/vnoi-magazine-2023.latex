@@ -9,9 +9,10 @@
 \usepackage[bottom]{footmisc}
 
 \renewcommand{\familydefault}{\sfdefault}
+\graphicspath{./}
 \begin{document}
     \begin{titlepage}
-        \setCoverImage{./assets/cover_x2.png}
+        \setCoverImage{../assets/cover_x2.png}
     \end{titlepage}
     
     \input{./introduction.latex}
@@ -47,6 +48,6 @@
     \input{./credit.latex}
     
     \newpage
-    \setCoverImage{./assets/backcover.png}
+    \setCoverImage{../assets/backcover.png}
     
 \end{document}

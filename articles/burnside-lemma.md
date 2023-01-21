@@ -17,14 +17,14 @@ Mình sẽ lấy một ví dụ khác nhẹ nhàng hơn:
 
 > Đếm số chuỗi hạt gồm $5$ hạt được tạo bởi các hạt màu đỏ, tím, vàng. Hay tổng quát hơn là đếm số chuỗi hạt gồm $n$ hạt được tạo bởi $k$ màu. 
 
-![](./assets/burnside-lemma/1-example1.png)
+![](../assets/burnside-lemma/1-example1.png)
 
 
 Do mỗi hạt có $k$ cách tô nên hiển nhiên $n$ hạt sẽ có $k^n$ cách tô. 
 
 Thực tế thì kết quả không đơn giản như vậy, chuỗi hạt của chúng ta có thể được xoay hoặc lật nên cách đếm ngây thơ sẽ không đúng.
 
-![](./assets/burnside-lemma/2-example2.png)
+![](../assets/burnside-lemma/2-example2.png)
 
 
 Vậy, chúng ta sẽ giải quyết những bài toán đếm này như thế nào?
@@ -45,17 +45,17 @@ Trước hết, ta cần hiểu rõ về các phép biến đổi đối xứng,
 
 Phép biến đổi đầu tiên, quan trọng nhất nhưng cũng kém thú vị nhất là phép biến đổi đơn vị: đơn giản là không làm gì cả:
 
-![](./assets/burnside-lemma/3-symmetry.png)
+![](../assets/burnside-lemma/3-symmetry.png)
 
 
 Phép biến đổi thứ hai là phép xoay:
 
-![](./assets/burnside-lemma/4-rotate.png)
+![](../assets/burnside-lemma/4-rotate.png)
 
 
 Và phép biến đổi cuối cùng là phép lật:
 
-![](./assets/burnside-lemma/5-flip.png)
+![](../assets/burnside-lemma/5-flip.png)
 
 
 Khi nói về nhóm, ta cũng phải quan tâm đến phép toán của nhóm, nhưng trong trường hợp này, kết quả của sự kết hợp (phép hợp) các phép xoay và lật với nhau, cũng ra các phép xoay và lật.
@@ -96,7 +96,7 @@ Nói một cách chính xác:
 
 Vậy thì hai cách tô màu ở trong cùng một quỹ đạo (có thể biến đổi từ một cái sang cái còn lại chỉ bằng xoay và lật) sẽ ứng với cùng một chuỗi hạt. Một quỹ đạo sẽ ứng với duy nhất một chuỗi hạt, và dễ thấy với mỗi chuỗi hạt có duy nhất một quỹ đạo ứng với nó. Vậy, để đếm số chuỗi hạt, ta sẽ đếm số quỹ đạo.
 
-![](./assets/burnside-lemma/6-orbit.png)
+![](../assets/burnside-lemma/6-orbit.png)
 
 
 Vậy chúng ta đếm số lượng quỹ đạo như thế nào?
@@ -119,24 +119,24 @@ Với bổ đề Burnside, chúng ta có thể giải quyết bài toán. Để 
 
 Đầu tiên, xét phần tử đơn vị, vì nó không làm gì nên nó sẽ cố định tất cả $k^5$ cách tô màu:
 
-![](./assets/burnside-lemma/7-application.png)
+![](../assets/burnside-lemma/7-application.png)
 
 
 Sau đó xét tới phép lật. Mỗi phép lật có trục đi qua các hạt như sau:
 
-![](./assets/burnside-lemma/8-flip-through-axis.png)
+![](../assets/burnside-lemma/8-flip-through-axis.png)
 
 
 Và bốn hạt còn lại được chia thành hai nhóm, đối xứng với nhau qua trục:
 
-![](./assets/burnside-lemma/9-flip-through-axis2.png)
+![](../assets/burnside-lemma/9-flip-through-axis2.png)
 
 
 Vậy để một cách tô màu được cố định bởi phép lật, hạt ở trên trục có thể tô bất cứ màu nào, và các hạt khác phải cùng màu với hạt đối xứng với nó. Do đó với mỗi trục ta cố định được $k^3$ phần tử. Vì có $5$ trục đi qua mỗi hạt, ta có tổng cộng $5k^3$.
 
 Cuối cùng, xét tới phép xoay. Đầu tiên là xoay 72 độ theo chiều kim đồng hồ (chuyển tất cả các hạt sang hạt bên cạnh theo chiều kim đồng hồ):
 
-![](./assets/burnside-lemma/10-rotate.png)
+![](../assets/burnside-lemma/10-rotate.png)
 
 
 Để cách tô được cố định bởi phép xoay này, hạt 1 phải giống hạt 2, hạt 2 phải giống hạt 3, 3 giống 4, 4 giống 5 và 5 giống 1. Do đó tất cả các hạt phải có cùng màu, nghĩa là có $n$ cách tô.
@@ -176,7 +176,7 @@ Sau đó, ta có thể phát biểu định lý như sau:
 
 ### Ứng dụng: Tô màu vòng cổ
 
-![](./assets/burnside-lemma/11-application.png)
+![](../assets/burnside-lemma/11-application.png)
 
 > Đếm số vòng cổ khác nhau từ $n$ hạt, mỗi hạt có thể được tô bằng một trong các màu $k$. Khi so sánh hai vòng cổ, chúng có thể được xoay, nhưng không được đảo ngược (tức là chỉ cho phép dịch chuyển vòng tròn).
 
@@ -245,7 +245,7 @@ int main() {
 ```
 
 ### Ứng dụng: Tô màu hình xuyến
-![](./assets/burnside-lemma/12-application.png)
+![](../assets/burnside-lemma/12-application.png)
 
 Thông thường, chúng ta không thể có được một công thức rõ ràng cho số lớp tương đương. Trong nhiều bài toán, số lượng hoán vị trong một nhóm có thể quá lớn để tính toán thủ công và không thể tính toán số chu trình trong chúng.
 

@@ -71,10 +71,10 @@ Câu trả lời là có! Và nó nằm ở chính cây DSU.
 ### Lời giải
 Chúng ta sẽ sort các cạnh theo trọng số tăng dần rồi sau đó xây dựng lên cây DSU (tương tự như thuật toán Kruskal). Nhìn vào hai đồ thị bên dưới chúng ta có thể đưa ra một nhận xét: cạnh có trọng số lớn nhất trên đường đi từ đỉnh $u$ đến $v$ chính là LCA của chúng trên cây DSU. 
 
-![Hình ảnh của đồ thị gốc](./assets/dsu-tree/img1.png)
+![Hình ảnh của đồ thị gốc](../assets/dsu-tree/img1.png)
 
 
-![Hình ảnh của cây DSU đã được xây dựng](./assets/dsu-tree/img2.png)
+![Hình ảnh của cây DSU đã được xây dựng](../assets/dsu-tree/img2.png)
 
 Mặt khác, từ [bài viết về RMQ và LCA](https://vnoi.info/wiki/translate/topcoder/Range-Minimum-Query-and-Lowest-Common-Ancestor), chúng ta đã biết rằng việc tính toán LCA trong $O(1)$ bằng cách sử dụng Euler Tour và cấu trúc dữ liệu chẳng hạn như Sparse Table là điều hoàn toàn có thể.
 

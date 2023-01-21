@@ -11,7 +11,7 @@ Lí thuyết trò chơi (game theory) là một công cụ được dùng để 
 Một trong những bài toán nổi tiếng nhất là [Song đề tù nhân (Prisoner's dilemma)](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma). A và B bị bắt vào tù, và mỗi người có hai lựa chọn - đầu thú hay không đầu thú - với những kết cục khác nhau. Nhìn thoáng qua thì trò chơi trông rất đơn giản, tuy nhiên ẩn trong đó là hai hướng suy nghĩ tuy đều hợp lí, song lại đối lập nhau.
 
 
-![Ví dụ của Song đề tù nhân](./assets/gaming/1-prisoners.png)
+![Ví dụ của Song đề tù nhân](../assets/gaming/1-prisoners.png)
 
 Trò chơi và lí thuyết trò chơi cũng rất phổ biến trong lập trình thi đấu vì sự đa dạng về độ khó và thể thức của nó. Tuy nhiên, [lí thuyết trò chơi](https://vnoi.info/wiki/algo/math/game-theory.md) chỉ đề cập đến những dạng *trò chơi tổ hợp cân bằng*, mà không bao phủ những dạng khác có thể xuất hiện.
 
@@ -40,14 +40,14 @@ Hai người lần lượt chơi với nhau, với A là người đi đầu ti�
   Vì hai ô đối xứng nhau không bao giờ kề cạnh nhau, và trạng thái của bảng luôn đối xứng qua tâm (nếu A tô màu được thì B cũng tô màu được), nên B luôn luôn đi được như vậy. Vậy A phải là người không tô được đầu tiên, tức là B là người thắng cuộc.
 
 
-![Minh họa chiến thuật của B](./assets/gaming/2-cf630R-1.png)
+![Minh họa chiến thuật của B](../assets/gaming/2-cf630R-1.png)
 
 - Khi $n$ lẻ, A sẽ thắng.
 
   Ở lượt đầu tiên, A sẽ tô màu ô $\left(\left\lceil \frac{n}{2} \right\rceil, \left\lceil \frac{n}{2} \right\rceil\right)$ - ô ở tâm của bảng. Sau đó, A chỉ việc đi đối xứng với B qua tâm. Tương tự như lập luận khi $n$ chẵn, ta có thể thấy A là người thắng cuộc.
 
 
-![Minh họa chiến thuật của A](./assets/gaming/3-cf630R-2.png)
+![Minh họa chiến thuật của A](../assets/gaming/3-cf630R-2.png)
 
 ## CF 197A Plate Game
 
@@ -66,7 +66,7 @@ Hai người lần lượt chơi với nhau, với A là người đi đầu ti�
 Cũng tương tự như bài trên, ta có thể đoán chiến thuật tối ưu của A là đặt một hình tròn vào tâm của tờ giấy, rồi đi đối xứng với B trong các nước đi còn lại.
 
 
-![Minh họa chiến thuật của A](./assets/gaming/4-cf197a.png)
+![Minh họa chiến thuật của A](../assets/gaming/4-cf197a.png)
 
 Tuy nhiên, đừng vội vàng mà nghĩ rằng A sẽ thắng trong mọi trường hợp! Nếu như $n < 2l$ hoặc $m < 2l$, thì ngay từ đầu A đã không thể cắt một hình tròn nguyên vẹn ra khỏi tờ giấy.
 
@@ -94,7 +94,7 @@ Do trong một lượt ta chỉ được tăng tọa độ $x$ hoặc tọa đ�
 Tuy nhiên, ta có thể thấy rằng trục $x$ và $y$ có vai trò như nhau. Do vậy, nếu như một người chơi tăng $x$ lên $k$ ở lượt của mình, thì người còn lại có thể tăng $y$ lên $k$ ở lượt tiếp theo. Nói cách khác, người chơi có thể giữ đồng xu ở trên một đường chéo nào đó.
 
 
-![Minh họa chiến thuật giữ trên đường chéo](./assets/gaming/5-cf1451D-1.png)
+![Minh họa chiến thuật giữ trên đường chéo](../assets/gaming/5-cf1451D-1.png)
 
 Phát triển ý tưởng này thêm sẽ đưa ta đến lời giải:
 
@@ -105,7 +105,7 @@ Gọi $X$ là giá trị cao nhất thỏa mãn $X$ chia hết cho $k$ và đi�
   B sẽ làm chiến thuật trên để "giữ" đồng xu ở trên đường chéo $y = x$. Khi B di chuyển đồng xu đến điểm $(X, X)$, thì A không còn nước đi hợp lệ nữa (do cả hai điểm $(X + k, X)$ và $(X, X + k)$ đều nằm ngoài hình tròn).
 
 
-![Minh họa chiến thuật của B](./assets/gaming/6-cf1451D-2.png)
+![Minh họa chiến thuật của B](../assets/gaming/6-cf1451D-2.png)
 
 - Nếu điểm $(X, X + k)$ nằm trong hình tròn bán kính $d$, thì A thắng.
 
@@ -114,7 +114,7 @@ Gọi $X$ là giá trị cao nhất thỏa mãn $X$ chia hết cho $k$ và đi�
   Tuy nhiên, theo định nghĩa của $X$, điểm $(X + k, X + k)$ nằm ngoài hình tròn. Ngoài ra, $(X^2+(X+2k)^2) - ((X+k)^2+(X+k)^2) = 2k^2 > 0$, nên điểm $(X, X + 2k)$ cũng nằm ngoài hình tròn tâm $(0, 0)$ bán kính $d$.
 
 
-![Minh họa chiến thuật của A](./assets/gaming/7-cf1451D-3.png)
+![Minh họa chiến thuật của A](../assets/gaming/7-cf1451D-3.png)
 
 ## CF 1375F Integer Game
 
@@ -142,7 +142,7 @@ Không mất tính tổng quát, giả sử $a<b<c$.
 
 Nhận thấy ở tình huống trên, $a$, $b$, $c$ tạo thành một *cấp số cộng*. Nói cách khác, $a$ và $c$ đối xứng nhau qua $b$: $c-b=b-a=x$.
 
-![Để ý điều kiện chồng c đã bị chọn ở lượt trước](./assets/gaming/8-1375F-1.png)
+![Để ý điều kiện chồng c đã bị chọn ở lượt trước](../assets/gaming/8-1375F-1.png)
 
 Vậy ở lượt trước đó, A sẽ đi như thế nào để "dồn" B vào trường hợp trên?
 
@@ -152,14 +152,14 @@ Giả sử ở lượt này Việt thêm vào chồng $a$ một lượng là $x$
 \iff &       &x&=2c-a-b
 \end{array}$$
 
-![](./assets/gaming/9-1375F-2.png)
+![](../assets/gaming/9-1375F-2.png)
 
 Để ý rằng ở phương trình trên, $a$ và $b$ **có vai trò tương tự nhau**. Nói cách khác, kể cả khi ở lượt này B thêm vào chồng $b$ một lượng là $x=2c-b-a$, thì giá trị mới của các chồng đá vẫn tạo thành một cấp số cộng.
 
 Thật vậy, số đá mới của ba chồng đá sẽ là $a<c<2c-a$, và $2c-a-c=c-a$.
 
 
-![](./assets/gaming/10-1375F-3.png)
+![](../assets/gaming/10-1375F-3.png)
     
 Như vậy, B chỉ còn lại một nước đi duy nhất là chọn chồng đá lớn nhất $c$. Tuy nhiên, nếu ta làm chiến thuật trên một lần nữa, thì theo luật B phải chọn một trong hai chồng còn lại.
 

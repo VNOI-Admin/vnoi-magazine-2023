@@ -61,7 +61,7 @@ Q: Vì sao bạn quyết định tham gia Kỳ thi VNOI Cup? Bạn cảm nhận 
 
 A: Nếu mà nói không vì giải thưởng thì em tự lừa dối bản thân quá *\*cười\**. Thật ra mấy contest trên VNOJ thì em vẫn tham gia thường xuyên. Em cứ đăng ký thi thôi nhưng tự nhiên cả đội tuyển IOI lúc đấy được mời thi Final VNOI cup ở Đà Nẵng, thế nên là kể cả em không đăng ký thi thì em vẫn được vào Đà Nẵng thi với mọi người *\*cười\**. Lý do thì chắc mỗi thế thôi, kỳ thi cũng giúp em luyện tập này, không trùng với IOI, lại có tiền giải thì em tham gia thôi. Phần nữa là em cũng muốn được gặp mặt mọi người vì mình có offline ở Đà Nẵng ý *\*lại cười\**.
 
-![Trần Xuân Bách tại kỳ thi VNOI Cup 2022](./assets/interviews/tran-xuan-bach.png)
+![Trần Xuân Bách tại kỳ thi VNOI Cup 2022](../assets/interviews/tran-xuan-bach.png)
 
 A: Phần thể hiện thì em tự thấy mình khá là tệ. Bài 1 em bug này, mấy bài kia em làm bình thường rồi cố đấm bài 5, ban đầu em tưởng ra được giải rồi những cuối cùng chỉ làm được một nửa thôi nên em bỏ đến cuối giờ. Sau đấy, em ngồi tập trung code bài Hình vì đấy là sở trường của em xong ra được code tối ưu. Làm xong bài đấy thì em ngồi code bài có dùng Lagrange, tầm bài thứ 6, rồi em dính bug đến cuối giờ luôn *\*cười\**. Bài đấy là bài Interactive, em bị bug đầu tiên bởi vì cái input của em bị sai tầm 2 phút cuối trước khi hết giờ, em sợ cho nên là vội xóa hết mấy cái debug đi để nộp. Về sau em xóa nhầm một cái dấu ‘?’ trong câu interact nên là bị sai, tại cái đấy nên em mất giải Nhất và tầm 10 triệu *\*cười\**
 

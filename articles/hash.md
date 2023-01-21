@@ -132,7 +132,7 @@ Cho một dãy $A$ có độ dài $N$ gồm các phần tử $1 \le A_i \le 10^6
 
 Định nghĩa của dãy "gần hoàn hảo" là có thể xóa đi đúng 1 số của dãy đó để tạo ra được dãy hoàn hảo như ví dụ dưới.
 
-![](./assets/hash/1-problem-1-illustration.png)
+![](../assets/hash/1-problem-1-illustration.png)
 
 #### Lời giải
 Sử dụng phương pháp Hash với phép cộng. Ta có tập $H = \{h(1), h(2),...,h(10^6)\}$, $f(l, r) = h(a_l) + h(a_{l + 1}) + ... + h(a_r)$.
@@ -267,7 +267,7 @@ Hệ thống giao thông được gọi là tốt khi với mọi cặp thành p
 
 #### Nhận xét
 Ta coi hệ thống đường bộ và tàu điện ngầm là 2 đồ thị riêng biệt. Coi mỗi thành phần liên thông là một tập hợp chứa các thành phố. Bài toán trở thành so sánh tập hợp $A$ và $B$, trong đó $A$ là tập hợp của các thành phần liên thông $C_i$ đường bộ, $B$ là tập hợp của các thành phần liên thông $D_i$ tàu điện ngầm.
-![](./assets/hash/2-problem-2-illustration.png)
+![](../assets/hash/2-problem-2-illustration.png)
 
 Trong hình ta có tập $A = \{\{1, 2, 3\}, \{5, 6, 7, 8\}\}$, $B = \{\{1, 2, 3\}, \{5, 6, 7, 8\}\}$. Như vậy có thể kết luận hệ thống này là tốt.
 
@@ -386,16 +386,16 @@ Các bài kiểm tra dưới đây đều được dịch bằng C++14 trên h�
 
 ### Tốc độ chèn
 Chèn các phần tử là các số nguyên 64-bit ngẫu nhiên.
-![](./assets/hash/3-benchmark-insert-speed.png)
+![](../assets/hash/3-benchmark-insert-speed.png)
 
 
 ### Tốc độ đọc
 Đọc các phần tử là các số nguyên 64-bit ngẫu nhiên.
-![](./assets/hash/4-benchmark-reading-speed.png)
+![](../assets/hash/4-benchmark-reading-speed.png)
 
 ### Bộ nhớ
 Bộ nhớ (Megabyte) khi chèn các phần tử là các số nguyên 64-bit ngẫu nhiên.
-![](./assets/hash/5-benchmark-memory.png)
+![](../assets/hash/5-benchmark-memory.png)
 
 ### Nhận xét
 - `std::map`:

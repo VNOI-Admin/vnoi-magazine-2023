@@ -9,7 +9,7 @@ Q: Chào Dũng, rất cảm ơn bạn đã nhận lời phỏng vấn cho tạp 
 
 A: Mình tên là Bùi Việt Dũng, năm nay đang 22 tuổi, là cựu học sinh trường THPT Kim Liên, Hà Nội. Mình tham gia ICPC 4 năm với tư cách là sinh viên của trường Đại học Wisconsin-Madison… tạm thời là thế nhé! *\*cười\**.
 
-![Bùi Việt Dũng tại trường THPT Kim Liên](./assets/interviews/bui-viet-dung-thpt-kim-lien.jpg)
+![Bùi Việt Dũng tại trường THPT Kim Liên](../assets/interviews/bui-viet-dung-thpt-kim-lien.jpg)
 
 Q: Sở thích của bạn là gì nhỉ? Bạn thường làm gì lúc rảnh?
 
@@ -75,7 +75,7 @@ Q: Năm lớp 10 thì mình đọc đề rồi nghĩ ra được thuật giải 
 
 A: Dù sao thì trong Tin học nhiều khi bạn nghĩ ra lời giải nhưng khi mình code ra thì chưa chắc nó đã ăn điểm giống như mình muốn. Ví dụ như World Finals vừa rồi cũng có một bài hình, mình nghĩ ra được lời giải đúng y hệt trong video của giám khảo, cũng code ra y hệt vậy nhưng nộp lên chỉ được Wrong Answer hoặc code chạy quá thời gian thôi. Nói chung việc nghĩ ra được thuật giải là một chuyện, và chuyển hóa nó thành code và ăn được điểm lại là câu chuyện khác.
 
-![Bùi Việt Dũng tại ICPC World Finals 2021, Dhaka](./assets/interviews/bui-viet-dung-wf.png)
+![Bùi Việt Dũng tại ICPC World Finals 2021, Dhaka](../assets/interviews/bui-viet-dung-wf.png)
 
 Q: Mình đồng ý điều này *\*cười\**. Okay thì đó là cấp 3 của bạn, sau đó thì hình như bạn không học đại học ở Việt Nam năm nào đâu nhỉ?
 
