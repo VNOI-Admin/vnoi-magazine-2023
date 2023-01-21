@@ -50,7 +50,11 @@ int main(){
 
 Ở đây `time(0)` chính là seed, là số giây tính từ 01/01/1970. Nên nếu chạy code trong cùng một giây thì sẽ được kết quả giống nhau. Trong các kì thi như HSGQG thì seed này là đủ tốt. 
 
-Để tránh bị hack khi tham gia contest trên các nền tảng như Codeforces (bị các thí sinh khác biết được seed, tính trước được các giá trị sinh ra và sinh test chặn), có thể sử dụng seed là `chrono::steady_clock::now().time_since_epoch().count()`, cũng là thời gian nhưng có độ chính xác cao hơn, ít nhất đến mili giây, rất khó để có thể xác định được seed.
+Để tránh bị hack khi tham gia contest trên các nền tảng như Codeforces (bị các thí sinh khác biết được seed, tính trước được các giá trị sinh ra và sinh test chặn), có thể sử dụng seed là
+```cpp
+const auto seed = chrono::steady_clock::now().time_since_epoch().count();
+```
+, cũng là thời gian nhưng có độ chính xác cao hơn, ít nhất đến mili giây, rất khó để có thể xác định được seed.
 
 ## Các phương pháp Hash
 
@@ -362,9 +366,9 @@ Trong rất nhiều trường hợp ta cần lưu trữ một lượng lớn cá
 
 Thông thường, ta sẽ sử dụng các CTDL có sẵn để tiết kiệm thời gian. Để giúp bạn đọc lựa chọn CTDL phù hợp nhất cho lời giải của mình, dưới đây sẽ so sánh tốc độ của các CTDL sau trong các trường hợp khác nhau:
 
-* `std::map`: Độ phức tạp các thao tác là $\mathcal{O(log \,n)}$.
-* `std::unordered_map`: Độ phức tạp trung bình $\mathcal{O(1)}$, trường hợp tệ nhất $\mathcal{O(n)}$.
-* `__gnu_pbds::gp_hash_table`: Độ phức tạp trung bình $\mathcal{O(1)}$, trường hợp tệ nhất $\mathcal{O(n)}$. 
+* `std::map`: Độ phức tạp các thao tác là $\mathcal{O}(\log \,n)$.
+* `std::unordered_map`: Độ phức tạp trung bình $\mathcal{O(1)}$, trường hợp tệ nhất $\mathcal{O}(n)$.
+* `__gnu_pbds::gp_hash_table`: Độ phức tạp trung bình $\mathcal{O}(1)$, trường hợp tệ nhất $\mathcal{O}(n)$. 
 
 `__gnu_pbds::gp_hash_table` là một CTDL tương đối "lạ", để sử dụng được CTDL này:
 
