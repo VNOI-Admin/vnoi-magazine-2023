@@ -175,7 +175,7 @@ Q: … năm 2021 chắc chắn là qualify cho WF.
 
 A: Đúng! Năm 2021, đúng cái kỳ thi quan trọng là kỳ thi Regional, mình lại khá ngạc nhiên mình làm bay như thế, vì tất cả các contest vòng miền và contest vòng National mình đều thua đội của HUST. Năm đấy ban đầu dự tính là hình như Việt Nam có 3 suất, mà mấy vòng liền mình gần như chỉ ăn là suất thứ tư. Lúc đấy, mấy cái ICPC này mang tính ganh đua, và việc qualify vào WF nó rất là ganh đua nhá, nên kể cả mình mạnh đến đâu thì vẫn sẽ có người mạnh hơn. Hơn nữa, nói nhỏ thôi chứ nếu như một mình mình giải hết mà đánh với 3 người khác đều có khả năng giải bài, thì nó là một cái… (bật cười) mình cảm giác là một cái gì đấy rất là không tưởng.
 
-![Nguyễn Xuân Tùng tại kỳ thi Thách Thức 2022](./assets/interviews/nguyen-xuan-tung.jpg)
+![Nguyễn Xuân Tùng tại kỳ thi Thách Thức 2022](../assets/interviews/nguyen-xuan-tung.jpg)
 
 Q: Đúng rồi, mình cũng phải công nhận là năm đấy Mèo qualify quá ngoạn mục. Nói chung, mọi người không thể biết được, trong phòng ban giám khảo, mọi người đã cảm thấy nó kinh khủng như nào khi mà team Mèo có thể đứng rank 3 mà rank 3 toàn thời gian thi luôn. Không phải kiểu phút cuối ăn may đâu. Năm 2021 thì thực ra Mèo train Codeforces ít hơn tất cả các năm trước nhá, thì chiến lược năm này là gì? Có phải cày Codeforces không, hay là Mèo có tự cày không?
 
