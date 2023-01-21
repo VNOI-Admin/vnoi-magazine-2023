@@ -5,6 +5,7 @@ import yaml
 import sys
 import os
 from collections import namedtuple
+from format_cpp import format_cpp
 
 sys.stdin.reconfigure(encoding="utf-8-sig")
 
@@ -148,7 +149,10 @@ class MarkoLatexRenderer(LatexRenderer):
             language = 'python'
         if language not in ['c', 'cpp', 'python', 'text']:
             language = 'text'
-        return self._environment(f"{language}code", element.children[0].children)
+        content = element.children[0].children
+        if language == 'cpp':
+            content = format_cpp(content)
+        return self._environment(f"{language}code", content)
     
     def render_block_math(self, element):
         # print('block math', element.content)
