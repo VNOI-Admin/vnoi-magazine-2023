@@ -39,7 +39,7 @@ A: Hồi đấy, mình cũng nghĩ nó là một thể loại cơ duyên khá đ
 
 Q: Mình… không biết!
 
-A: Là bạn Lê Duy Bách, cũng là một bạn bây giờ là… Mình ừm….Mình chơi với Lê Duy Bách từ hồi mình lớp 9 rồi, nhưng mà thực ra câu chuyện đấy không quan trọng. Lê Duy Bách hơn mình 1 tuổi. Năm ấy mình lớp 12, lúc đấy Lê Duy Bách cũng mới bước chân vào CP thôi. Ông đấy thách đấu mình một bài trên SPOJ. Bài đấy thật ra input đơn giản lắm, chỉ bao gồm 3 số nguyên và output 1 số nguyên thôi, phần còn lại toàn là Toán học, không phải kiến thức giải thuật gì cao siêu. Nhưng kết quả bài đấy mình đã giải được trước ông Bách, nên lúc đấy mình mới bắt đầu nhắm đến CNTT như một phương án backup. Một phần tại vì thời gian lúc đấy mình ôn thi đại học, vào Y điểm năm nào cũng cao nhất mà, rồi mình cũng xác định là chắc cũng không cạnh tranh lại các bạn khác. 
+A: Là bạn Lê Duy Bách, cũng là một bạn bây giờ là… Mình ừm….Mình chơi với Lê Duy Bách từ hồi mình lớp 9 rồi, nhưng mà thực ra câu chuyện đấy không quan trọng. Lê Duy Bách hơn mình 1 tuổi. Năm ấy mình lớp 12, lúc đấy Lê Duy Bách cũng mới bước chân vào CP thôi. Ông đấy thách đấu mình một bài trên SPOJ. Bài đấy thật ra input đơn giản lắm, chỉ bao gồm 3 số nguyên và output 1 số nguyên thôi, phần còn lại toàn là Toán học, không phải kiến thức giải thuật gì cao siêu. Nhưng kết quả bài đấy mình đã giải được trước ông Bách, nên lúc đấy mình mới bắt đầu nhắm đến CNTT như một phương án backup. Một phần tại vì thời gian lúc đấy mình ôn thi đại học, vào Y điểm năm nào cũng cao nhất mà, rồi mình cũng xác định là chắc cũng không cạnh tranh lại các bạn khác.
 
 A: Tại sao mình lại vào trường Đại học Quốc tế? Cũng đúng năm đấy là trường Đại học Quốc gia mới bắt đầu có kỳ thi Đánh giá năng lực. Riêng năm của mình thì lại mới chỉ tổ chức cho trường Đại học Quốc tế thôi, mấy năm còn lại mới bắt đầu tổ chức cho toàn bộ Đại học Quốc gia. Năm ấy rốt cuộc thế nào mình thi Đánh giá năng lực ăn một cái tốp khá cao, và được học bổng.
 
@@ -55,7 +55,7 @@ Q: Bị trượt nhiều không?
 
 A: Năm ấy, năm 2017, là năm đầu tiên mà chuyển từ thể thức thi trắc nghiệm 90 phút / 50 câu xuống còn 50 phút / 40 câu mỗi môn. Điểm cao khủng khiếp và Mèo không những trượt Y, mà tra điểm mới thấy Mèo đã trượt Y Đa khoa của tất cả các trường Y cả nước. Các nghề khác thì có thể đậu, nhưng mà riêng cái nghề Y thì toàn trượt.
 
-Q: Nói chung điều đấy đã đưa Mèo vào được Đại học Quốc tế, là một trường đại học mà thực tế là không có truyền thống gì về lập trình thi đấu. Mèo bắt đầu với lập trình thi đấu như thế nào, và tại sao tự nhiên lại trở nên mạnh như ngày hôm nay vậy? 
+Q: Nói chung điều đấy đã đưa Mèo vào được Đại học Quốc tế, là một trường đại học mà thực tế là không có truyền thống gì về lập trình thi đấu. Mèo bắt đầu với lập trình thi đấu như thế nào, và tại sao tự nhiên lại trở nên mạnh như ngày hôm nay vậy?
 
 A: Câu đấy Mèo chả biết trả lời như thế nào.
 
@@ -113,11 +113,11 @@ A: Rank 2 thôi, chuyên Tin năm nào cũng nhiều hơn 1 giải nhất.
 
 Q: Thế là rank 2 khối chuyên Tin, đứng trên một huyền thoại khác đó là Đỗ Đình Đắc và đứng dưới một siêu huyền thoại khác. Trở về năm 2019, Mèo thi rất ít luôn, chiến lược gì đã thay đổi? Đầu năm thì Mèo rating khoảng 2100, và cuối năm thì Mèo rating là đỏ Codeforces. Đúng rồi, đỏ Codeforces 2423, lần đầu tiên Mèo lên đỏ Codeforces là tháng 12 năm 2019. Nhưng mà Mèo làm ít contest hơn hẳn thì chiến lược đã thay đổi như nào?
 
-A: Năm đấy vẫn còn những cuộc thi dài Codechef Long, mình có một cái cộng đồng chuyên đi làm Codechef Long. Thật ra mình không nhớ lắm, năm 2019 là khoảng thời gian mà mình bắt đầu làm Codechef Long nhiều hơn và tập các bài khó nhiều hơn. 
+A: Năm đấy vẫn còn những cuộc thi dài Codechef Long, mình có một cái cộng đồng chuyên đi làm Codechef Long. Thật ra mình không nhớ lắm, năm 2019 là khoảng thời gian mà mình bắt đầu làm Codechef Long nhiều hơn và tập các bài khó nhiều hơn.
 
-A: Với lại thật ra kiểu training của mình là xuất thân từ thi ICPC chứ không có thi VOI, nên lúc đầu lên rating nhanh một phần cũng vì thi ICPC bạn có thể chép thuật toán. Ví dụ như kiểu dùng thuật toán như một cái hộp đen ấy, mà thậm chí có một số bài toán còn không cần hiểu thuật toán đấy. Đương nhiên là hiểu thì vẫn giải được nhiều bài hơn, nhưng mà thực tế là bạn cũng có thể tiến được một khoảng cách nhất định nếu như bạn biết thuật toán làm gì thôi. 
+A: Với lại thật ra kiểu training của mình là xuất thân từ thi ICPC chứ không có thi VOI, nên lúc đầu lên rating nhanh một phần cũng vì thi ICPC bạn có thể chép thuật toán. Ví dụ như kiểu dùng thuật toán như một cái hộp đen ấy, mà thậm chí có một số bài toán còn không cần hiểu thuật toán đấy. Đương nhiên là hiểu thì vẫn giải được nhiều bài hơn, nhưng mà thực tế là bạn cũng có thể tiến được một khoảng cách nhất định nếu như bạn biết thuật toán làm gì thôi.
 
-A: Mình nghĩ giai đoạn này là giai đoạn mà mình chậm lại và bắt đầu học kỹ hơn. Hoặc cũng có thể đơn giản là lúc đấy mình chỉ muốn nghỉ ngơi thôi và tương tự như vậy. Hoặc là mình đổi chiến lượng training sang practice thay vì là đánh contest chẳng hạn? Ví dụ bạn có thể thấy là giai đoạn cuối năm 2019 mình đánh contest nhiều thế nào. Và đặc biệt như bạn nói là cuối năm 2018 và cuối năm 2019 Codeforces mình lên một màu mới, nhưng thực tế toàn là lên sau đợt Olympic Tin học Sinh viên.
+A: Mình nghĩ giai đoạn này là giai đoạn mà mình chậm lại và bắt đầu học kỹ hơn. Hoặc cũng có thể đơn giản là lúc đấy mình chỉ muốn nghỉ ngơi thôi và tương tự như vậy. Hoặc là mình đổi chiến lượng training sang luyện tập thay vì là đánh contest chẳng hạn? Ví dụ bạn có thể thấy là giai đoạn cuối năm 2019 mình đánh contest nhiều thế nào. Và đặc biệt như bạn nói là cuối năm 2018 và cuối năm 2019 Codeforces mình lên một màu mới, nhưng thực tế toàn là lên sau đợt Olympic Tin học Sinh viên.
 
 Q: Àaaa, thú vị. Tức là sau khi đạt giải Olympic Sinh viên thì Mèo tự thấy là sức mạnh của mình tăng lên và vào thi Codeforces tăng lên thật đúng không?
 
@@ -133,7 +133,7 @@ A: Năm đấy là năm đầu tiên mình thi Siêu Cúp, và kết quả là m
 
 Q: Ừm tại vì... thực ra thì Siêu Cúp rất khó có giải. Nó chỉ có 6 giải thôi, không có đến mấy chục giải như bảng Chuyên Tin với cả Không chuyên. Thế thì còn ICPC?
 
-A: ICPC năm đấy thì mình vẫn trên tinh thần là để gặp mọi người nhưng thực ra mình làm khá tốt so với mong đợi. Năm ấy chính xác là mình được hạng 18. Đấy là mình đã miss một bài dễ nhưng mà đã giải được 2 bài khó. Mình mà giải thêm được bài dễ đấy thì mình nghĩ mình cũng có thể tự tin nói rằng mình nằm trong tốp đầu. 
+A: ICPC năm đấy thì mình vẫn trên tinh thần là để gặp mọi người nhưng thực ra mình làm khá tốt so với mong đợi. Năm ấy chính xác là mình được hạng 18. Đấy là mình đã miss một bài dễ nhưng mà đã giải được 2 bài khó. Mình mà giải thêm được bài dễ đấy thì mình nghĩ mình cũng có thể tự tin nói rằng mình nằm trong tốp đầu.
 
 Q: Không rank 18 thực ra là khá tốt ấy chứ. Khi xem bảng Official thì team Mèo sẽ có huy chương đúng không?
 
@@ -233,11 +233,11 @@ Q: Mình vẫn giỏi đúng không?
 
 A: Thôi thôi, kinh nghiệm tiếng Anh thì em chịu chết.
 
-Q: Kinh nghiệm Speaking là bạn phải giỏi sẵn, không có học gì lên 8.5 đâu. 
+Q: Kinh nghiệm Speaking là bạn phải giỏi sẵn, không có học gì lên 8.5 đâu.
 
-A: Về việc học Tiếng Anh, lời khuyên mình không có nhưng mà lời khuyên về việc thi IELTS thì… Mình nghĩ thi IELTS ngoài việc mục đích đo trình độ của mình thì cũng là để show off. 
+A: Về việc học Tiếng Anh, lời khuyên mình không có nhưng mà lời khuyên về việc thi IELTS thì… Mình nghĩ thi IELTS ngoài việc mục đích đo trình độ của mình thì cũng là để show off.
 
-Thi IELTS mình phải show off được cái khả năng của mình. Mình biết bao nhiêu ngữ pháp lôi hết ra, bao nhiêu từ vựng lôi hết ra. Nói chung là mình hãy cứ trực tiếp show off cái khả năng của mình, khi đấy điểm có thể sẽ cao lên. Cái việc show off mà điểm cao lên, mình cũng không nghĩ là một điều xấu đâu nhé! Vì khi mình làm như thế, ban giám khảo mới biết được là mình mạnh thế nào. Còn nếu như mình mạnh mà người ta không biết thì người ta khó chấm điểm lắm. Bởi vì IELTS này nó là một cuộc chơi, không chỉ riêng mình mà của mình và ban giám khảo nữa, trừ 2 môn mà có sẵn đáp án thì không nói làm gì 
+Thi IELTS mình phải show off được cái khả năng của mình. Mình biết bao nhiêu ngữ pháp lôi hết ra, bao nhiêu từ vựng lôi hết ra. Nói chung là mình hãy cứ trực tiếp show off cái khả năng của mình, khi đấy điểm có thể sẽ cao lên. Cái việc show off mà điểm cao lên, mình cũng không nghĩ là một điều xấu đâu nhé! Vì khi mình làm như thế, ban giám khảo mới biết được là mình mạnh thế nào. Còn nếu như mình mạnh mà người ta không biết thì người ta khó chấm điểm lắm. Bởi vì IELTS này nó là một cuộc chơi, không chỉ riêng mình mà của mình và ban giám khảo nữa, trừ 2 môn mà có sẵn đáp án thì không nói làm gì
 
 Q: OK, một kinh nghiệm rất là hay ho, các bạn nhớ show off khi đi thi IELTS để được 8.5 Speaking như Mèo - một thành tích mà mình tin là rất nhiều giáo viên tiếng Anh cũng mơ ước luôn chứ không chỉ là các bạn bình thường. OK! Để kết thúc cuộc phỏng vấn giống như tất cả các khách mời khác. Trong tương lai, sau khi bị đuổi hay tốt nghiệp, Mèo có dự định gì trong 5 năm, 10 năm?
 

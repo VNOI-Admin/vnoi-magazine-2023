@@ -21,19 +21,19 @@ A: Arthur, một show của thiếu nhi. Đặc biệt cái show này có hai l�
 
 Q: Thú vị, thú vị đấy! Bạn đang ở Chicago đúng không nhỉ? Bạn thích điều gì ở Chicago nhất?
 
-A: Một điều mà mình yêu thích ở Chicago là mọi người đều đặt hàng online, và hàng cũng đến rất nhanh. Ở Chicago thì có ngay một kho hàng ở đây, Chicago cũng là một trong những trung tâm thương mại lớn của thế giới. Nếu các bạn biết về thị trường, về quyền mua, quyền bán ấy, như CMI các thứ thì Chicago có đủ các kho hàng trên đời. Nói chung là mua gì cũng đến rất nhanh, nhiều khi sáng mình đặt là chiều đã có rồi! 
+A: Một điều mà mình yêu thích ở Chicago là mọi người đều đặt hàng online, và hàng cũng đến rất nhanh. Ở Chicago thì có ngay một kho hàng ở đây, Chicago cũng là một trong những trung tâm thương mại lớn của thế giới. Nếu các bạn biết về thị trường, về quyền mua, quyền bán ấy, như CMI các thứ thì Chicago có đủ các kho hàng trên đời. Nói chung là mua gì cũng đến rất nhanh, nhiều khi sáng mình đặt là chiều đã có rồi!
 
-Q: Hỏi ngoài lề tí, bạn thích mua hàng online hay bạn thích đến tận nơi để mua? Vừa rồi Black Friday bạn có mua nhiều hàng không? 
+Q: Hỏi ngoài lề tí, bạn thích mua hàng online hay bạn thích đến tận nơi để mua? Vừa rồi Black Friday bạn có mua nhiều hàng không?
 
-A: Black Friday thì mình toàn mua hàng online vì mình không thích chen lấn xô đẩy lắm. Một trong số thứ mình mua là chiếc laptop mình đang xài đây, chất lượng hình ảnh nó cũng khá cao, ít nhất là cao hơn hồi mình làm bvd live trên VNOI. 
+A: Black Friday thì mình toàn mua hàng online vì mình không thích chen lấn xô đẩy lắm. Một trong số thứ mình mua là chiếc laptop mình đang xài đây, chất lượng hình ảnh nó cũng khá cao, ít nhất là cao hơn hồi mình làm bvd live trên VNOI.
 
 Q: Okay, thế bạn mua máy gì nhỉ? Thinkpad? Macbook?
 
 A: Mình chơi hẳn một cái Alienware luôn, gaming PC nhé.
 
-Q: Uii. Alienware là đỉnh của việc chơi game rồi! 
+Q: Uii. Alienware là đỉnh của việc chơi game rồi!
 
-A: Đã thế máy này là mình còn được giảm tận 60%. 
+A: Đã thế máy này là mình còn được giảm tận 60%.
 
 Q: Thế bạn có chơi game không?
 
@@ -111,7 +111,7 @@ A: Mình tiếc là hôm đấy có bài C là bài hình học, mà mình lại
 
 Q: Sau đó là WF năm đó diễn ra ở đâu nhỉ?
 
-A: Ở Nga, lúc đó mình cũng trên tinh thần làm lại bằng WF rồi nhưng lại dính COVID mới bùng phát nên là WF (bảng Invitational) lại bị delay đến năm 2021. Mình nhớ là mình qualify cho kỳ WF tiếp theo thì kỳ WF trước mới diễn ra 
+A: Ở Nga, lúc đó mình cũng trên tinh thần làm lại bằng WF rồi nhưng lại dính COVID mới bùng phát nên là WF (bảng Invitational) lại bị delay đến năm 2021. Mình nhớ là mình qualify cho kỳ WF tiếp theo thì kỳ WF trước mới diễn ra
 
 A: COVID diễn ra khiến timeline của ICPC nó đảo lộn hết tất cả. Đã có những lúc mà mình phải train ở 2 team khác nhau cùng lúc, một đội để qualify năm sau và một đội cho năm ngoái.
 
@@ -133,7 +133,7 @@ Q: Thế nhưng mà đáng tiếc là vẫn có sự cố nên bạn phải thi 
 
 A: Trong tiếng Anh có từ bittersweet, kiểu vừa vui vừa buồn. Vui vì lúc đấy team mình được quan tâm hơn, được 2 bạn volunteer xách đồ giúp mình, được các đội đến từ các châu lục cổ vũ rất nhiều, trong đó có các bạn ở Việt Nam.
 
-A: Team mình khi train thì lúc nào cũng nhắm vào top 40, điều đó đối với bọn mình rất giá trị vì rating của mỗi người nhìn vào thì chắc không thể nào lên được tầm đó của ICPC WF rồi. Nhưng khi kết hợp với nhau thì sức mạnh của bọn mình thì được nhân lên rất nhiều, đến tận 3 lần, thường các team khác thì chỉ khoảng 1,5 lần thôi, chắc là vì skillset của bọn mình khá là khác nhau nên khi kết hợp lại thì rất có lợi. Cũng vui nữa là ngay từ đầu bọn mình không quen biết gì nhau cả, do trường chọn team, nhưng sau này lại rất thân với nhau.
+A: Team mình khi train thì lúc nào cũng nhắm vào top 40, điều đó đối với bọn mình rất giá trị vì rating của mỗi người nhìn vào thì chắc không thể nào lên được tầm đó của ICPC WF rồi. Nhưng khi kết hợp với nhau thì sức mạnh của bọn mình thì được nhân lên rất nhiều, đến tận 3 lần, thường các team khác thì chỉ khoảng 1,5 lần thôi, chắc là vì bộ kĩ năng của bọn mình khá là khác nhau nên khi kết hợp lại thì rất có lợi. Cũng vui nữa là ngay từ đầu bọn mình không quen biết gì nhau cả, do trường chọn team, nhưng sau này lại rất thân với nhau.
 
 Q: Sau WF năm nay rồi thì bạn tốt nghiệp chưa nhỉ?
 
@@ -147,7 +147,7 @@ Q: Bạn đang làm trong lĩnh vực nào nhỉ?
 
 A: Mình đang làm một công ty trading, về tài chính. Trong công ty thì mình cũng chỉ là người tính toán những cái công thức rất là phức tạp bằng máy tính thôi. Nhiều cái ban đầu mình thấy rất là đơn giản nhưng khi mà đi vào làm việc thì mới thấy là rất phức tạp. Kiểu nhiều khi có công thức đấy cứ thế mà tính thôi, sau khi mà làm việc thì mình phải chú ý đến độ phức tạp nữa vì cái gì cũng phải tối ưu. Trong trading thì họ đòi hỏi tốc độ xử lý rất nhanh, kiểu nhiều khi O(n) không đủ thì mình phải tìm cách cho nó xuống O(log n) rồi phải cập nhật, mỗi lần cập nhật một cái thông số nào đó thì phải cập nhật luôn kết quả… Nói chung mình thấy kỹ năng trong CP rất là có ích trong công việc của mình.
 
-A: Ngoài ra mình cũng làm interview problemset, tức là mình nghĩ ra bài dành cho interview. Nói chung trong team interview thì sẽ có nhiều CPer nên các bạn làm CP thì cũng có thể quen dạng đề các thứ. 
+A: Ngoài ra mình cũng làm interview problemset, tức là mình nghĩ ra bài dành cho interview. Nói chung trong team interview thì sẽ có nhiều CPer nên các bạn làm CP thì cũng có thể quen dạng đề các thứ.
 
 Q: Mình muốn bổ sung thêm phần này thì trong những năm gần đây thì những công ty trading tuyển rất mạnh vào cộng đồng CPer. Vừa rồi ICPC Việt Nam có nhà tài trợ vàng là Optiver, bây giờ các công ty trading cũng tài trợ ICPC rất là nhiều.
 
@@ -155,7 +155,7 @@ A: Đúng rồi, vừa rồi cũng có một công ty trading là Jane Street c�
 
 Q: Vâng, đấy là phần về tương lai. Giờ thì cũng đến phần cuối của phỏng vấn rồi nên như thường lệ mình cũng muốn hỏi vài câu mang tính chia sẻ với các bạn đọc. Dũng là một người đóng góp rất nhiều cho cộng đồng VNOI, không phải ngẫu nhiên mà team VNOI trong lần làm tạp chí này mời Dũng làm người phỏng vấn đầu tiên. Mình nghĩ là bạn là một trong những người có ảnh hưởng rất lớn lên cộng đồng. Đặc biệt trong năm vừa rồi thì mình nhớ là có cái series bvd live rất là được hưởng ứng, thì động lực nào đã khiến bạn làm cái series bvd live chất lượng như vậy?
 
-A: Thực ra động lực cũng chỉ là mình đã nhận được từ VNOI rất nhiều, kiểu mình thấy là dù không phải là nơi giúp mình phát triển nhiều nhất nhưng mà VNOI có nhiều cái đầu tiên của mình, giúp mình tìm được định hướng để phát triển. Nếu như không có VNOI thì mình chắc là sẽ không theo CP. Mình biết Codeforces là qua VNOI, mình biết các site CP khác cũng là qua VNOI. Mình thấy là mình nên có trách nhiệm cho cộng đồng, cống hiến lại cho cộng đồng. Có thể là một bạn nào đấy xem bvd live mà cũng mới học CP thì bạn đó có thể hưởng lợi từ cái series đó và biết đâu bạn lại thành ICPC World Finalist thì sao? 
+A: Thực ra động lực cũng chỉ là mình đã nhận được từ VNOI rất nhiều, kiểu mình thấy là dù không phải là nơi giúp mình phát triển nhiều nhất nhưng mà VNOI có nhiều cái đầu tiên của mình, giúp mình tìm được định hướng để phát triển. Nếu như không có VNOI thì mình chắc là sẽ không theo CP. Mình biết Codeforces là qua VNOI, mình biết các site CP khác cũng là qua VNOI. Mình thấy là mình nên có trách nhiệm cho cộng đồng, cống hiến lại cho cộng đồng. Có thể là một bạn nào đấy xem bvd live mà cũng mới học CP thì bạn đó có thể hưởng lợi từ cái series đó và biết đâu bạn lại thành ICPC World Finalist thì sao?
 
 Q: Very inspiring! Rất là đáng quý. Hỏi thêm một tí là bạn có chuẩn bị cái đấy có lâu không?
 
@@ -171,5 +171,5 @@ Q: Okay , chắc là câu hỏi cũng chỉ có thế thôi. Các câu chuyện 
 
 A: Có một điều mình nghĩ mình học được qua lập trình đó là tham gia các kì thi Tin học. Nó khác với các kì thi như thi Đại học hay tuyển vào cấp 3, đó là những kì thi mà mình được phép thất bại. Giống như ICPC WF, mình chọn chiến thuật khá là mạo hiểm vì mình biết là mình được phép thất bại. Mình nghĩ các bạn không nên đặt nặng quá, mình không thành công được thì mình thất bại thôi. Cái quan trọng là mình biết nhìn vào những thất bại đó để làm động lực phấn đấu. Mình học được cách biết cười vào những thất bại, những cái ngu của mình trong quá khứ. Lúc đấy việc học và thi đấu Tin học của các bạn nó sẽ thoải mái hơn rất nhiều.
 
-Q: Rất cảm ơn Dũng vì lời nhắn nhủ rất truyền cảm hứng cho các bạn độc giả. Cảm ơn Dũng vì buổi phỏng vấn hôm nay! 
+Q: Rất cảm ơn Dũng vì lời nhắn nhủ rất truyền cảm hứng cho các bạn độc giả. Cảm ơn Dũng vì buổi phỏng vấn hôm nay!
 

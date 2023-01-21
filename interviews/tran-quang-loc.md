@@ -7,11 +7,11 @@ A: Lộc
 ---
 Q: Xin chào anh Lộc, mời anh giới thiệu về bản thân ạ.
 
-A: Xin chào các bạn, mình tên là Trần Quang Lộc, sinh năm 1999, nhà ở tỉnh Hòa Bình. Mình vừa tốt nghiệp và đang đi làm tại Pendle. Mình từng là du học sinh Nga, học tại trường ITMO, trường của tourist 
+A: Xin chào các bạn, mình tên là Trần Quang Lộc, sinh năm 1999, nhà ở tỉnh Hòa Bình. Mình vừa tốt nghiệp và đang đi làm tại Pendle. Mình từng là du học sinh Nga, học tại trường ITMO, trường của tourist
 
 Q: Anh Lộc có thể kể về quá trình học Tin của mình được không?
 
-A: Mình biết lập trình từ lớp 8, từ môn Tin trên trường là dạy Pascal. Lên cấp 3, mình học trường THPT chuyên Hoàng Văn Thụ, ban đầu mình học chuyên Toán xong đến giữa lớp 11 thì mình chuyển sang học Tin. Trường mình cũng không phải mạnh về môn Tin, nhưng được cái là lúc đó mình cũng rất muốn học Tin và cũng chịu khó tìm tòi các thứ. Mình có đọc cuốn CP3 nhưng mà chỉ đọc được một nửa thôi, còn lại mình xem đống reference ở dưới rồi tìm nguồn khác đọc. 
+A: Mình biết lập trình từ lớp 8, từ môn Tin trên trường là dạy Pascal. Lên cấp 3, mình học trường THPT chuyên Hoàng Văn Thụ, ban đầu mình học chuyên Toán xong đến giữa lớp 11 thì mình chuyển sang học Tin. Trường mình cũng không phải mạnh về môn Tin, nhưng được cái là lúc đó mình cũng rất muốn học Tin và cũng chịu khó tìm tòi các thứ. Mình có đọc cuốn CP3 nhưng mà chỉ đọc được một nửa thôi, còn lại mình xem đống reference ở dưới rồi tìm nguồn khác đọc.
 
 A: Mình cũng chỉ được thi quốc gia vào lớp 12 và kết quả cũng không được như mình mong đợi, nói một cách trẻ trâu thì gọi là cay cú . Mình nghĩ khả năng mình có thể làm tốt hơn, ở cả quá trình ở cấp 3 nên mình không dừng lại việc học CP mà sẽ tiếp tục theo đuổi trên đại học. Trường ITMO cũng là trường mạnh về CP nên nó cũng giúp ích được cho mình. Mình thì lại không học cùng ngành với tourist, tức là ngành cũng không mạnh về CP lắm nên mình cũng không thi ICPC vào năm nhất. Khi mình thi ICPC bên Nga, mình cũng vừa học vừa ôn thi ICPC. Được cái là teammate của mình cũng hăng nên mình cũng được tham gia nhiều event, CP training camp. Mình bắt đầu thi ICPC vào năm hai nên mình cũng được thi 3 năm ở Nga.
 
@@ -31,7 +31,7 @@ A: Đúng vậy, nhưng mà để mình kể cho cái này vui này! Dù mình p
 
 A: Thêm vài lý do không nên đi Nga nữa là COVID và đang có xung đột. Bây giờ dịch cũng đỡ rồi nhưng nếu xảy ra sự kiện tương tự như thế làm bạn phải ở lại bên Nga, mà Nga thì lại rất xa nên chắc chắn là người nhà cũng lo, mình cũng buồn. Cái xung đột bên Nga cũng ảnh hưởng ít nhiều đến cá nhân bạn.
 
-A: Còn về phần nên, nếu bạn là người thích đi đây đi đó thì sẽ thích Nga, vì Nga có rất nhiều cảnh đẹp, cũng là một trải nghiệm khá vui. Thêm nữa là nếu bạn may mắn thì sẽ được dự các sự kiện hay ho bên Nga, giống như mình được đi training camp rất vui. Mình cũng thấy là Regional ở Nga tổ chức rất là hoành tráng. À, nếu bạn chọn ITMO thì cũng có nhiều người Việt nên bạn cũng không cảm thấy cô đơn khi sang đây, không thiếu người để nói tiếng mẹ đẻ cùng . Trong ký túc xá mình có đến tầm 200 người Việt! 
+A: Còn về phần nên, nếu bạn là người thích đi đây đi đó thì sẽ thích Nga, vì Nga có rất nhiều cảnh đẹp, cũng là một trải nghiệm khá vui. Thêm nữa là nếu bạn may mắn thì sẽ được dự các sự kiện hay ho bên Nga, giống như mình được đi training camp rất vui. Mình cũng thấy là Regional ở Nga tổ chức rất là hoành tráng. À, nếu bạn chọn ITMO thì cũng có nhiều người Việt nên bạn cũng không cảm thấy cô đơn khi sang đây, không thiếu người để nói tiếng mẹ đẻ cùng . Trong ký túc xá mình có đến tầm 200 người Việt!
 
 Q: Nói chung vừa nãy anh nói thì em mới nhận ra là việc thi ICPC với teammate Nga nó khó hơn hẳn thi với teammate nói tiếng Anh. Cho nên em thấy điều đó khiến thành tích của anh nó ngầu hơn em nghĩ! Lúc nãy anh cũng có nói là anh và tourist học khác ngành nên chắc mọi người cũng thắc mắc rằng học CP thì sau này ra làm gì? Chẳng hạn như tourist giờ làm gì, anh làm gì, và 2 người khác ngành thì có khác công việc không?
 
@@ -39,7 +39,7 @@ A: tourist hiện tại theo mình biết là tiếp tục làm nghiên cứu si
 
 Q: Vậy sau khi sang Nga, anh thấy mình đã đạt được mục tiêu anh muốn trong CP chưa?
 
-A: Tất nhiên mục tiêu cao nhất của mình là vào được WF, và mình đã không làm được. Nhưng mình cũng được thi Regional, và cái Regional của mình (NERC) cũng được đánh giá là khó. Thêm một điều nữa là mình được gặp tourist này! Mình cũng thấy đó là điều tuyệt vời mà không phải ai cũng được. 
+A: Tất nhiên mục tiêu cao nhất của mình là vào được WF, và mình đã không làm được. Nhưng mình cũng được thi Regional, và cái Regional của mình (NERC) cũng được đánh giá là khó. Thêm một điều nữa là mình được gặp tourist này! Mình cũng thấy đó là điều tuyệt vời mà không phải ai cũng được.
 
 ![Trần Quang Lộc với đội Unexpected Value trong kì thi ICPC NERC 2021](../assets/interviews/tran-quang-loc-nerc-2021-1.jpg)
 
@@ -53,7 +53,7 @@ A: Đúng rồi, thật ra cũng đơn giản! Vào một ngày bình thường,
 
 Q: Vậy anh có thể chia sẻ thêm rằng làm coordinator có vui không? Anh có recommend các bạn khác làm coordinator giống anh không?
 
-A: Về làm coordinator, các bạn nếu thấy mình khủng thì có thể nhắn với KAN. Bởi vì errorgorn bảo với mình là nó thích nên nó nhắn KAN xin vô làm thôi.  Các bạn nên hiểu là việc của coordinator không phải là làm round mà là đảm bảo chất lượng của round, về đề lẫn về test. Một là đề phải đọc vào dễ hiểu, đầy đủ thông tin, hai là test phải mạnh. Bạn sẽ phải hướng dẫn các bạn viết problem, rồi phải hướng dẫn sinh test như thế nào, nói chung thì cái này cũng có format. Trước khi bài được cho vào round thì coordinator phải duyệt bài nữa, có thể reject thoải mái . Cái hay của việc đó là bạn được biết những ý tưởng hay từ những bài được proposed. Hầu hết bài bây giờ không phải là bài original nữa, mình cũng phải đọc, ngẫm, xem solution của tác giả có hợp lệ không. Theo mình đó là phần thú vị khi làm coordinator .
+A: Về làm coordinator, các bạn nếu thấy mình khủng thì có thể nhắn với KAN. Bởi vì errorgorn bảo với mình là nó thích nên nó nhắn KAN xin vô làm thôi.  Các bạn nên hiểu là việc của coordinator không phải là làm round mà là đảm bảo chất lượng của round, về đề lẫn về test. Một là đề phải đọc vào dễ hiểu, đầy đủ thông tin, hai là test phải mạnh. Bạn sẽ phải hướng dẫn các bạn viết problem, rồi phải hướng dẫn sinh test như thế nào, nói chung thì cái này cũng có format. Trước khi bài được cho vào round thì coordinator phải duyệt bài nữa, có thể từ chối thoải mái . Cái hay của việc đó là bạn được biết những ý tưởng hay từ những bài được proposed. Hầu hết bài bây giờ không phải là bài original nữa, mình cũng phải đọc, ngẫm, xem solution của tác giả có hợp lệ không. Theo mình đó là phần thú vị khi làm coordinator .
 
 A: Nói chung là phải đảm bảo hết các giai đoạn của quá trình làm contest, chỗ nào không ổn thì phải sửa ngay. Ví dụ test xong round mà thấy bài này không ổn thì phải thay bằng bài khác, nhiều khi công đoạn đó phải lặp lại nhiều lần khá lâu.
 
@@ -85,7 +85,7 @@ A: Câu hỏi thú vị, một ngày ở trường thì có khoảng 7 tiết. T
 
 Q: Ngoài đi học ra thì anh còn làm gì nữa?
 
-A: Tất nhiên là phải kể đến thời gian mình di chuyển từ ký túc xá lên trường và ngược lại . Ở Nga thì không có tàu điện hay xe buýt nên mình phải đi bộ tầm 40 phút cho một chuyến. Được cái vào năm tư thì có dịch vụ thuê xe điện nên mình được di chuyển tiện hơn, cái này có app hẳn hoi nhé. Trường mình cũng liên kết với các công ty nên mỗi sinh viên cũng được 1 vé free đi trong ngày . Trong 1 tuần thì chỉ được 5 ngày thôi cho nên nếu muốn đi vào T7 thì vẫn phải đi bộ ;( 
+A: Tất nhiên là phải kể đến thời gian mình di chuyển từ ký túc xá lên trường và ngược lại . Ở Nga thì không có tàu điện hay xe buýt nên mình phải đi bộ tầm 40 phút cho một chuyến. Được cái vào năm tư thì có dịch vụ thuê xe điện nên mình được di chuyển tiện hơn, cái này có app hẳn hoi nhé. Trường mình cũng liên kết với các công ty nên mỗi sinh viên cũng được 1 vé free đi trong ngày . Trong 1 tuần thì chỉ được 5 ngày thôi cho nên nếu muốn đi vào T7 thì vẫn phải đi bộ ;(
 
 Q: Thế anh có phải làm bài tập về nhà nhiều không?
 
@@ -97,7 +97,7 @@ A: Lúc mình thi xong lớp 12 thì mình ở tím.
 
 Q: Cái này em nghĩ nhiều bạn cũng quan tâm nhiều. Anh lên đại học rồi thì thời gian cho CP cũng giảm xuống so với cấp 3 nhưng mà anh lại tiếp tục cày lên đỏ CF. Vậy anh đã làm được điều đó như thế nào nhỉ?
 
-A: Chắc là do mình vẫn làm contest thường xuyên nên mình vẫn duy trì được trình độ, với lại mình cũng hay luyện bằng bot TLE trên server của VNOI, mỗi ngày mình gitgud 1 lần. Mình thấy cái đó cũng hay vì là mỗi lần gitgud rồi AC, dù mình tự giải hay là bí đọc lời giải rồi code lại thì nó cũng tính điểm cho mình, từ đó cũng hình thành một cái quá trình để mình theo dõi. Đó cũng là một động lực để mình tiếp tục luyện. 
+A: Chắc là do mình vẫn làm contest thường xuyên nên mình vẫn duy trì được trình độ, với lại mình cũng hay luyện bằng bot TLE trên server của VNOI, mỗi ngày mình gitgud 1 lần. Mình thấy cái đó cũng hay vì là mỗi lần gitgud rồi AC, dù mình tự giải hay là bí đọc lời giải rồi code lại thì nó cũng tính điểm cho mình, từ đó cũng hình thành một cái quá trình để mình theo dõi. Đó cũng là một động lực để mình tiếp tục luyện.
 
 A: Thực ra thì quá trình luyện của mình cũng lâu chứ, mãi đến kỳ 1 của năm tư mình mới lên được đỏ. Thực ra lúc làm contest, mình cũng trên tinh thần là thi cho vui, vì vui nên lần sau mình lại thi tiếp. Nhiều bạn có thể không nghĩ giống mình nên các bạn bỏ contest khi lên đại học. Ngoài ra làm contest nhiều cũng giúp bạn luyện được tư duy, đó cũng là lợi thế cho các việc khác. Dù gì thì các bạn cũng nên coi CP là một môn thể thao chứ không phải là cái gì giúp bạn tăng lương hay gì đấy . Thích thì mình mới làm!
 
@@ -119,7 +119,7 @@ Q: Cuối cùng thì anh có điều gì muốn nhắn nhủ với các bạn đ
 
 A: Nếu các bạn thấy con đường của mình thú vị thì các bạn có thể thử . Mình làm mọi thứ khá là đơn giản, thứ duy nhất mình thấy mình phải đánh đổi là thời gian. Nói chung thì như mình nói đấy, các bạn nên chịu khó tìm hiểu các thứ, chắc chắn các bạn cũng tìm được nhiều thứ hay ho, và trong quá trình lâu dài thì chắc chắn các bạn sẽ học được nhiều điều mà các bạn đi đường ngắn sẽ không có được.
 
-Q: Rất cảm ơn những chia sẻ của anh Lộc. 
+Q: Rất cảm ơn những chia sẻ của anh Lộc.
 
 A: Cảm ơn các bạn rất nhiều!
 
