@@ -179,7 +179,7 @@ class MarkoLatexRenderer(LatexRenderer):
         # TODO: check how to handle element.start with ordered list
         if element.start and element.start != 1:
             print("Setting the starting number of the list is not supported!")
-        return self._environment(env, children, ['leftmargin=0.5cm'])
+        return self._environment(env, children, ['leftmargin=0.5cm', 'itemsep=1mm', 'topsep=0mm', 'partopsep=0mm', 'parsep=0mm'])
             
     def render_image(self, element):
         children = self.render_children(element)
