@@ -3,6 +3,8 @@ from marko import (inline, block)
 import re
 import yaml
 import sys
+import os
+from collections import namedtuple
 
 sys.stdin.reconfigure(encoding="utf-8-sig")
 
@@ -89,9 +91,24 @@ class InterviewQA(inline.InlineElement):
     parse_children = False
     def __init__(self, match):
         self.type = match.group(1)
+        
+shorthand_data = yaml.safe_load(open('./shorthands.yaml'))
+ShorthandMeaning = namedtuple('ShorthandMeaning', ('value', 'id'))
+transformed_shorthand_data = {}
+for idx, data in enumerate(shorthand_data):
+    for keyword, meaning in data.items():
+        transformed_shorthand_data[keyword] = ShorthandMeaning(meaning, idx)
+        
+class Shorthand(inline.InlineElement):
+    pattern = f'({"|".join(transformed_shorthand_data.keys())})'
+    parse_children = False
+    def __init__(self, match):
+        self.keyword = match.group(1)
+        self.meaning = transformed_shorthand_data[self.keyword]
 
 class MarkoLatexRenderer(LatexRenderer):
     front_matter = {}
+    added_shorthand = set()
     
     def render_document(self, element):
         children = self.render_children(element)
@@ -204,6 +221,12 @@ class MarkoLatexRenderer(LatexRenderer):
             return r'\interview' + element.type + ' '
         return element.type + ': '
     
+    def render_shorthand(self, element):
+        if element.meaning.id in self.added_shorthand:
+            return element.keyword
+        self.added_shorthand.add(element.meaning.id)
+        return f'\\shorthand{{{element.keyword}}}{{{element.meaning.value}}}'
+    
     @staticmethod
     def _escape_latex(text: str) -> str:
         # print('escaping', text)
@@ -243,6 +266,7 @@ class MarkoLatexExtension:
             Emoji,
             FrontMatter,
             InterviewQA,
+            Shorthand
         ]
     renderer_mixins = [MarkoLatexRenderer]
 
