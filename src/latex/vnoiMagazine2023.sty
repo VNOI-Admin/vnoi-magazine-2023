@@ -68,7 +68,9 @@
 \newenvironment{article}[3]{
     
     \pagestyle{fancy}
-    \ifodd\value{page}\null\newpage\fi%
+    
+    % \ifodd\value{page}\null\newpage\fi%
+    
     \fancyhead{}
     \lhead{#1}
     \rhead{\textrm{\textit{#3}}}
