@@ -5,9 +5,14 @@
 \usepackage[T1,T5]{fontenc}
 \usepackage[main=vietnamese]{babel}
 \usepackage{vnoiMagazine2023}
-\usepackage[a4paper, margin=1.5cm, twoside]{geometry}
+\usepackage[a4paper, margin=1.5cm]{geometry}
 \usepackage[bottom]{footmisc}
 \usepackage{indentfirst}
+
+\usepackage{perpage} %the perpage package
+\MakePerPage{footnote} %the perpage package command
+
+\addtolength{\footnotesep}{0mm} % change to 1mm
 
 \renewcommand{\familydefault}{\sfdefault}
 \graphicspath{./}
