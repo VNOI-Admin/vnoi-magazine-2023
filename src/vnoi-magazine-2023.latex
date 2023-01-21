@@ -7,6 +7,7 @@
 \usepackage{vnoiMagazine2023}
 \usepackage[a4paper, margin=1.5cm, twoside]{geometry}
 \usepackage[bottom]{footmisc}
+\usepackage{indentfirst}
 
 \renewcommand{\familydefault}{\sfdefault}
 \graphicspath{./}
