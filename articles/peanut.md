@@ -31,7 +31,7 @@ Xét đa thức $R = P - Q$, ta có:
 - Vì $P$ và $Q$ đều có bậc $n$, nên $R$ có bậc tối đa là $n$.
 - Với mọi $i$, $R(x_i) = P(x_i) - Q(x_i) = y_i - y_i = 0$, vậy $R$ có $n + 1$ nghiệm $x_0, x_1, \dots, x_n$.
 
-Theo [Định lí cơ bản của đại số](https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Bnh_l%C3%BD_c%C6%A1_b%E1%BA%A3n_c%E1%BB%A7a_%C4%91%E1%BA%A1i_s%E1%BB%91), $R$ phải là đa thức không, vậy $P = Q$ (vô lí với giả sử phản chứng).
+Theo [Định lí cơ bản của đại số](https://vi.wikipedia.org/wiki/Định_lý_cơ_bản_của_đại_số), $R$ phải là đa thức không, vậy $P = Q$ (vô lí với giả sử phản chứng).
 
 ![Trích SGK toán lớp 7 tập 2](./assets/peanut/img1.png)
 
