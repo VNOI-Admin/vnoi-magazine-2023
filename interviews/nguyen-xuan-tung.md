@@ -19,7 +19,7 @@ A: Vâng, đều là hai em năm nhất.
 
 Q: Được biết Mèo là một người cực kỳ khủng về CP, một trong số rất ít rating 2600+ Codeforces. Nhưng Mèo lại không có giải quốc gia ở cấp 3, và năm 1, năm 2 ở đại học thì cũng rất là yếu. Để câu chuyện thêm phần kịch tính và để lại những phần hay nhất ở cuối cùng, mình sẽ bắt đầu từ cấp 3. Thế thì, cấp 3 Mèo học ở đâu, học chuyên gì?
 
-A: Cấp 3 mình là học sinh trường Phổ thông Năng khiếu ở TP.HCM, và mình học theo chuyên Sinh. Mà thực ra ngay cả câu chuyện mình vào chuyên Sinh như thế nào cũng là một câu chuyện thú vị nhá! Hồi đấy thực ra mình định vào chuyên Hoá cơ, nhưng mà lúc mình mua đề ôn để thi vào cấp 3, mình có thử đọc hết tất cả các đề của Năng khiếu. Lúc mình đọc tới đề của bên Sinh mình thấy có vài câu làm được. Thế là đúng cái hôm đăng ký thi vào lớp 10, mình đã quyết định đánh thêm môn Sinh vào. Cuối cùng thế nào lại trượt hết tất cả các chuyên, chỉ đậu mỗi chuyên Sinh.*\*cười\**.
+A: Cấp 3 mình là học sinh trường Phổ thông Năng khiếu ở TP.HCM, và mình học theo chuyên Sinh. Mà thực ra ngay cả câu chuyện mình vào chuyên Sinh như thế nào cũng là một câu chuyện thú vị nhá! Hồi đấy thực ra mình định vào chuyên Hoá cơ, nhưng mà lúc mình mua đề ôn để thi vào cấp 3, mình có thử đọc hết tất cả các đề của Năng khiếu. Lúc mình đọc tới đề của bên Sinh mình thấy có vài câu làm được. Thế là đúng cái hôm đăng ký thi vào lớp 10, mình đã quyết định đánh thêm môn Sinh vào. Cuối cùng thế nào lại trượt hết tất cả các chuyên, chỉ đậu mỗi chuyên Sinh.
 
 Q: Và cuối cùng thì bạn đã học chuyên Sinh?
 
@@ -73,11 +73,11 @@ A: Vẫn có được giải Ba, năm đấy Mèo được điểm khá cao ở 
 
 Q: Mình đoán là Mèo cũng nhường các bạn khác như mọi khi đúng không?
 
-A: Nhường kiểu này hơi quá! Chưa biết nhường như nào nên nhường hơi nhiều, sau này nhường ít lại *\*cười\**.
+A: Nhường kiểu này hơi quá! Chưa biết nhường như nào nên nhường hơi nhiều, sau này nhường ít lại .
 
 Q: Thế thì đến năm 2, mọi việc đã thay đổi như nào?
 
-A: Đến năm 2, lần đầu tiên mình đánh ICPC, phải nói là thật sự choáng ngợp với khả năng của các bạn. Năm đấy là một năm mà đề ICPC cũng tương đối khó, thời đề vẫn còn khó hơn bây giờ. Và mình cũng hơi bị choáng ngợp về việc tại sao lại có nhiều đội “xài” được nhiều bài như thế, thậm chí là các đội cấp 3, các bạn năm nhất các thứ. Nói thật, nhìn sức mạnh của các bạn mà mình không nghĩ được là… Nói chung là nhìn lên top trên của mình, mình cảm giác là một cái đẳng cấp mà mình không bao giờ chạm được. Và có vẻ như với số lượng cúp vô địch mình có bây giờ thì đúng là nó là một đẳng cấp mà cũng chưa chạm tới thật *\*cười\**.
+A: Đến năm 2, lần đầu tiên mình đánh ICPC, phải nói là thật sự choáng ngợp với khả năng của các bạn. Năm đấy là một năm mà đề ICPC cũng tương đối khó, thời đề vẫn còn khó hơn bây giờ. Và mình cũng hơi bị choáng ngợp về việc tại sao lại có nhiều đội “xài” được nhiều bài như thế, thậm chí là các đội cấp 3, các bạn năm nhất các thứ. Nói thật, nhìn sức mạnh của các bạn mà mình không nghĩ được là… Nói chung là nhìn lên top trên của mình, mình cảm giác là một cái đẳng cấp mà mình không bao giờ chạm được. Và có vẻ như với số lượng cúp vô địch mình có bây giờ thì đúng là nó là một đẳng cấp mà cũng chưa chạm tới thật .
 
 Q: Năm 2 của Mèo  là năm bao nhiêu trong thực tế rồi?
 
@@ -141,7 +141,7 @@ A: Đúng, có huy chương đồng.
 
 Q: Ah nice, các bạn có thể thấy là Mèo có sự đi lên rất là rõ ràng luôn, mỗi năm lên một màu và mỗi năm đi lên một kiểu. Nói chung, năm 2019 này Mèo tập trung vào train Codechef Long. Và cuối cùng thì hết năm 2019, bạn đạt được một thành tích, mà ở Việt Nam ngày xưa, từ trước khi COVID diễn ra, là rất ít người có, đó là đỏ Codeforces. Hồi đó đỏ Codeforces Việt Nam đếm được trên đầu ngón tay, và cái đỏ Codeforces ấy rất là quan trọng. Bước sang năm 2020, là một năm mà Mèo suýt lên được 2k6 Codeforces, tức là suýt lên được IGM. Và năm này thì Mèo còn train ít contest hơn cả năm 2019 nữa. Chiến lược của Mèo trong năm đấy là gì?
 
-A: Năm 2020 là lúc đấy mình đang năm cuối đại học. Mình bận học với cả mình bận luận văn các thứ, làm sao mà train nhiều được *\*cười\**.
+A: Năm 2020 là lúc đấy mình đang năm cuối đại học. Mình bận học với cả mình bận luận văn các thứ, làm sao mà train nhiều được .
 
 Q: Thế tại sao Mèo train ít mà đến cuối năm nó vẫn gần như lên được IGM như thế này?
 
@@ -161,7 +161,7 @@ A: Năm này đương nhiên là có! Và năm 2020, ICPC với mình là một 
 
 Q: Là rank bao nhiêu nhỉ?
 
-A: Năm đấy mình RANK 4 *\*tuyệt vọng\**. Và kết quả là đội TOP 3 ĐƯỢC ĐI WF. Đội ở rank 3 đến từ trường HCMUS, có bạn Nguyễn Diệp Xuân Quang. Mình đã thua đội bạn đấy chỉ 24 phút penalty.
+A: Năm đấy mình RANK 4. Và kết quả là đội TOP 3 ĐƯỢC ĐI WF. Đội ở rank 3 đến từ trường HCMUS, có bạn Nguyễn Diệp Xuân Quang. Mình đã thua đội bạn đấy chỉ 24 phút penalty.
 
 Q: 24 phút là quá nhiều. Thật là cay đắng khi thua penalty. OK, thế còn bảng Siêu Cúp, năm này kết quả Mèo thế nào?
 
@@ -191,7 +191,7 @@ A: Thực ra, cái khoảng thời gian mình train mạnh lại là tầm từ 
 
 Q: Năm 2022 mình cũng sẽ skip qua vì năm 2022 Mèo không thi ICPC nữa và Codeforces thì cũng thi mỗi 4 contest. Nói chung hoạt động train cũng không mạnh nữa vì đã đạt đến đỉnh cao của việc qualify WF lần đầu tiên trong lịch sử trường Đại học Quốc tế. Nhìn chung thì các bạn có thể thấy, Mèo có một quá trình phát triển rất đều và rất khủng khiếp qua các năm: từ đầu năm 2018 với rating đâu đó khoảng 1500, đầu năm 2019 là 2100, đầu năm 2020 thì là 2400, và đầu năm 2021 là 2600. Sự phát triển mà gần như là không mấy ai có được. Khi nhìn lại thì Mèo thấy chiến lược train của mình nó đúng đắn nhất ở chỗ nào?
 
-A: Nói về chiến lược train của bản thân, mình nghĩ là nó cũng có điểm đúng và nó cũng có điểm sai. Mình nghĩ điểm đúng ở chỗ là đầu tiên cái mindset train của mình nó khá chill. Kiểu mục tiêu của mình là chỉ muốn 1 contest mình hơn được những người mình cho là hơn hẳn mình. Mình chỉ cần thắng 1 contest thôi thì tự dưng mình có cảm giác hơn người ta. Và hai nữa là mình, mình nghĩ cái mình mạnh vì mình train nhiều, chứ không hẳn do mình mạnh lắm *\*cười\**.
+A: Nói về chiến lược train của bản thân, mình nghĩ là nó cũng có điểm đúng và nó cũng có điểm sai. Mình nghĩ điểm đúng ở chỗ là đầu tiên cái mindset train của mình nó khá chill. Kiểu mục tiêu của mình là chỉ muốn 1 contest mình hơn được những người mình cho là hơn hẳn mình. Mình chỉ cần thắng 1 contest thôi thì tự dưng mình có cảm giác hơn người ta. Và hai nữa là mình, mình nghĩ cái mình mạnh vì mình train nhiều, chứ không hẳn do mình mạnh lắm .
 
 Q: OK, còn gì nữa không?
 
@@ -237,7 +237,7 @@ Q: Kinh nghiệm Speaking là bạn phải giỏi sẵn, không có học gì l�
 
 A: Về việc học Tiếng Anh, lời khuyên mình không có nhưng mà lời khuyên về việc thi IELTS thì… Mình nghĩ thi IELTS ngoài việc mục đích đo trình độ của mình thì cũng là để show off. 
 
-Thi IELTS mình phải show off được cái khả năng của mình. Mình biết bao nhiêu ngữ pháp lôi hết ra, bao nhiêu từ vựng lôi hết ra. Nói chung là mình hãy cứ trực tiếp show off cái khả năng của mình, khi đấy điểm có thể sẽ cao lên. Cái việc show off mà điểm cao lên, mình cũng không nghĩ là một điều xấu đâu nhé! Vì khi mình làm như thế, ban giám khảo mới biết được là mình mạnh thế nào. Còn nếu như mình mạnh mà người ta không biết thì người ta khó chấm điểm lắm. Bởi vì IELTS này nó là một cuộc chơi, không chỉ riêng mình mà của mình và ban giám khảo nữa, trừ 2 môn mà có sẵn đáp án thì không nói làm gì *\*cười\**
+Thi IELTS mình phải show off được cái khả năng của mình. Mình biết bao nhiêu ngữ pháp lôi hết ra, bao nhiêu từ vựng lôi hết ra. Nói chung là mình hãy cứ trực tiếp show off cái khả năng của mình, khi đấy điểm có thể sẽ cao lên. Cái việc show off mà điểm cao lên, mình cũng không nghĩ là một điều xấu đâu nhé! Vì khi mình làm như thế, ban giám khảo mới biết được là mình mạnh thế nào. Còn nếu như mình mạnh mà người ta không biết thì người ta khó chấm điểm lắm. Bởi vì IELTS này nó là một cuộc chơi, không chỉ riêng mình mà của mình và ban giám khảo nữa, trừ 2 môn mà có sẵn đáp án thì không nói làm gì 
 
 Q: OK, một kinh nghiệm rất là hay ho, các bạn nhớ show off khi đi thi IELTS để được 8.5 Speaking như Mèo - một thành tích mà mình tin là rất nhiều giáo viên tiếng Anh cũng mơ ước luôn chứ không chỉ là các bạn bình thường. OK! Để kết thúc cuộc phỏng vấn giống như tất cả các khách mời khác. Trong tương lai, sau khi bị đuổi hay tốt nghiệp, Mèo có dự định gì trong 5 năm, 10 năm?
 
@@ -245,12 +245,12 @@ A: Phỏng vấn mà 5 năm, 10 năm thì khó quá.
 
 Q: Không 5 năm, 10 năm thì 1 năm thôi, thần Mèo là người đặc biệt mà nên là dự định 1 năm thôi, hoặc 1 tháng thôi cũng được.
 
-A: Mình không hay tính xa lắm, thực ra cái mình tính xa nhất đến giờ là WF năm sau thôi. Kể cả WF năm sau thì mình chắc không mạnh như team EggCentroy được đâu! Nhưng mình đặt mục tiêu trong WF là làm một cái gì đấy để mình không hối tiếc. Ví dụ như đạt một cái rank trong tốp 50. hay một cái tốp gì đấy cao cao hơn mình mong đợi chẳng hạn. Hoặc là giải được một cái bài khó, first solve được bài dễ nhất. Nói chung là làm cái gì đấy để lại dấu ấn đặc biệt một chút, giống như 2 cúp bạc siêu cúp mình đã đạt được *\*cười\**.
+A: Mình không hay tính xa lắm, thực ra cái mình tính xa nhất đến giờ là WF năm sau thôi. Kể cả WF năm sau thì mình chắc không mạnh như team EggCentroy được đâu! Nhưng mình đặt mục tiêu trong WF là làm một cái gì đấy để mình không hối tiếc. Ví dụ như đạt một cái rank trong tốp 50. hay một cái tốp gì đấy cao cao hơn mình mong đợi chẳng hạn. Hoặc là giải được một cái bài khó, first solve được bài dễ nhất. Nói chung là làm cái gì đấy để lại dấu ấn đặc biệt một chút, giống như 2 cúp bạc siêu cúp mình đã đạt được .
 
 Q: Yea thế thì chúc Mèo may mắn trong WF năm tới! Biết đâu Mèo lại làm một pha, ví dụ như, rank 2 WF chẳng hạn.
 
-A: Ui giồi ơiiiiii *\*cười\**.
+A: Ui giồi ơiiiiii .
 
-Q: Đi vào lịch sử luôn, EggCentroy ra đường *\*cười\**. OK thế thôi, cảm ơn Mèo đã nhận lời phỏng vấn ngày hôm nay. Chúc Mèo năm mới, Tết vui vẻ, thế thôi! Chào bạn nhé!
+Q: Đi vào lịch sử luôn, EggCentroy ra đường . OK thế thôi, cảm ơn Mèo đã nhận lời phỏng vấn ngày hôm nay. Chúc Mèo năm mới, Tết vui vẻ, thế thôi! Chào bạn nhé!
 
 
