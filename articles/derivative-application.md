@@ -130,7 +130,7 @@ for (int x = 1; x <= MAX_H; ++x) {
 
 Sử dụng đạo hàm, ta cũng có thể chứng minh hàm $F(x)$ là hàm lồi, và do đó cách chặt tam phân trình bày ở trên là chính xác.
 
-Một hàm số là hàm lồi trong đoạn $[l, r]$ nếu đạo hàm bậc 2 của nó luôn lớn hơn hoặc bằng $0$ trong khoảng $[l, r]$. [Nguồn](https://en.wikipedia.org/wiki/Convex_function). (Một cách hiểu trực quan: có thể thấy nếu đạo hàm bậc 2 không âm $\Rightarrow$ đạo hàm bậc 1 là hàm tăng dần $\Rightarrow$ hàm số luôn "cong cong" về phía trên)
+Một hàm số là hàm lồi trong đoạn $[l, r]$ nếu đạo hàm bậc 2 của nó luôn lớn hơn hoặc bằng $0$ trong khoảng $[l, r]$. (Một cách hiểu trực quan: có thể thấy nếu đạo hàm bậc 2 không âm $\Rightarrow$ đạo hàm bậc 1 là hàm tăng dần $\Rightarrow$ hàm số luôn "cong cong" về phía trên). ([Xem thêm trên trang Wiki về hàm lồi](https://en.wikipedia.org/wiki/Convex_function))
 
 Ở bài này, dễ thấy $f_i(x)$ luôn lớn hơn hoặc bằng $0$, do đó $F''(x) = \sum{f_i(x)}$ cũng luôn lớn hơn hoặc bằng $0$.
 

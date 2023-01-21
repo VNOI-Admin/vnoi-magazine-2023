@@ -115,7 +115,7 @@ Trong cài đặt thực tế, ta thường sử dụng một module $M$ để t
 
 Nếu dụng module $P$ là số nguyên tố lớn. Xét 2 multiset $A$ và $B$ khác nhau mà $h(A) \equiv h(B)$ và $C = A \cap B$ nên $h(A - C) \equiv h(B - C)$.
 
-Giả sử $x$ là số chỉ xuất hiện trong $A - C$ và $y$ là số lần xuất hiện của $x$. Do $0 < y < P$ nên có thể sử dụng nghịch đảo modulo, ta có $h(x)\equiv {1 \over y}[h(B-C)-h(A-C-\{x\}×y)]$. Vì $h(x)$ thuộc khoảng $[1, P)$ nên khả năng xung đột là $1 \over {P - 1}$.
+Giả sử $x$ là số chỉ xuất hiện trong $A - C$ và $y$ là số lần xuất hiện của $x$. Do $0 < y < P$ nên có thể sử dụng nghịch đảo modulo, ta có $h(x)\equiv {1 \over y}[h(B-C)-h(A-C-\{x\}\times y)]$. Vì $h(x)$ thuộc khoảng $[1, P)$ nên khả năng xung đột là $1 \over {P - 1}$.
 
 Tuy vậy kể cả khi module $M$ không nguyên tố, khả năng xung đột cũng vẫn là khoảng $1 \over M$. Với $M$ đủ lớn, hoặc khi thực hiện các phép tính tràn số ($M = 2^{64}$), khả năng này là đủ nhỏ.
 
