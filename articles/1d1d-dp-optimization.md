@@ -463,5 +463,3 @@ Bạn đọc có thể luyện tập thêm về kĩ thuật ở những bài sau
 
 - [VJudge - Batch Scheduling](https://vjudge.net/problem/OpenJ_Bailian-1180)
 - [Codeforces - 321E](https://codeforces.com/contest/321/problem/E)
-
-
