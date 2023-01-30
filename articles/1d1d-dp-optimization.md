@@ -457,14 +457,11 @@ $$w(b, i) + w(a, i + 1) \le w(b, i + 1) + w(a, i)$$
 
 ### Ứng dụng
 
-Kĩ thuật này thường được sử dụng cùng với kĩ thuật [Aliens' Trick](https://mamnoonsiam.github.io/posts/attack-on-aliens.html), kĩ thuật từng xuất hiện trong đề thi [IOI 2016](https://oj.uz/problem/view/IOI16_aliens). 
-
-Ngoài ra, hầu hết các bài toán có thể giải bằng QHĐ bao lồi/QHĐ chia để trị đều có thể giải bằng kĩ thuật này.
+Kĩ thuật này thường được sử dụng cùng với kĩ thuật [Aliens' Trick](https://mamnoonsiam.github.io/posts/attack-on-aliens.html), kĩ thuật từng xuất hiện trong đề thi [IOI 2016](https://oj.uz/problem/view/IOI16_aliens). Ngoài ra, hầu hết các bài toán có thể giải bằng QHĐ bao lồi/QHĐ chia để trị đều có thể giải bằng kĩ thuật này.
 
 Bạn đọc có thể luyện tập thêm về kĩ thuật ở những bài sau:
 
 - [VJudge - Batch Scheduling](https://vjudge.net/problem/OpenJ_Bailian-1180)
-
 - [Codeforces - 321E](https://codeforces.com/contest/321/problem/E)
 
 
